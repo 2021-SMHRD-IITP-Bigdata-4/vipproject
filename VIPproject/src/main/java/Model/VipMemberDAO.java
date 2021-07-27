@@ -13,6 +13,8 @@ public class VipMemberDAO {
 	PreparedStatement psmt = null;
 	ResultSet rs = null;
 	int cnt = 0;
+	VipMemberDTO dto = null;
+	boolean x = false;
 	
 	public void conn() {
 		try {
@@ -66,4 +68,58 @@ public class VipMemberDAO {
 		return cnt;
 	}
 	
+	public boolean checkId(String id) {
+		conn();
+		String sql = "select * from user_info where user_id = ?";
+		try {
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, id);
+			
+			rs = psmt.executeQuery();
+			
+			if (rs.next()) {
+				x = true;
+			}			
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return x;
+	}
+	
+	public VipMemberDTO login(VipMemberDTO dto) {
+		conn();
+		String sql = "select * from user_info where user_id = ? and user_pw =?";
+		try {
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, dto.getUser_id());
+			psmt.setString(2, dto.getUser_pw());
+			
+			rs = psmt.executeQuery();
+			
+			if (rs.next()) {
+				String user_id = rs.getString(1);
+				String display_name = rs.getString(2);
+				String user_name = rs.getString(3);
+				String user_pw = rs.getString(4);
+				String user_phone = rs.getString(5);
+				String user_address = rs.getString(6);
+				String have_dog = rs.getString(7);
+				int cal_num = rs.getInt(8);
+				
+				dto = new VipMemberDTO(user_id, display_name, user_name, user_pw, user_phone, 
+										user_address, have_dog, cal_num);
+			}
+				
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		} 
+		
+		return dto;
+		
+	}
 }

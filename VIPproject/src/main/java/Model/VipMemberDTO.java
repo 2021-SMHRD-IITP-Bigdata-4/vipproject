@@ -33,8 +33,12 @@ public class VipMemberDTO {
 		this.user_address = user_address;
 		this.have_dog = have_dog;
 	}
+	
 
-
+	public VipMemberDTO(String user_id, String user_pw) {
+		this.user_id = user_id;
+		this.user_pw = user_pw;
+	}
 
 	public String getUser_id() {
 		return user_id;

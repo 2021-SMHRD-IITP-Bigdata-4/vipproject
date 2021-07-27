@@ -11,15 +11,22 @@
 		<form action = "JoinService" method = "post">
 			<tr>
 				<td>ID</td>
-				<td><input type = "text" name = "id"></td>
+				<td>
+					<input type = "text" name = "id">
+					<input type = "button" value = "중복확인" onclick = "checkId()">
+				</td>
+				
 			</tr>
 			<tr>
 				<td>PW</td>
-				<td><input type = "passward" name = "pw"></td>
+				<td><input type = "password" name = "pw" class = "pw" id = "password_1"></td>				
 			</tr>
 			<tr>
 				<td>PW 확인</td>
-				<td><input type = "passward" name = "pw2"></td>
+				<td colspan = "2">
+					<input type = "password" name = "pw2" class = "pw" id = "password_2">
+					<font id = "checkPw" size = "2"></font>
+				</td>
 			</tr>
 			<tr>
 				<td>이름</td>
@@ -41,9 +48,9 @@
 				<td>강아지 소유 여부</td>
 				<td>
 					<span>네</span>
-					<input type = "radio" name = "haveDog" value = "yes">
+					<input type = "radio" name = "have_dog" value = "yes">
 					<span>아니오</span>
-					<input type = "radio" name = "haveDog" value = "no">
+					<input type = "radio" name = "have_dog" value = "no">
 				</td>	
 			</tr>
 			<tr>
@@ -51,5 +58,29 @@
 			</tr>
 		</form>
 	</table>
+	
+	<script src = "js/jquery-3.6.0.min.js"></script>
+	<script>
+		$('.pw').focusout(function(){
+			let pass1 = $("#password_1").val();
+			let pass2 = $("#password_2").val();
+			
+			if (pass1 != "" || pass2 !=""){
+				if (pass1 == pass2){
+					$("#checkPw").html('일치');
+					$("#checkPw").attr('color','green');
+				} else {
+					$("#checkPw").html('불일치')
+					$("#checkPw").attr('color','red');
+										
+				}
+			}
+			
+		})		
+		
+	
+	</script>
+	
+	
 </body>
 </html>
