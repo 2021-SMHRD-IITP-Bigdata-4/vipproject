@@ -8,7 +8,7 @@
 </head>
 <body>
 	<table border = "1px solid black">
-		<form action = JoinService method = "post">
+		<form action = "JoinService" method = "post">
 			<tr>
 				<td>ID</td>
 				<td><input type = "text" name = "id"></td>
@@ -26,6 +26,10 @@
 				<td><input type = "text" name = "name"></td>
 			</tr>
 			<tr>
+				<td>닉네임</td>
+				<td><input type = "text" name = "display_name"></td>
+			</tr>
+			<tr>
 				<td>전화번호</td>
 				<td><input type = "text" name = "phone"></td>
 			</tr>
@@ -41,6 +45,9 @@
 					<span>아니오</span>
 					<input type = "radio" name = "haveDog" value = "no">
 				</td>	
+			</tr>
+			<tr>
+				<td colspan = "2" align = "center"><input type = "submit" value = "가입하기"></td>
 			</tr>
 		</form>
 	</table>
