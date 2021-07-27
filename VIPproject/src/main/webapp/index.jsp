@@ -103,7 +103,7 @@ https://templatemo.com/tm-559-zay-shop
                     </a>
                     <%if (info != null){ %>
                     
-                    	<a href = "#">개인정보수정</a> <br>                  	
+                    	<a href = "userUpdate.jsp">개인정보수정</a> <br>                  	
                     	<a href = "Logout">로그아웃</a>
                     <%} else {%>
                     <a class="nav-icon position-relative text-decoration-none" href="login.jsp">

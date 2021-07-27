@@ -122,4 +122,29 @@ public class VipMemberDAO {
 		return dto;
 		
 	}
+	
+	public int update(VipMemberDTO dto) {
+		conn();
+		String sql = "update user_info set display_name =?, user_name = ?, user_pw = ?,"
+				+" user_phone = ?, user_address = ?, have_dog = ? where user_id = ? ";
+		try {
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, dto.getDisplay_name());
+			psmt.setString(2, dto.getUser_name());
+			psmt.setString(3, dto.getUser_pw());
+			psmt.setString(4, dto.getUser_phone());
+			psmt.setString(5, dto.getUser_address());
+			psmt.setString(6, dto.getHave_dog());
+			psmt.setString(7, dto.getUser_id());
+			
+			cnt = psmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+	
+	return cnt;
+	}
 }

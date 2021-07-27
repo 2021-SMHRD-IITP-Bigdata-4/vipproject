@@ -16,7 +16,7 @@ public class LoginService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		response.setCharacterEncoding("EUC-KR");
+		request.setCharacterEncoding("EUC-KR");
 		
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
