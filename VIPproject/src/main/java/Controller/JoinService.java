@@ -37,7 +37,7 @@ public class JoinService extends HttpServlet {
 			response.sendRedirect("join_success.jsp");
 		} else {
 			System.out.println("가입실패");
-			response.sendRedirect("git.jsp");
+			response.sendRedirect("join.jsp");
 		}
 		
 		
