@@ -12,8 +12,8 @@
 			<tr>
 				<td>ID</td>
 				<td>
-					<input type = "text" name = "id">
-					<input type = "button" value = "중복확인" onclick = "checkId()">
+					<input type = "text" name = "id" class = "input_id">
+					<font id = checkId size = "2"></font>
 				</td>
 				
 			</tr>
@@ -78,7 +78,31 @@
 			
 		})		
 		
-	
+		$('.input_id').focusout(function(){
+			let userId = $('.input_id').val(); // input_id에 입력되는 값
+			
+			$.ajax({
+				url : "IdCheckService",
+				type : "post",
+				data : {userId: userId},
+				dataType : 'json',
+				success : function(result){
+					if(result == 0){
+						$("#checkId").html('사용할 수 없는 아이디입니다.');
+						$("#checkId").attr('color','red');
+					} else{
+						$("#checkId").html('사용할 수 있는 아이디입니다.');
+						$("#checkId").attr('color','green');
+					} 
+				},
+				error : function(){
+					alert("서버요청실패");
+				}
+			})	
+			
+		})
+		
+		
 	</script>
 	
 	

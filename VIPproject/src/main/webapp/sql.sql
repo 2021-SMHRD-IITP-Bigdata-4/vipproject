@@ -18,3 +18,5 @@ INCREMENT BY 1;
 select * from user_info;
 
 drop table user_info cascade constraints;
+
+select * from user_info where user_id = 'kim';

@@ -68,7 +68,7 @@ public class VipMemberDAO {
 		return cnt;
 	}
 	
-	public boolean checkId(String id) {
+	public int checkId(String id) {
 		conn();
 		String sql = "select * from user_info where user_id = ?";
 		try {
@@ -76,17 +76,20 @@ public class VipMemberDAO {
 			psmt.setString(1, id);
 			
 			rs = psmt.executeQuery();
-			
-			if (rs.next()) {
-				x = true;
-			}			
+					
+			if(rs.next() || id.equals("")) {
+				cnt = 0;  // 이미 존재
+			} else {
+				cnt = 1;  // 생성 가능
+			}
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
 			close();
 		}
-		return x;
+		
+		return cnt;
 	}
 	
 	public VipMemberDTO login(VipMemberDTO dto) {
