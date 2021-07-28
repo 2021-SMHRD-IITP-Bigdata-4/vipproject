@@ -115,7 +115,7 @@ public class VipMemberDAO {
 				dto = new VipMemberDTO(user_id, display_name, user_name, user_pw, user_phone, 
 										user_address, have_dog, cal_num);
 			}
-				
+				 
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {

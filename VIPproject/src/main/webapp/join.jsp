@@ -98,8 +98,8 @@
 				error : function(){
 					alert("서버요청실패");
 				}
-			})	
-			
+			})
+			 
 		})
 		
 		

@@ -19,4 +19,4 @@ select * from user_info;
 
 drop table user_info cascade constraints;
 
-select * from user_info where user_id = 'kim';
+select * from user_info where user_id = 'kim'; 
