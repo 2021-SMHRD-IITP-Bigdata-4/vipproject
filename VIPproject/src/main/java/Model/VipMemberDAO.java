@@ -13,7 +13,7 @@ public class VipMemberDAO {
 	PreparedStatement psmt = null;
 	ResultSet rs = null;
 	int cnt = 0;
-	VipMemberDTO dto = null;
+	VipMemberDTO loginDto = null;
 	boolean x = false;
 	
 	public void conn() {
@@ -94,7 +94,7 @@ public class VipMemberDAO {
 	
 	public VipMemberDTO login(VipMemberDTO dto) {
 		conn();
-		String sql = "select * from user_info where user_id = ? and user_pw =?";
+		String sql = "select * from user_info where user_id =? and user_pw =?";
 		try {
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getUser_id());
@@ -112,7 +112,7 @@ public class VipMemberDAO {
 				String have_dog = rs.getString(7);
 				int cal_num = rs.getInt(8);
 				
-				dto = new VipMemberDTO(user_id, display_name, user_name, user_pw, user_phone, 
+				loginDto = new VipMemberDTO(user_id, display_name, user_name, user_pw, user_phone, 
 										user_address, have_dog, cal_num);
 			}
 				 
@@ -122,7 +122,7 @@ public class VipMemberDAO {
 			close();
 		} 
 		
-		return dto;
+		return loginDto;
 		
 	}
 	
