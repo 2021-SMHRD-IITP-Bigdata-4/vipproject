@@ -32,6 +32,7 @@
     	.form-login{
     			padding-bottom : 3rem!important;	
     	}
+
     </style>
 <!--
     
@@ -147,15 +148,19 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Start Section -->
     <section class="container py-5">
         <div class="row text-center pt-5 pb-3">
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">
+                VIP
+            </a>
             <div class="col-lg-6 m-auto">
     <div class="form-group">
   <fieldset>
   <form action = "LoginService" method = "post">
-      <label for="exampleInputEmail1" class="form-label mt-4">ID</label>
+	
+      
       <input type="text" name = "id" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" placeholder="Enter ID">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+      <label for="exampleInputPassword1" class="form-label mt-4"> </label>
       <input type = "password" name = "pw" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
     <div class = "form-login">
