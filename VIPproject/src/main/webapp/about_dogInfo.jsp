@@ -160,21 +160,21 @@ https://templatemo.com/tm-559-zay-shop
 
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
-                    <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
+                    <div class="h1 text-success text-center"><img src="assets/img/80dog1_aboutDog-removebg-preview.png" alt="About Hero"><!-- <i class="fa fa-truck fa-lg"></i> --></div>
                     <h2 class="h5 mt-4 text-center">기초 상식</h2>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
-                    <div class="h1 text-success text-center"><i class="fas fa-exchange-alt"></i></div>
+                    <div class="h1 text-success text-center"><img src="assets/img/80dog1_aboutDog-removebg-preview.png" alt="About Hero"></div>
                     <h2 class="h5 mt-4 text-center">건강 정보</h2>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
-                    <div class="h1 text-success text-center"><i class="fa fa-percent"></i></div>
+                    <div class="h1 text-success text-center"><img src="assets/img/80dog1_aboutDog-removebg-preview.png" alt="About Hero"></div>
                     <h2 class="h5 mt-4 text-center">견종별 특성</h2>
                 </div>
             </div>
@@ -188,9 +188,9 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container my-4">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1">우리는요</h1>
+                    <h1 class="h1">V.I.P.</h1>
                     <p>
-                        변려견 종합 정보 서비스를 제공해요
+                        변려견 종합 정보 서비스
                     </p>
                 </div>
                 <div class="col-lg-9 m-auto tempaltemo-carousel">
@@ -242,23 +242,26 @@ https://templatemo.com/tm-559-zay-shop
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">정보</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">더 많은 정보</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">애완견 정보</a></li>
-                        <li><a class="text-decoration-none" href="#">법과 정책</a></li>
-                        <li><a class="text-decoration-none" href="#">동반 서비스</a></li>
-                        <li><a class="text-decoration-none" href="#">요즘 트랜드</a></li>
-                        <li><a class="text-decoration-none" href="#">쇼핑몰별 잘팔리는 용품</a></li>
+                        <li><a class="text-decoration-none" href="#">기초상식</a></li>
+                        <li><a class="text-decoration-none" href="#">건강정보</a></li>
+                        <li><a class="text-decoration-none" href="#">종별특성</a></li>
+                   
 
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">더 많은 애완견 정보</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">더 많은 V.I.P. 서비스</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">기초상식</a></li>
-                        <li><a class="text-decoration-none" href="#">건강정보</a></li>
-                        <li><a class="text-decoration-none" href="#">견종별 특성</a></li>
+                        <li><a class="text-decoration-none" href="#">애완견 정보</a></li>
+                        <li><a class="text-decoration-none" href="#">요즘 트랜드</a></li>
+                        <li><a class="text-decoration-none" href="#">쇼핑몰별 잘잘리는 애완용품</a></li>
+                        <li><a class="text-decoration-none" href="#">동반 서비스</a></li>
+                        <li><a class="text-decoration-none" href="#">법과 정책</a></li>
+                        <li><a class="text-decoration-none" href="#">게시판</a></li>
+                        <li><a class="text-decoration-none" href="#">반려견 캘린더</a></li>
                     </ul>
                 </div>
 
