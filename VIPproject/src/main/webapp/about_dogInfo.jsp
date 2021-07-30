@@ -132,7 +132,9 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-md-8 text-white">
                     <h1>알아가기</h1>
                     <p>
-                        내가 기르는 반려견은 어떤 아이일까요? 어떤걸 좋아하고 어떨때 행복할까요? 우리는 서로 알아가는게 필요해요
+                        내가 기르는 반려견은 어떤 아이일까요? 
+                        어떤걸 좋아하고 어떨때 행복할까요? 
+                        우리는 서로 알아가는게 필요해요
                     </p>
                 </div>
                 <div class="col-md-4">
@@ -147,10 +149,10 @@ https://templatemo.com/tm-559-zay-shop
     <section class="container py-5">
         <div class="row text-center pt-5 pb-3">
             <div class="col-lg-6 m-auto">
-                <h1 class="h1">Our Services</h1>
+                <h1 class="h1">반려견 정보</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    Lorem ipsum dolor sit amet.
+                    개에 대한 기본적인 지식과 더욱 건강하게 기를 수 있는 정보
+                    견종별 특성에 대해 공부해요
                 </p>
             </div>
         </div>
@@ -159,30 +161,24 @@ https://templatemo.com/tm-559-zay-shop
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
-                    <h2 class="h5 mt-4 text-center">Delivery Services</h2>
+                    <h2 class="h5 mt-4 text-center">기초 상식</h2>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fas fa-exchange-alt"></i></div>
-                    <h2 class="h5 mt-4 text-center">Shipping & Return</h2>
+                    <h2 class="h5 mt-4 text-center">건강 정보</h2>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-percent"></i></div>
-                    <h2 class="h5 mt-4 text-center">Promotion</h2>
+                    <h2 class="h5 mt-4 text-center">견종별 특성</h2>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-3 pb-5">
-                <div class="h-100 py-5 services-icon-wap shadow">
-                    <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
-                    <h2 class="h5 mt-4 text-center">24 Hours Service</h2>
-                </div>
-            </div>
         </div>
     </section>
     <!-- End Section -->
@@ -192,10 +188,9 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container my-4">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1">Our Brands</h1>
+                    <h1 class="h1">우리는요</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        Lorem ipsum dolor sit amet.
+                        변려견 종합 정보 서비스를 제공해요
                     </p>
                 </div>
                 <div class="col-lg-9 m-auto tempaltemo-carousel">
@@ -206,76 +201,7 @@ https://templatemo.com/tm-559-zay-shop
                                 <i class="text-light fas fa-chevron-left"></i>
                             </a>
                         </div>
-                        <!--End Controls-->
-
-                        <!--Carousel Wrapper-->
-                        <div class="col">
-                            <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="templatemo-slide-brand" data-bs-ride="carousel">
-                                <!--Slides-->
-                                <div class="carousel-inner product-links-wap" role="listbox">
-
-                                    <!--First slide-->
-                                    <div class="carousel-item active">
-                                        <div class="row">
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End First slide-->
-
-                                    <!--Second slide-->
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Second slide-->
-
-                                    <!--Third slide-->
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
-                                            </div>
-                                            <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Third slide-->
-
-                                </div>
-                                <!--End Slides-->
-                            </div>
-                        </div>
-                        <!--End Carousel Wrapper-->
+                        
 
                         <!--Controls-->
                         <div class="col-1 align-self-center">
@@ -298,44 +224,41 @@ https://templatemo.com/tm-559-zay-shop
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Zay Shop</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">V.I.P</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            123 Consectetur at ligula 10660
+                            우리팀은 광주에서 활동해요
                         </li>
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                            <a class="text-decoration-none" href="tel:010-020-0340">없어요ㅜ 메일로주세요</a>
                         </li>
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                            <a class="text-decoration-none" href="bigdatadallie@gmail.com">bigdatadallie@gmail.com</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">정보</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#">애완견 정보</a></li>
+                        <li><a class="text-decoration-none" href="#">법과 정책</a></li>
+                        <li><a class="text-decoration-none" href="#">동반 서비스</a></li>
+                        <li><a class="text-decoration-none" href="#">요즘 트랜드</a></li>
+                        <li><a class="text-decoration-none" href="#">쇼핑몰별 잘팔리는 용품</a></li>
+
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">더 많은 애완견 정보</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">About Us</a></li>
-                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
-                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                        <li><a class="text-decoration-none" href="#">Contact</a></li>
+                        <li><a class="text-decoration-none" href="#">기초상식</a></li>
+                        <li><a class="text-decoration-none" href="#">건강정보</a></li>
+                        <li><a class="text-decoration-none" href="#">견종별 특성</a></li>
                     </ul>
                 </div>
 
@@ -376,7 +299,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
-                            Copyright &copy; 2021 Company Name 
+                            Copyright &copy; 2021 VIP 
                             | Designed by <a rel="sponsored" href="https://templatemo.com/page/1" target="_blank">TemplateMo</a>
                         </p>
                     </div>
