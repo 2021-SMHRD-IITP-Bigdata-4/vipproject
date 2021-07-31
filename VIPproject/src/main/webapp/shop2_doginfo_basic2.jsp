@@ -186,554 +186,324 @@ https://templatemo.com/tm-559-zay-shop
             <div class="col-lg-9">
                 <div class="row">
                 <div class="row">
-                <!-----------기초상식>개 종류 관련------------>
+                <!-----------건강 정보>식사관리------------>
                 	<div class="col-md-4">
-                    기초 상식
+                    건강 정보
                         <div class="card mb-4 product-wap rounded-0">
-                         개 종류 관련 용어
+                         식사관리
                             <div class="card rounded-0">
                             </div>
                             <div class="card-body">
-                            컴페이언도그
-                                <p class="text-center mb-0">가정견으로 키우는 개.</p>
-                            </div>
-                            <div class="card-body">
-                            토이 도그
-                                <p class="text-center mb-0">애완견.</p>
-                            </div>
-                            <div class="card-body">
-                            하딩 도그
-                                <p class="text-center mb-0">목양견, 목축견, 호양견 등 목축에 이용되는 개의 총칭. 콜리나 보더 콜리 등이 대표적인 견종. 하딩은 영어로 '가축들을 모은다'는 뜻이다.</p>
-                            </div>
-                            <div class="card-body">
-                            목축견
-                                <p class="text-center mb-0">소나 돼지 등의 목축을 감시하거나 유도하는 개.</p>
-                            </div>
-                            <div class="card-body">
-                            목양견
-                                <p class="text-center mb-0">양떼를 감시, 유도하는 개. 대표적인 견종으로 콜리가 있다.</p>
-                            </div>
-                            <div class="card-body">
-                            호양견
-                                <p class="text-center mb-0">해수나 적으로부터 양을 지키는 푸리나 코몬도르 등의 개. 늑대에게도 맞서 싸울 만큼 용맹하다.</p>
-                            </div>
-                            <div class="card-body">
-                            캐틀 도그
-                                <p class="text-center mb-0">소(영어로 캐틀)떼를 유도하는 개. 목축견.</p>
-                            </div>
-                            <div class="card-body">
-                            건 독
-                                <p class="text-center mb-0">새를 쫓아내는 잉글리시 코커스패니얼이나 사냥감이 있는 장소를 알리는 포인터나 세터, 사냥꾼이 쏜 사냥감을 회수하는 리트리버 등, 새사냥을 돕는 조렵견을 뜻한다.</p>
-                            </div>
-                            <div class="card-body">
-                            스피츠 계열
-                                <p class="text-center mb-0">스피츠나 시바견 등 뾰족하게 선 귀와 뾰족한 구문(입 주변 전체)를 가진 견종.</p>
-                            </div>
-                            <div class="card-body">
-                            테리어
-                                <p class="text-center mb-0">오소리나 여우, 쥐사냥 등에 이용되는 수렵견종의 총칭. 땅굴 속에 숨어 있는 사냥감을 쫓아내거나 끌어내는 등 사냥을 돕는 데서 '땅'이라는 뜻을 가진 라틴어 이름이 붙었다.</p>
-                            </div>
-                            <div class="card-body">
-                            하운드
-                                <p class="text-center mb-0">사냥감을 추적하기 위해 만들어진 수렵견의 총칭.</p>
-                            </div>
-                            <div class="card-body">
-                            센트 하운드
-                                <p class="text-center mb-0">후각을 이용해 사냥감의 냄새를 더듬어가는 하운드.</p>
-                            </div>
-                            <div class="card-body">
-                            사이트 하운드
-                                <p class="text-center mb-0">멀리서 사냥감을 발견하면 전력질주해서 쫓는 시각형 하운드. 스마트한 체형이다.</p>
-                            </div>
-                            <div class="card-body">
-                            워킹 도그
-                                <p class="text-center mb-0">경비나 호위, 구조, 탐색, 하차인도, 썰매끌기 등 사냥 외에도 인간을 위해서 일하는 개.</p>
-                            </div>
-                            <div class="card-body">
-                            워터 도그
-                                <p class="text-center mb-0">바다나 강, 호수 등에서 수중작업을 하는 수영 실력이 뛰어난 개.</p>
-                            </div>
-                            <div class="card-body">
-                            마타기견
-                                <p class="text-center mb-0">일본에서 오래전부터 사냥에 이용된 개의 총칭. 아키타견 등이 그 피를 이어받았다.</p>
-                            </div>
-                            <div class="card-body">
-                            투견
-                                <p class="text-center mb-0">개끼리 싸움을 시키는 것. 토사견이나 옛날의 스태포드셔 불 테리어 등이 유명.</p>
-                            </div>
-                            <div class="card-body">
-                            군용견
-                                <p class="text-center mb-0">전령이나 감시 등의 군병 일을 돕는 개. 독일 셰퍼드 도그나 도베르만, 그레이트 데인 등이 대표 견종.</p>
-                            </div>
-                            <div class="card-body">
-                            경찰견
-                                <p class="text-center mb-0">경찰의 범죄수사에서 냄새를 추적하거나 순찰 등에 활약하는 개. 한국에서는 독일 셰퍼드나 래브라도 리트리버 등 3견종이 이용된다.</p>
-                            </div>
-                            <div class="card-body">
-                            마약견
-                                <p class="text-center mb-0">공항 등에서 화물에 숨겨진 마약류의 냄새를 맡고 찾아내는 개.</p>
-                            </div>
-                            <div class="card-body">
-                            화재구조견
-                                <p class="text-center mb-0">화재시 무너진 잔해에 깔린 생존자를 냄새로 탐색하고 구조하는 개.</p>
-                            </div>
-                            <div class="card-body">
-                            해상구조견
-                                <p class="text-center mb-0">해상재난을 당한 사람을 구조하는 개. 뉴펀들랜드가 유명</p>
-                            </div>
-                            <div class="card-body">
-                            맹도견
-                                <p class="text-center mb-0">시각장애인을 돕는 개. 래브라도 리트리버가 대표종.</p>
-                            </div>
-                            <div class="card-body">
-                            청도견
-                                <p class="text-center mb-0">청각장애인을 돕는 개. 견종에 상관없이 애완견도 청도견이 될 수 있다.</p>
-                            </div>
-                            <div class="card-body">
-                            간호견
-                                <p class="text-center mb-0">신체장애인을 돕는 개.</p>
-                            </div>
-                            <div class="card-body">
-                            세라피견
-                                <p class="text-center mb-0">의료나 복지현장에서 인간의 마음을 치유하는 애니멀 세라피(동물치료요법)에 종사하는 개.</p>
-                            </div>
-                            <div class="card-body">
-                            토착견
-                                <p class="text-center mb-0">옛날부터 그 지방에 서식하던 개.</p>
-                            </div>
                             
+                                <p class="text-center mb-0">동물체의 주요한 구성성분은 수분, 단백질, 지방, 광물질 그리고 극히 소량의 탄수화물이며, 각각의 구성비율은 동물품종, 연령, 성별 및 동물의 상태에 따라 다르다.
+지방이나 소화관의 내용물을 제외하고는 동물체의 조성은 거의 물이 75%, 단백질 20%, 광물질 5% 및 탄수화물이 1% 이하로 되어 있다.
+음식물은 에너지를 공급하는 고유의 음식물(탄수화물, 지방 및 단백질)과 생명에는 반드시 필요하나 에너지를 공급하지 않는 수분, 무기 염류 및 비타민으로 분류한다.
+음식물은 다른 영양소와 함께 에너지를 공급해야 되는데, 에너지는 근육운동과 체온을 유지시킬 뿐 아니라 호흡이나 심장기능의 유지 등에도 필요하다.
+한편, 에너지가 많은 음식물을 다량으로 섭취하면 체내에 체지방이 축적되어 비만의 원인이 되기 쉽고 반대로 필요량에 부족하게 되면 성장이 불량하거나,
+체중이 감소되어 야위고 쉽게 병에 걸리게 된다.
+개는 엄격한 의미에서 육식성 동물이 아니므로 육류만으로는 생존할 수 없다.</p>
+                            </div>
                         </div>
                     </div>
-                <!----------기초 > 용품관련 용어 ------------->
+                <!----------건강 정보>반려견이 먹으면 안되는 음식물 ------------->
                 	<div class="col-md-4">
                         <div class="card mb-4 product-wap rounded-0">
-                         용품 관련 용어
+                         반려견이 먹으면 안되는 음식물
                             <div class="card rounded-0">
                             </div>
                             <div class="card-body">
-                            서클
-                                <p class="text-center mb-0">철제나 플라스틱제 펜스를 뜻하며 주로 개를 실내 사육할 때 사용한다. 평소 개가 머무는 공간을 둘러싸고 안에 하우스나 화장실, 식기 등을 넣어준다.</p>
+                            양파
+                                <p class="text-center mb-0">어떤 식으로 요리해도 양파의 독성은 없어지지 않는다. 양파의 강한 독성은 개나 고양이의 적혈구를 녹여 버리며, 심한 경우에는 급성 빈혈을 일으켜 죽기도 한다.</p>
                             </div>
                             <div class="card-body">
-                            하우스
-                                <p class="text-center mb-0">개가 침대로 사용하는 사육용품. 개가 안심하고 지낼 수 있는 동굴 모양이 좋다.</p>
+                            초콜렛
+                                <p class="text-center mb-0">초콜렛은 중독을 일으킨다. 섭취 시 지나치게 활동적이거나 흥분상태를 보이기도 하고, 다른 음식은 먹지도 않아도 구토를 자주 하게 되고 노란색의 점액질을 토해낸다.</p>
                             </div>
                             <div class="card-body">
-                            화장실
-                                <p class="text-center mb-0">화장실 시트를 고정할 수 있는 것이 좋다.</p>
+                            우유
+                                <p class="text-center mb-0">우유에는 모유에는 없는 유당이 함유되어 있으나, 강아지는 선천적으로 유당을 분해할 수 있는 효소가 없다. 어린 강아지에게 설사를 일으키는 원인이 되기도 하며 설사는 2차 감염원이 되기도 하므로 특별한 경우가 아니면 급여를 삼가해야 한다.</p>
                             </div>
                             <div class="card-body">
-                            화장실 시트
-                                <p class="text-center mb-0">화장실에 까는 시트 형태의 종이. 강아지가 화장실 버릇을 익힐 때까지 서클 전체에 깔아두고 아무 데서나 볼일을 봐도 괜찮도록 적응기간을 둔다.</p>
+                            생선
+                                <p class="text-center mb-0">등푸른 생선에는 DHA가 많이 함유되어 있지만 어린강아지는 DHA를 분해하는 효소가 없어서 소화가 되지 않고 바로 배설된다. 그리고 생선가시는 소화되지 않고 소화기관에 상처나 염증을 유발 할 수도 있다. 기름이 많이 함유된 생선통조림은 설사와 구토를 일으키고 많은 양의 기름은 강아지에게 소화장애를 일으키므로 급여를 삼가해야 한다.</p>
                             </div>
                             <div class="card-body">
-                            펫히터
-                                <p class="text-center mb-0">펫 전용 전기히터. 방석 모양의 펫히터를 이불 밑에 깔고 사용한다.</p>
+                            닭뼈
+                                <p class="text-center mb-0">소화가 되었을 때 뼈가 날카롭게 분해되면서 소화기관에 상처를 내어 염증이나 혈변, 심한 경우에는 죽음에 이르게 할 수 있다.</p>
                             </div>
                             <div class="card-body">
-                            캐리어
-                                <p class="text-center mb-0">개를 안에 넣어 운반할 수 있는 용구. 캐스터가 달렸거나 가방 모양, 등에 매는 모양, 케이지 모양, 연결해서 넓은 공간으로 사용할 수 있는 모양 등 여러 가지 타입이 있다.</p>
+                            마른 오징어
+                                <p class="text-center mb-0">개들은 음식을 씹지 않고 바로 소화기관으로 넘기므로 오징어나 쥐포 등을 먹으면 입과 식도, 위까지 손상될 수 있으므로 주지 않는다.</p>
                             </div>
                             <div class="card-body">
-                            리드
-                                <p class="text-center mb-0">목줄. 벨트 모양이나 단면이 둥근 끈, 체인 등 여러 가지 타입이 있다.</p>
+                            채소류의 과잉섭취
+                                <p class="text-center mb-0">어느 정도의 채소류의 섭취는 섬유질이 있어 소화흡수에 도움이 되지만, 많은 양의 채소류는 공급과잉이 되며 체외로 배출되므로 적당량을 준다.</p>
                             </div>
-                            <div class="card-body">
-                            초커
-                                <p class="text-center mb-0">목걸이와 일체화된 타입의 리드. 뒤로 잡아당기면 목줄 부분이 조이므로, 산책시 훈련에 이용하면 효과적이다.</p>
-                            </div>
-                            <div class="card-body">
-                            솔 브러시
-                                <p class="text-center mb-0">돼지털 등으로 만든 브러시. 단모종을 빗질할 때 편리하며 털에 윤기를 내준다.</p>
-                            </div>
-                            <div class="card-body">
-                            슬리커 브러시
-                                <p class="text-center mb-0">금속제로 바늘 모양의 핀을 심은 브러시. 빠진 털을 제거하거나 엉킨 털을 풀거나 결을 정리하는 용도이며, 털이 부드러운 장모견에게 적합하다. 바늘이 개의 피부에 닿으면 상처가 나므로 몸에는 닿지 않게 사용해야 한다.</p>
-                            </div>
-                            <div class="card-body">
-                            핀 브러시
-                            <div class="card-body">
-                                <p class="text-center mb-0">끝이 둥근 핀을 심은 브러시. 오버코트에서 빠진 털을 제거하거나 엉킨 장모의 결을 정돈한다. 피부에 자극을 주는 효과도 있다.</p>
-                            </div>
-                            <div class="card-body">
-                            일자빗(comb)
-                                <p class="text-center mb-0">빠진 털 등을 제거하고 결을 정리해준다.</p>
-                            </div>
-                            
                         </div>
                     </div>
-                    <!----------기초 > 질병 관련 용어 ------------->
+                    <!----------건강 정보>반려견의 질병 ------------->
                 	<div class="col-md-4">
                         <div class="card mb-4 product-wap rounded-0">
-                         질병 관련 용어
+                         반려견의 질병
                             <div class="card rounded-0">
+                            > 병의 종류
+                            </div>
+                            <div class="card-body">
+                            호흡기
+                                <p class="text-center mb-0">콧물, 계속되는 재채기, 기침, 구역질, 호흡 곤란, 심한코골이</p>
+                            </div>
+                            <div class="card-body">
+                            눈
+                                <p class="text-center mb-0">눈의 분비물, 시력 감퇴, 염증, 감염으로 인한 출혈, 흐린 테가 끼는 경우</p>
+                            </div>
+                            <div class="card-body">
+                            귀
+                                <p class="text-center mb-0">귀 고름, 머리를 흔들어 대는 경우, 귀가 부어 오르는 경우, 균형상실, 난청</p>
+                            </div>
+                            <div class="card-body">
+                            입
+                                <p class="text-center mb-0">침을 질질 흘리는 경우, 식욕 저하, 잇몸의 염증, 구취, 이빨이 부러지거나 흔들리는 경우</p>
+                            </div>
+                            <div class="card-body">
+                            외부기생충
+                                <p class="text-center mb-0">지나치게 핥는 경우, 기생충이 발견되는 경우, 비듬, 탈모, 긁적거림</p>
+                            </div>
+                            <div class="card-body">
+                            피와 심장
+                                <p class="text-center mb-0">지나친 기침, 빈혈, 무기력증, 지나친 기침, 운동을 기피하는 경우</p>
+                            </div>
+                            <div class="card-body">
+                            뼈, 근육, 관절
+                                <p class="text-center mb-0">감염된 부분의 부어 오름, 다리를 만지면 통증을 느끼는 경우, 마비, 절룩거림</p>
+                            </div>
+                            <div class="card-body">
+                            신경성
+                                <p class="text-center mb-0">발작이나 경련, 비틀거리는 걸음걸이 일부 또는 전신 마비</p>
+                            </div>
+                            <div class="card-body">
+                            소화기
+                                <p class="text-center mb-0">행동상의 변화, 균형의 상실, 체중의 과도한 변화, 식욕 상실, 변비, 설사 구토</p>
+                            </div>
+                            <div class="card-body">
+                            피부 및 털
+                                <p class="text-center mb-0">갑자기 씹어 대거나 핥는 경우, 염증 또는 종양, 탈모, 계속 긁어 대는 경우</p>
+                            </div>
+                            <div class="card-body">
+                            생식기
+                                <p class="text-center mb-0">유방의 통증, 생식 불능, 유산, 출산 후의 이상, 이상 분비물</p>
+                            </div>
+                            <div class="card-body">
+                            비뇨기
+                                <p class="text-center mb-0">배뇨가 힘든 경우, 혈뇨, 대소변 실금, 소변량의 증가, 배뇨의 감소</p>
                             </div>
                             <div class="card-body">
                             기생충
-                                <p class="text-center mb-0">동물의 몸에 기생해 질병을 발생시키는 벌레. 벼룩이나 진드기 등 몸의 외부에 기생하는 외부기생충과 개사상충(필라리아)이나 회충 등 심장이나 장내 등 내부에 기생하는 것이 있다.</p>
+                                <p class="text-center mb-0">분비물에서 기생충을 발견하는 경우, 배가 부어 오르는 경우, 설사, 항문에서 이 물질을 발견 하는 경우, 체중 감소</p>
+                            </div>
+                         <div class="card mb-4 product-wap rounded-0">
+                         > 응급처치방법
+                            <div class="card rounded-0">
                             </div>
                             <div class="card-body">
-                            필라리아
-                                <p class="text-center mb-0">개사상충 등의 기생충이 혈관에 들어가 증식하면서 개의 몸을 좀먹는 질병. 이 기생충의 매개인 모기가 발생하기 1개월 전부터, 보이지 않는 1개월 후까지 예방약을 먹이면 대부분 막을 수 있다.</p>
+                                <p class="text-center mb-0">반려견의 교통사고, 일사병, 골절이나 화상, 급한 호흡의 곤란 등으로 인한 경우 빠르게 대응하여 애견을 사고로부터 구할 수 있다.
+이런 사고를 당한 반려견은 쇼크나 통증으로 사납고 난폭해지므로 인간의 신체에 해가 가지 않게 해야한다.
+특히 물지 못하도록 기본적인 안전장치를 한 다음 애견에 적절한 응급치료나 적당한 방법으로 병원으로 데려간다.
+부상당한 장소가 복잡하거나 위험에 노출된 장소이면 곧 바로 안전한 장소로 이동 시킨다.
+운반할 때는 개의 신체가 심하게 흔들리거나 또 다른 충격을 받지 않도록 한다.
+흥분하거나 쇼크 상태이기 때문에 침착하게 개에게 말을 걸어 주의를 끌어 안심시키고, 많은 사람들의 접근을 막는다.
+쇼크나 통증으로 주인도 물 수 있으므로 항상 주의를 요한다.
+적당한 보호장치와 같은 조치를 취해 물지 못하도록 방지한다. 또한 응급처치나 운반을 할 때는 장갑이나 수건을 이용하여 개의 몸을 감싸여 이동한다.
+응급처치는 신속하게 정확하게 한다. 긴 타월을 이용해 개의 복부를 타월로 감싸고 목 부분을 묶은 뒤 개를 안아서 운반한다.
+판자나 두꺼운 시트를 들 것 대용으로 이용할 경우, 개를 바닥으로 미끄러지듯이 부드럽게 이동시킨다.
+개가 떨어지거나 충격을 받지 않도록 하기 위하여 끈이나 부드러운 천을 이용해 묶어</p>
+                            
+                        </div>
+                    </div>
+                    <!----------건강 정보>임신과 출산 ------------->
+                	<div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0">
+                         임신과 출산
+                            <div class="card rounded-0">
+                            >발정과 교배
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center mb-0">발정은 품종, 개체, 발육 정도에 따라 차이가 있으나 조숙한 소형견은 5~7개월, 중형견은 8~10개월, 대형견은 1년 이상이 지나야 시작된다.
+발정증상은 외음부가 팽창되고 혈액이 섞인 액체가 배출되며, 개가 안정적이지 못하고 외음부를 자주 핥는다.
+발정주기는 난포의 발육, 성숙, 배란, 황체 형성 등에 따라 4기로 구분한다.</p>
+                            </div>
+                            <div class="card-body">
+                            발정전기
+                                <p class="text-center mb-0">개가 안정적이지 못하고 배뇨회수가 증가하며 외음부가 점차 붓기 시작하면서 충혈되며 출혈이 보이기도 한다.</p>
+                            </div>
+                            <div class="card-body">
+                            발정기
+                                <p class="text-center mb-0">외음부의 붓기가 최고에 달하고 출혈의 색이 점차 엷어져서, 보통의 분비물로 변한다. 발정이 처음 시작된 후 12일 정도 지난 시기에 배란이 일어나고, 이 시기가 교배의 적기 이다.</p>
+                            </div>
+                            <div class="card-body">
+                            발정후기
+                                <p class="text-center mb-0">교배 시켜서 임신이 된 경우는 분비물 배출은 빨리 멈추지만, 임신이 되지 않은 경우에는 오랫동안 소량으로 분비된다. 점차 외음부가 작아져서 원래의 모양대로 돌아간다. 말기에는 위임신의 증세를 나타내는 개체도 있다. 그러나 발정후기가 끝난 후 확실한 증거를 볼 수 없다.</p>
+                            </div>
+                            <div class="card-body">
+                            발정 휴지기
+                                <p class="text-center mb-0">발정횟수는 이 기간의 장단에 따라서 달라지는데, 대체적으로 개는 일년에 두번 발정을 일으키며 한 발정기가 한 3주 정도이다. 개체에 따라서 이보다 더 긴 경우도 있다.</p>
+                            </div>
+                            <div class="card rounded-0">
+                            > 임신의 경과
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center mb-0">모든 교배가 다 성공적으로 연결되는 것은 아니다. 교배 후에 임신 여부를 확인해야 하는데 실제로 임신의 징후가 나타나는것은 5주가 넘어서부터이다.
+9주의 임신 기간 중 제일 먼저 나타나는 징후는 2주 정도부터 외음부의 이완, 유선의 적은 덩어리 등이 생기는 것이며 입덧으로 식욕이 떨어진다.
+그리고 3주부터는 복부가 약간 볼록해지며 위에서 보면 양쪽으로 늘어져서 재보면 배 둘레가 늘어난 것을 알 수 있다.
+젖 중에는 아래쪽 4쌍의 8개의 유선이 발달하여 새끼에게 젖을 주기 위해 그 주위의 털이 빠진다.
+4주에 접어들면 생식기에서 점액질의 분비물이 나오며 식후에는 복부가 현저하게 커진다.
+6주에는 신체의 변화가 두드러지는데, 복부의 팽창이 눈으로 확인되며 임신의 유무를 이 시기에 하는 것을 기준으로 하는 것이 상식이다.
+복부의 털이 빠짐과 동시에 젖이 커지고 특히 아래쪽 2쌍 4개는 붉어 진다.
+7주부터는 미약한 움직임이 시작되며, 본능적으로 출산 준비를 위해 굴을 파거나 어두운 곳을 찾기 시작한다.
+이 시기 부터는 복부가 압박되기 시작해 소변을 자주 본다.
+8주에 접어 들면 움직임이 활발해져 손으로 만져 보지 않더라도 편안히 누워 있는 개의 배를 보면 여기저기서 움직이는것을 볼 수 있다.</p>
+                            </div>
+                            <div class="card-body">
+                            임신 기간
+                                <p class="text-center mb-0">개의 임신 기간은 평균 9주(63일)로 이 기간 중 아래쪽 젖에서 연한 초유가 분비되며 점점 짙어진다. 출산이 가까워지면 불안한 상태가 된다.
+교배일을 정확히 알면 그 교배일로부터 분만 예정일을 알 수 있다. 새끼의 발육 상태에 따라 2~3일의 편차는 있다.</p>
+                            </div>
+                            <div class="card-body">
+                            출산 시 신체변화
+                                <p class="text-center mb-0">일정하지는 않지만 개의 품종이나 체격의 크기에 따라서 5~6 마리를 낳는 중형견을 표준으로 할 때 배 둘레가 60% 정도 커진다.</p>
+                            </div>
+                            <div class="card-body">
+                            임신 중인 반려견 관리
+                                <p class="text-center mb-0">임신 중인 개에게는 적당한 영양 섭취와 적당한 운동 및 산책이 중요하다. 너무 무리하게 운동을 시키거나 많은 양의 사료를 급여해서는 안된다.
+이는 난산이나 유산의 원인이 되기도 한다. 적당한 영양섭취를 시켜 강아지가 비대해지지 않도록 한다.
+임신 중인 개는 평소보다 많은 양의 에너지가 필요하므로 영양을 충분히 섭취 할 수 있도록 급여하면 된다. 사료의 양은 평소의 30%까지 늘려 급여한다.
+적당한 운동도 필수적이다. 계단 오르내리기, 문턱 넘어가기 등 복부에 자극이 될 만한 행동은 금한다.</p>
+                            </div>
+                            <div class="card-body">
+                            분만의 준비
+                                <p class="text-center mb-0">가급적이면 평소에 익숙해진 장소나 길들여진 개 집에서 분만하도록 한다. 분만 전후에는 신경이 예민해지고 경계심이 강해지고 공격적이어서 소란스럽거나
+사람의 왕래가 많은 곳은 피해야 한다.</p>
+                            </div>
+                            <div class="card-body">
+                            분만의 경과
+                                <p class="text-center mb-0">분만이 다가온 개는 어두운 곳으로 들어가려 한다. 이러한 증상이 12시간이나 24시간 계속되다가 진통 때 신음을 하게 되며,
+호흡 간격이 10분마다 하다가 차차 그 주기가 짧아진다.
+호흡이 거칠어지고 몸을 떠는 개도 있다. 첫 강아지가 산도로 내려오기 때문에 뒷다리에 힘을 주며 뻗는데,
+그 후 태반을 쓰고 움직이는 것이 나타난다. 본능적으로 어미개는 태반을 물어 뜯고 강아지의 전신을 핥아준다.
+그리고 탯줄은 새끼의 몸에서 2~3cm 되는 위치에서 물어 뜯는다.
+출산의 모든 것은 개가 본능적으로 하므로 어미 개에게 맡겨 두고 사람은 손을 대지 않는 것이 좋다.
+다만 초산인 경우라 잘하지 못 할 때에는 사람이 태반을 벗겨주고 실로 탯줄을 묶은 후 가위로 잘라준다.
+어미 개의 몸도 신문지나 마른 천을 이용하여 닦아주어 물기를 제거한다.</p>
+                            </div>
+                            <div class="card-body">
+                            출산견의 건강상태
+                                <p class="text-center mb-0">어미 개의 체온은 분만 24시간 전에 일시적으로 37도 정도로 떨어지나 분만 후에는 다시 정상 체온으로 돌아온다.
+맥박은 평소보다 20 이상을 넘지만 분만 후에는 조금 떨어지고 수유하는 초기에는 높게 유지한다.
+분만 후에는 자궁 등에 상처가 있어 2일 후에 열이 나는 수가 있다.
+이 때 체온이 40도까지 올라가나 일주일쯤 지나면 정상으로 돌아온다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------건강 정보>강아지의 성장 ------------->
+                	<div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0">
+                         강아지의 성장
+                         	<div class="card rounded-0">
+                            </div>
+                         	<div class="card-body">
+                            
+                                <p class="text-center mb-0">출생에서 3주까지 건강한 강아지는 대체로 평온하다. 강아지는 90%의 시간은 잠을 자고 10%의 시간은 젖을 빨며 젖꼭지를 차지하기 위해 경쟁한다.
+처음 이틀 동안은 머리를 밑으로 묻고 잠을 잔다. 자는 동안 강아지는 놀라기도 하고 소리에 반응을 나타내는데, 이것을 활동하는 잠이라고 한다.
+활동 잠은 강아지들이 하는 유일한 운동 방법이고 후에 쓸 근육을 발달을 돕기도 하기 때문에 지극히 정상적이다.</p>
+                            </div>
+                            <div class="card-body">
+                            분만~2주령
+                                <p class="text-center mb-0">눈을 뜨지 못함. 5~6일 뒤 귀 들림. 5~6일 탯줄 떨어짐. 추위에 약함</p>
+                            </div>
+                            <div class="card-body">
+                            3주령~4주령
+                                <p class="text-center mb-0">젖니 생성. 움직임 활발. 14~17일 눈뜸. 20시간 이상 수면</p>
+                            </div>
+                            <div class="card-body">
+                            5주령~2개월령
+                                <p class="text-center mb-0">젖니 모두 생성. 장난이 심함. 젖을 뗌. 체형의 완성. 전엽병 쉽게 노출</p>
+                            </div>
+                            <div class="card-body">
+                            3개월~5개월령
+                                <p class="text-center mb-0">만 2개월 지나면 어미로부터 독립생활 가능</p>
+                            </div>
+                            <div class="card-body">
+                            9개월~12개월령
+                                <p class="text-center mb-0">성견의 80% 도달. 전체적인 균형 형성. 암캐의 경우 첫 발정시기</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------건강 정보>개의 훈련 ------------->
+                	<div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0">
+                         개의 훈련
+                            <div class="card rounded-0">
+                            </div>
+                            <div class="card-body">
+                            훈련 시기
+                                <p class="text-center mb-0">훈육은 생후 2~3 개월부터 시작하는데, 처음에는 쉽고 간단하고 단시간에 끝낼 수 있는 배설요령 식사요령 등을 교육한다.
+생후 7~8 개월이 되면 신체의 성장과 행동범위가 넓어지므로 본격적으로 훈련을 시작한다.
+훈련은 훈육보다는 더 많은 시간과 노력이 필요하며 개도 더 많은 체력과 힘이 요구된다.</p>
+                            </div>
+                            <div class="card-body">
+                            사회화
+                                <p class="text-center mb-0">생후 3주령에서 13주령까지의 시기로 이 시기에는 가능한 많은 사람과 접촉시키고, 여러 소리나 상황을 경험 시키는 것이 환경에 잘 적응하는 개로 성장시킨다.
+강아지도 실수를 할 수도 있다는 사실을 알아야하고 그 것으로 화내지는 말아야한다. 나쁜 습관은 나중에 고치려 하기 보다는 처음부터 갖지 않도록 하는 것이 좋다.
+강아지와 함께 시간을 보내고 같이 놀아주고, 말도 걸고, 쓰다듬어 주면서 정을 주며 키운다.
+강아지에게 해도 되는 것과 하지 말아야 할 것을 꾸준히 가르쳐 주어야 한다.</p>
+                            </div>
+                            <div class="card-body">
+                            훈육 및 훈련 시기
+                                <p class="text-center mb-0">훈육은 생후 2~3개월부터 시작하는데 처음에는 쉽고 간단하며 단시간에 끝낼 수 있는 배설요령, 식사요령 등을 교육한다.
+생후 7~8 개월이 되면 신체의 성장과 행동범위가 넓어지므로 본격적으로 훈련을 시작한다.
+훈련은 훈육보다는 더 많은 시간과 노력이 필요하며 개에게도 더 많은 체력과 힘이 요구된다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------건강 정보>애견 예방 접종 ------------->
+                	<div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0">
+                         애견 예방 접종
+                            <div class="card rounded-0">
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center mb-0">예방접종을 한 후에는 열, 침울, 통증, 종창 등의 접종반응이 나타날 수 있지만 대부분의 경우에 하루 정도 조용한 곳에 두면 자연히 괜찮아진다.
+그러나 증상이 심할 경우나 이상증상이 나타날 경우에는 담당 수의사에게 문의하는 것이 좋다.</p>
+                            </div>
+                            <div class="card-body">
+                            혼합예방주사 (DHPPL)
+                                <p class="text-center mb-0">기초접종 : 생후 6 ~ 8주에 1차 접종</p>
+                                <p class="text-center mb-0">추가접종 : 1차 접종 후 2 ~ 4주 간격으로 2 ~ 4회</p>
+                                <p class="text-center mb-0">보강접종 : 추가접종 후 매년 1회 주사</p>
+                            </div>
+                            <div class="card-body">
+                            코로나바이러스성 장염(Coronavirus)
+                                <p class="text-center mb-0">기초접종 : 생후 6 ~ 8주에 1차 접종</p>
+                                <p class="text-center mb-0">추가접종 : 1차 접종 후 2 ~ 4주 간격으로 1 ~ 2회</p>
+                                <p class="text-center mb-0">보강접종 : 추가접종 후 매년 1회 주사</p>
+                                <p class="text-center mb-0"></p>
+                            </div>
+                            <div class="card-body">
+                            기관ㆍ기관지염 (Kennel Cough)
+                                <p class="text-center mb-0">기초접종 : 생후 6 ~ 8주에 1차 접종</p>
+                                <p class="text-center mb-0">추가접종 : 1차 접종 후 2 ~ 4주 간격으로 1 ~ 2회</p>
+                                <p class="text-center mb-0">보강접종 : 추가접종 후 매년 1회 주사</p>
                             </div>
                             <div class="card-body">
                             광견병
-                                <p class="text-center mb-0">일단 발병하면 치료방법이 없고, 거의 100퍼센트 사망에 이르는 무서운 바이러스성 감염증. 신경이 망가지고 끔찍한 증상을 보이며 사람을 공격하기도 한다. 광견병바이러스는 개뿐만 아니라 다른 동물에게서도 옮으며, 사람을 포함한 모든 포유류에게 감염된다. 때문에 주인은 봄·가을 광견병 예방주사를 해주는 것이 좋다.</p>
-                            </div>
-                            <div class="card-body">
-                            백신주사
-                                <p class="text-center mb-0">개의 전염병을 예방하는 주사. 연2회의 접종으로 전염병을 예방할 수 있으니 맞히는 것이 좋다. 특히 새끼 때는 반드시 백신주사를 맞혀야 한다.</p>
-                            </div>
-                            <div class="card-body">
-                            항문선
-                                <p class="text-center mb-0">냄새를 유발하는 원인이 집결되어 있는 취선으로 항문 옆에 있다. 내버려두면 파열될 수 있으니 정기적으로 짜주는 것이 좋다.</p>
+                                <p class="text-center mb-0">기초접종 : 생후 3개월 이상 1회 접종</p>
+                                <p class="text-center mb-0">보강접종 : 6개월 간격으로 주사</p>
                             </div>
                         </div>
                     </div>
-                    <!----------기초 > 기타 관련 용어 ------------->
-                	<div class="col-md-4">
-                        <div class="card mb-4 product-wap rounded-0">
-                         기타 관련 용어
-                            <div class="card rounded-0">
-                            </div>
-                            <div class="card-body">
-                            트리밍
-                                <p class="text-center mb-0">개나 고양이의 외모를 깨끗하게 정돈해주기 위해서 털을 깎거나 목욕시키는 것.</p>
-                            </div>
-                            <div class="card-body">
-                            그루밍
-                                <p class="text-center mb-0">개가 스스로 하는 피모 손질로 브러싱이나 트리밍 효과가 있다.</p>
-                            </div>
-                            <div class="card-body">
-                            당김운동
-                                <p class="text-center mb-0">개에게 리드를 달아서 도보나 자전거와 나란히 걷게 하는 운동.</p>
-                            </div>
-                            <div class="card-body">
-                            자유운동
-                                <p class="text-center mb-0">개에게 리드를 달지 않고 자유롭게 달리거나 놀게 하는 운동. 도그런 등에서 한다.</p>
-                            </div>
-                            <div class="card-body">
-                            도그런
-                                <p class="text-center mb-0">리드를 풀어 개가 자유롭게 뛰어놀 수 있는 전용 운동장.</p>
-                            </div>
-                            <div class="card-body">
-                            트리머
-                                <p class="text-center mb-0">개나 고양이 미용사.</p>
-                            </div>
-                            <div class="card-body">
-                            브리더
-                                <p class="text-center mb-0">개나 고양이의 순종 번식가.</p>
-                            </div>
-                            <div class="card-body">
-                            환모기(털갈이 시기)
-                                <p class="text-center mb-0">피모가 빠지고 새로 나는 시기로, 계절의 기온변화에 의해 일어난다. 10~11월경 생겨난 언더코트는 겨울털이 되었다가 4~5월경 빠지기 시작한다.</p>
-                            </div>
-                            <div class="card-body">
-                            패드
-                                <p class="text-center mb-0">발바닥의 육구. 다리에 가해지는 부담을 완화시키는 쿠션 역할을 하며 미끄러짐 방지 효과도 있다.</p>
-                            </div>
-                            <div class="card-body">
-                            늑대발톱
-                                <p class="text-center mb-0">개의 다리에 있는 발톱으로 퇴화된 엄지 부분에 있다. 오래 전 늑대였을 때의 흔적으로 보통은 제거한다. 대개는 앞다리에 있는데, 그레이트 피레네는 뒷다리에도 있다.</p>
-                            </div>
-                            <div class="card-body">
-                            단이
-                                <p class="text-center mb-0">도베르만이나 복서, 그레이트 데인 등 본래 늘어진 귀를 가진 견종의 귀를 뾰족하게 선 귀로 만들기 위해서 생후 3~5개월경 마취시키고 귀의 일부를 절제하는 것이다. 유럽 여러 나라에서는 금지시키며, 단이시킨 개는 아예 수입 금지되기도 한다.</p>
-                            </div>
-                            <div class="card-body">
-                            단미
-                                <p class="text-center mb-0">외모를 정돈하기 위해서 생후 10일경 꼬리를 절단하는 것이다. 유럽 여러 나라에서는 금지되어 있고, 단미시킨 개는 아예 수입 금지되기도 한다.</p>
-                            </div>
-                            <div class="card-body">
-                            영역
-                                <p class="text-center mb-0">개는 영역을 표시하기 위해 산책할 때 여러 장소에 오줌을 눈다.</p>
-                            </div>
-                            <div class="card-body">
-                            마킹
-                                <p class="text-center mb-0">주로 산책할 때 개가 여러 장소에 오줌을 눠 냄새를 묻히는 것. 개의 두상이나 몸에 들어간 무늬를 가리키기도 한다.</p>
-                            </div>
-                            <div class="card-body">
-                            헛울음
-                                <p class="text-center mb-0">경계할 필요가 없는데도 개가 주인의 제지를 듣지 않고 짖어대는 것.</p>
-                            </div>
-                            <div class="card-body">
-                            스탠더드
-                                <p class="text-center mb-0">이상적인 견종의 형태를 규정한 견종표준. 체격의 크기나 모질색, 두상의 형태 등 기준치 외에 결점에 관한 규정도 있다. 단체에 따라 조금씩 차이가 있다.</p>
-                            </div>
-                            <div class="card-body">
-                            공인견종
-                                <p class="text-center mb-0">견종단체에 공인되어 있는 견종. 각국의 켄넬클럽이나 견종 단체에 따라서 독자적으로 공인되어 있는 견종도 있지만, 본서에서는 FCI(국제축견연맹)에 공인되어 있는 개를 '공인견종'으로 하고, FCI의 견종번호를 표기했다.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!----------기초 > 개의 피모와 컬러 ------------->
-                	<div class="col-md-4">
-                        <div class="card mb-4 product-wap rounded-0">
-                         개의 피모와 컬러
-                            <div class="card rounded-0">
-                            > 모질타입
-                            </div>
-                            <div class="card-body">
-                            와이어
-                                <p class="text-center mb-0">철사처럼 뻣뻣하고 거친 모질 타입. 와이어 헤어드라고도 한다.</p>
-                            </div><div class="card-body">
-                            롱
-                                <p class="text-center mb-0">장모 타입. 롱헤어라고도 한다.</p>
-                            </div>
-                            <div class="card-body">
-                            스무스
-                                <p class="text-center mb-0">단모 타입. 쇼트헤어라고도 한다.</p>
-                            </div>
-                            <div class="card-body">
-                            헤어리스
-                                <p class="text-center mb-0">피모가 없는 타입. 차이니즈 크레스티드 도그나 멕시칸 헤어리스 도그가 유명.</p>
-                            </div>
-                            <div class="card-body">
-                            오버코트
-                                <p class="text-center mb-0">개의 몸 표면에 있는 털을 가리키는데 상모, 강모, 병모라고도 한다. 언더코트와 달리 뻣뻣.</p>
-                            </div>
-                            <div class="card-body">
-                            언더코트
-                                <p class="text-center mb-0">오버코트 아래의 조밀하게 난 부드러운 털로 하모라고도 한다. 몸을 보온하거나 방수하는 역할을 하고, 가을에 생기기 시작해서 초여름에는 빠진다. 언더코트가 없는 견종도 있다.</p>
-                            </div>
-                            <div class="card-body">
-                            싱글코트
-                                <p class="text-center mb-0">언더코트 없이 오버코트만 가진 피모.</p>
-                            </div>
-                            <div class="card-body">
-                            더블코트
-                                <p class="text-center mb-0">오버코트와 언더코트로 된 이중코트의 피모.</p>
-                            </div>
-                            <div class="card-body">
-                            얼룩털
-                                <p class="text-center mb-0">오버코트 위로 드문드문 돋아난 다른 빛깔의 피모.</p>
-                            </div>
-                            <div class="card-body">
-                            장식털
-                                <p class="text-center mb-0">주로 귀나 사지, 꼬리 등에 있는 긴 피모.</p>
-                            </div>
+                    
+                    
+
                             
-                            <div class="card-body">
-                            장식털
-                                <p class="text-center mb-0">주로 귀나 사지, 꼬리 등에 있는 긴 피모.</p>
-                            </div>
-                            <div class="card-body">
-                            반점
-                                <p class="text-center mb-0">바탕색과는 다른 색깔이나 짙은 무늬가 띄엄띄엄 흩어진 것. 마킹이라고도 한다.</p>
-                            </div>
-                            <div class="card-body">
-                            스폿
-                                <p class="text-center mb-0">작은 무늬. 콤비네이션을 이루는 두 가지 다른 색의 조합.</p>
-                            </div>
-                            <div class="card-body">
-                            댑플
-                                <p class="text-center mb-0">여러 가지 색으로 무늬를 이루는 피모 타입.</p>
-                            </div>
-                            <div class="card-body">
-                            블레이즈
-                                <p class="text-center mb-0">개의 두 눈 사이를 지나는 하얀 무늬.</p>
-                            </div>
-                            <div class="card-body">
-                            마스크
-                                <p class="text-center mb-0">입이나 이마 앞부분의 피모 색깔이 진한 부분으로, 복서나 마스티프 등의 견종에게서 보이는 특징. 피모색이 거뭇한 것은 블랙마스크라고 한다.</p>
-                            </div>
-                            <div class="card rounded-0">
-                            > 개의 여러가지 컬러
-                            </div>
-                            <div class="card-body">
-                            애플리코트
-                                <p class="text-center mb-0">살구색. 붉은 기가 있는 노랑색.</p>
-                            </div>
-                            <div class="card-body">
-                            옐로우
-                                <p class="text-center mb-0">옅은 갈색. 래브라도 리트리버가 대표.</p>
-                            </div>
-                            <div class="card-body">
-                            휘튼
-                                <p class="text-center mb-0">보리색. 옅은 노란색을 띈 색.</p>
-                            </div>
-                            <div class="card-body">
-                            크림
-                                <p class="text-center mb-0">크림</p>
-                            </div>
-                            <div class="card-body">
-                            그레이
-                                <p class="text-center mb-0">회색. 진한 다크 그레이에서 옅은 실버 그레이 등 농담은 다양.</p>
-                            </div>
-                            <div class="card-body">
-                            골든
-                                <p class="text-center mb-0">황금색.</p>
-                            </div>
-                            <div class="card-body">
-                            세이블
-                                <p class="text-center mb-0">옅은 기본색에 검은 털이 섞인 것.</p>
-                            </div>
-                            <div class="card-body">
-                            쵸콜릿
-                                <p class="text-center mb-0">진한 적갈색이나 고동색.</p>
-                            </div>
-                            <div class="card-body">
-                            트라이 컬러
-                                <p class="text-center mb-0">흰색과 검은색, 턴(황갈색)의 삼색에서 비롯된 모색. 와이어 폭스 테리어가 유명.</p>
-                            </div>
-                            <div class="card-body">
-                            파티 컬러
-                                <p class="text-center mb-0">흰색 바탕에 뚜렷한 색깔의 무늬가 있는 것.</p>
-                            </div>
-                            <div class="card-body">
-                            헐크인
-                                <p class="text-center mb-0">흰색 바탕에 검은색이나 청회색 무늬가 들어 있는 것.</p>
-                            </div>
-                            <div class="card-body">
-                            퓨어 화이트(백)
-                                <p class="text-center mb-0">순백색.</p>
-                            </div>
-                            <div class="card-body">
-                            폰
-                                <p class="text-center mb-0">황금색을 띤 갈색. 농담은 다양.</p>
-                            </div>
-                            <div class="card-body">
-                            블랙 앤 탄
-                                <p class="text-center mb-0">검은색 바탕에 눈 위나 다리, 가슴 등에 규칙적인 턴(황갈색) 무늬가 들어 있다.</p>
-                            </div>
-                            <div class="card-body">
-                            블랙
-                                <p class="text-center mb-0">검은색</p>
-                            </div>
-                            <div class="card-body">
-                            브린들
-                                <p class="text-center mb-0">기본 바탕색에 다른 컬러가 섞인 것.</p>
-                            </div>
-                            <div class="card-body">
-                            블루
-                                <p class="text-center mb-0">청. 농담은 다양.</p>
-                            </div>
-                            <div class="card-body">
-                            블루론
-                                <p class="text-center mb-0">파란색 바탕에 흰색 털이 살짝 섞인 모색.</p>
-                            </div>
-                            <div class="card-body">
-                            페퍼
-                                <p class="text-center mb-0">청색을 띈 흑호마에서 옅은 그레이.</p>
-                            </div>
-                            <div class="card-body">
-                            레드
-                                <p class="text-center mb-0">붉은색. 붉은색을 띤 갈색.</p>
-                            </div>
-                            <div class="card-body">
-                            레드 앤 화이트
-                                <p class="text-center mb-0">적갈색과 흰색의 두 가지 색.</p>
-                            </div>
-                            <div class="card-body">
-                            리바
-                                <p class="text-center mb-0">진한 적갈색.</p>
-                            </div>
-                            <div class="card-body">
-                            적
-                                <p class="text-center mb-0">일본견 특유의 색. 황갈색에서 비적(緋赤)까지 폭넓다.</p>
-                            </div>
-                            <div class="card-body">
-                            적호마
-                                <p class="text-center mb-0">붉은 바탕에 검은색이 얼룩처럼 들어 있는 무늬.</p>
-                            </div>
-                            <div class="card-body">
-                            적호(赤虎)
-                                <p class="text-center mb-0">붉은 털에 검은 줄무늬가 들어 있는 것.</p>
-                            </div>
-                            <div class="card-body">
-                            이자벨라
-                                <p class="text-center mb-0">옅은 밤색털.</p>
-                            </div>
-                            <div class="card-body">
-                            울프 그레이
-                                <p class="text-center mb-0">다갈회색이나 황회색의 털끝이 검게 되는 것.</p>
-                            </div>
-                            <div class="card-body">
-                            오렌지
-                                <p class="text-center mb-0">적황색이나 옅은 턴(황갈색)의 피모. 포메라니안이 유명.</p>
-                            </div>
-                            <div class="card-body">
-                            그리즐
-                                <p class="text-center mb-0">그레이에 블루를 띄는 색.</p>
-                            </div>
-                            <div class="card-body">
-                            흑호마
-                                <p class="text-center mb-0">호마보다 전체적으로 검은색이 더 많은 것.</p>
-                            </div>
-                            <div class="card-body">
-                            흑호(黑虎)
-                                <p class="text-center mb-0">검은 바탕에 붉은 털의 줄무늬가 들어간 피모. 호(虎)보다 검은 부분이 많아 몸 전체가 검게 보인다.</p>
-                            </div>
-                            <div class="card-body">
-                            호마
-                                <p class="text-center mb-0">흰색과 검은색이 반반 들어간 무늬.</p>
-                            </div>
-                            <div class="card-body">
-                            샌디
-                                <p class="text-center mb-0">모래색. 진한 샌디 옐로우 등도 있다.</p>
-                            </div>
-                            <div class="card-body">
-                            실버
-                                <p class="text-center mb-0">거의 그레이에 가까운 은색.</p>
-                            </div>
-                            <div class="card-body">
-                            슬레이트 블루
-                                <p class="text-center mb-0">회색을 띤 블루.</p>
-                            </div>
-                            <div class="card-body">
-                            솔리드
-                                <p class="text-center mb-0">단색.</p>
-                            </div>
-                            <div class="card-body">
-                            탄
-                                <p class="text-center mb-0">황갈색.</p>
-                            </div>
-                            <div class="card-body">
-                            체스트넛
-                                <p class="text-center mb-0">밤색이나 적갈색.</p>
-                            </div>
-                            <div class="card-body">
-                            호
-                                <p class="text-center mb-0">일본견 특유의 모색. 흰 바탕에 검은 줄무늬가 들어 있다.</p>
-                            </div>
-                            <div class="card-body">
-                            비버
-                                <p class="text-center mb-0">브라운과 그레이가 섞인 모색.</p>
-                            </div>
-                            <div class="card-body">
-                            비스킷
-                                <p class="text-center mb-0">옅은 크림색.</p>
-                            </div>
-                            <div class="card-body">
-                            팔로
-                                <p class="text-center mb-0">옅은 노란색.</p>
-                            </div>
-                            <div class="card-body">
-                            브라운
-                                <p class="text-center mb-0">갈색 혹은 다갈색.</p>
-                            </div>
-                            <div class="card-body">
-                            블루머를
-                                <p class="text-center mb-0">블루나 검정, 회색이 섞인 대리석 같은 무늬.</p>
-                            </div>
-                            <div class="card-body">
-                            마호가니
-                                <p class="text-center mb-0">적갈색에 가까운 밤색.</p>
-                            </div>
-                            <div class="card-body">
-                            러스티 레드
-                                <p class="text-center mb-0">붉은 기를 띤 녹슨 색.</p>
-                            </div>
-                            <div class="card-body">
-                            루비
-                                <p class="text-center mb-0">진한 체스트넛.</p>
-                            </div>
-                            <div class="card-body">
-                            로운
-                                <p class="text-center mb-0">바탕색에 흰색 털이 살짝 섞인 모색.</p>
-                            </div>
-                        </div>
-                    </div>
         </div>
     </div>
     <!-- End Content -->

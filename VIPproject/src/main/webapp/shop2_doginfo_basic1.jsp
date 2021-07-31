@@ -185,12 +185,11 @@ https://templatemo.com/tm-559-zay-shop
 
             <div class="col-lg-9">
                 <div class="row">
-                <div class="row">
                 <!-----------기초상식>개 종류 관련------------>
                 	<div class="col-md-4">
                     기초 상식
                         <div class="card mb-4 product-wap rounded-0">
-                         개 종류 관련 용어
+                         개종류 관련 용어
                             <div class="card rounded-0">
                             </div>
                             <div class="card-body">
@@ -731,9 +730,52 @@ https://templatemo.com/tm-559-zay-shop
                             <div class="card-body">
                             로운
                                 <p class="text-center mb-0">바탕색에 흰색 털이 살짝 섞인 모색.</p>
+                                
                             </div>
                         </div>
                     </div>
+                    
+                    <!----------기초 > 개의 몸과 귀 ------------->
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0">
+                         개의 몸과 귀
+                            <div class="card rounded-0">
+                            > 몸
+                            </div>
+                            <div class="card rounded-0">
+                            	<img class="card-img rounded-0 img-fluid" src="assets/img/dogBody.jpg">
+                            </div>
+                            <div class="card rounded-0">
+                            > 귀
+                            </div>
+                            <div class="card-body">
+                            직립 귀(프릭 이어)
+                                <p class="text-center mb-0">시바견이나 셰퍼드 등의 견종에게서 볼 수 있는 직립 귀의 형태. 선 귀라고도 한다. 귀를 잘라 늘어진 귀를 세우는 그레이트 데인이나 도베르만 같은 견종도 있지만, 현재 유럽에서는 단이가 금지되어 있다.</p>
+                            </div>
+                            <div class="card-body">
+                            반직립 귀(세미프릭 이어)
+                                <p class="text-center mb-0">직립 귀 끝의 4분의 1 정도가 늘어져 있는 귀. 러프 콜리나 셰틀랜드 십독 등이 대표적. 로즈 귀나 V자형 귀도 반직립 귀에 포함된다.</p>
+                            </div>
+                            <div class="card-body">
+                            버튼 귀
+                                <p class="text-center mb-0">늘어진 귀의 일종으로 귓불 끝이 늘어지고 귀의 동굴을 막고 있는 형태의 귀. 에어데일 테리어가 전형적인 버튼 귀.</p>
+                            </div>
+                            <div class="card-body">
+                            V자형 귀
+                                <p class="text-center mb-0">삼각형 귀. 시베리안 허스키 같은 직립 타입과 불 마스티프 같은 늘어진 귀 등 두 가지 타입이 있다.</p>
+                            </div>
+                            <div class="card-body">
+                            로즈 귀(로즈 이어)
+                                <p class="text-center mb-0">반직립 귀의 일종으로 귀를 재우거나 접으면 외이 안의 요철이 보이는 형태. 요철 부분이 장미 꽃잎처럼 보여 로즈 귀라고 불린다. 불독의 귀가 전형적인 형태.</p>
+                            </div>
+                            <div class="card-body">
+                            박쥐 귀(배트 이어)
+                                <p class="text-center mb-0">직립 귀의 일종으로 귀의 폭이 넓고 끝이 둥글어 박쥐의 날개처럼 보인다. 프렌치 불독의 귀가 전형적인 형태.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                	
         </div>
     </div>
     <!-- End Content -->
