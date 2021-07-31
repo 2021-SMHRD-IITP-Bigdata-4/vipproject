@@ -39,7 +39,8 @@
       <label for="formFile" class="form-label mt-4">Photo</label>
       <input class="form-control" type="file" id="formFile">
     </div>
-	
+<!-- 작성 -->
+<button type="button" class="btn btn-outline-dark">작성하기</button>
 	
 </body>
 </html>
