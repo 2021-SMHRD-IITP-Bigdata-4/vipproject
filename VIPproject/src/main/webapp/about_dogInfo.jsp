@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-    <title>VIP - Dog Information Page</title>
+    <title>VIP - Dog Information breed Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -132,8 +132,8 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-md-8 text-white">
                     <h1>알아가기</h1>
                     <p>
-                        내가 기르는 반려견은 어떤 아이일까요? 
-                        어떤걸 좋아하고 어떨때 행복할까요? 
+                        내가 기르는 반려견은 어떤 아이일까요?<br>
+                        어떤걸 좋아하고 어떨때 행복할까요?<br>
                         우리는 서로 알아가는게 필요해요
                     </p>
                 </div>
@@ -151,7 +151,8 @@ https://templatemo.com/tm-559-zay-shop
             <div class="col-lg-6 m-auto">
                 <h1 class="h1">반려견 정보</h1>
                 <p>
-                    개에 대한 기본적인 지식과 더욱 건강하게 기를 수 있는 정보
+                    개에 대한 기본적인 지식<br>
+                    더욱 건강하게 기를 수 있는 정보<br>
                     견종별 특성에 대해 공부해요
                 </p>
             </div>
@@ -231,10 +232,6 @@ https://templatemo.com/tm-559-zay-shop
                             우리팀은 광주에서 활동해요
                         </li>
                         <li>
-                            <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:010-020-0340">없어요ㅜ 메일로주세요</a>
-                        </li>
-                        <li>
                             <i class="fa fa-envelope fa-fw"></i>
                             <a class="text-decoration-none" href="bigdatadallie@gmail.com">bigdatadallie@gmail.com</a>
                         </li>
@@ -242,25 +239,25 @@ https://templatemo.com/tm-559-zay-shop
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">더 많은 정보</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">다른 애완견 정보 보기</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">기초상식</a></li>
-                        <li><a class="text-decoration-none" href="#">건강정보</a></li>
-                        <li><a class="text-decoration-none" href="#">종별특성</a></li>
+                        <li><a class="text-decoration-none" href="#">기초 상식</a></li>
+                        <li><a class="text-decoration-none" href="#">건강 정보</a></li>
+                        <li><a class="text-decoration-none" href="#">견종별 특성</a></li>
                    
 
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">더 많은 V.I.P. 서비스</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">더 많은 V.I.P. 서비스 보기</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li><a class="text-decoration-none" href="#">애완견 정보</a></li>
                         <li><a class="text-decoration-none" href="#">요즘 트랜드</a></li>
-                        <li><a class="text-decoration-none" href="#">쇼핑몰별 잘잘리는 애완용품</a></li>
-                        <li><a class="text-decoration-none" href="#">동반 서비스</a></li>
+                        <li><a class="text-decoration-none" href="#">쇼핑몰별 잘팔리는 애완용품</a></li>
+                        <li><a class="text-decoration-none" href="#">동반 서비스 업체</a></li>
                         <li><a class="text-decoration-none" href="#">법과 정책</a></li>
-                        <li><a class="text-decoration-none" href="#">게시판</a></li>
+                        <li><a class="text-decoration-none" href="#">커뮤니티 게시판</a></li>
                         <li><a class="text-decoration-none" href="#">반려견 캘린더</a></li>
                     </ul>
                 </div>
@@ -279,12 +276,6 @@ https://templatemo.com/tm-559-zay-shop
                         <li class="list-inline-item border border-light rounded-circle text-center">
                             <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
                         </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
-                        </li>
                     </ul>
                 </div>
                 <div class="col-auto">
@@ -302,8 +293,8 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
-                            Copyright &copy; 2021 VIP 
-                            | Designed by <a rel="sponsored" href="https://templatemo.com/page/1" target="_blank">TemplateMo</a>
+                            Copyright &copy; 2021 V.I.P.
+                            | Designed by <a rel="sponsored" href="https://templatemo.com/page/1" target="_blank">V.I.P.</a>
                         </p>
                     </div>
                 </div>
