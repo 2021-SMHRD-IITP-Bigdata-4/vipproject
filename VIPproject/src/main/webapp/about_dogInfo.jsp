@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-    <title>VIP - Dog Information breed Page</title>
+    <title>VIP - Dog Information Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -55,7 +55,6 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container d-flex justify-content-between align-items-center">
 
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">
-                <!--서비스 이름 변경/김선/0727 9:38-->
                 V.I.P.
             </a>
 
@@ -66,17 +65,27 @@ https://templatemo.com/tm-559-zay-shop
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="index.jsp">Home</a>
+                            <a class="nav-link" href="about.jsp">애완견 정보</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.jsp">About</a>
+                            <a class="nav-link" href="shop.jsp">요즘 트랜드</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.jsp">Shop</a>
+                            <a class="nav-link" href="contact.jsp">법과 정책</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.jsp">Contact</a>
+                            <a class="nav-link" href="contact.jsp">동반 서비스 업체</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.jsp">쇼핑몰별 잘팔리는 용품</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.jsp">커뮤니티 게시판</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.jsp">반려견 캘린더</a>
                         </li>
                     </ul>
                 </div>
@@ -92,14 +101,7 @@ https://templatemo.com/tm-559-zay-shop
                     <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
-                    </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="login.jsp">
-                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
-                    </a>
+                    
                 </div>
             </div>
 
@@ -184,39 +186,7 @@ https://templatemo.com/tm-559-zay-shop
     </section>
     <!-- End Section -->
 
-    <!-- Start Brands -->
-    <section class="bg-light py-5">
-        <div class="container my-4">
-            <div class="row text-center py-3">
-                <div class="col-lg-6 m-auto">
-                    <h1 class="h1">V.I.P.</h1>
-                    <p>
-                        변려견 종합 정보 서비스
-                    </p>
-                </div>
-                <div class="col-lg-9 m-auto tempaltemo-carousel">
-                    <div class="row d-flex flex-row">
-                        <!--Controls-->
-                        <div class="col-1 align-self-center">
-                            <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="prev">
-                                <i class="text-light fas fa-chevron-left"></i>
-                            </a>
-                        </div>
-                        
-
-                        <!--Controls-->
-                        <div class="col-1 align-self-center">
-                            <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="next">
-                                <i class="text-light fas fa-chevron-right"></i>
-                            </a>
-                        </div>
-                        <!--End Controls-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Brands-->
+    
 
 
     <!-- Start Footer -->
@@ -254,9 +224,9 @@ https://templatemo.com/tm-559-zay-shop
                     <ul class="list-unstyled text-light footer-link-list">
                         <li><a class="text-decoration-none" href="#">애완견 정보</a></li>
                         <li><a class="text-decoration-none" href="#">요즘 트랜드</a></li>
-                        <li><a class="text-decoration-none" href="#">쇼핑몰별 잘팔리는 애완용품</a></li>
-                        <li><a class="text-decoration-none" href="#">동반 서비스 업체</a></li>
                         <li><a class="text-decoration-none" href="#">법과 정책</a></li>
+                        <li><a class="text-decoration-none" href="#">동반 서비스 업체</a></li>
+                        <li><a class="text-decoration-none" href="#">쇼핑몰별 잘팔리는 애완용품</a></li>
                         <li><a class="text-decoration-none" href="#">커뮤니티 게시판</a></li>
                         <li><a class="text-decoration-none" href="#">반려견 캘린더</a></li>
                     </ul>
