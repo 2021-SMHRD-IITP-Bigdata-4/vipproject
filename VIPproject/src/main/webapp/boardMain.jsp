@@ -48,8 +48,8 @@
   </thead>
    <tbody>
      <tr class="table-active">
-      <th scope="row">Active</th>
-      <td>Column content</td>
+      <th scope="row">Active</th>   
+      <td><a href = "boardView.jsp">Column content</a></td>    
       <td>Column content</td>
       <td>Column content</td>
       <td>Column content</td>
@@ -66,7 +66,7 @@
    </tbody>
 </table>
 
-<!-- 목록, 글쓰기 -->
+<!-- 홈, 글쓰기 -->
 <a href = "index.jsp"><button type="button" class="btn btn-outline-dark">Home</button></a>
 <a href = "boardWrite.jsp"><button type="button" class="btn btn-dark">Write</button></a>
 
