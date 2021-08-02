@@ -98,21 +98,12 @@
             <div class="col-lg-3">
                 <h1 class="h2 pb-4">애견동반시설</h1>
                 <ul class="list-unstyled templatemo-accordion">
-                    
-                        <a id="room" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="roomMap.jsp">
-                            <span>숙박</span>
+                        <a id="room" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="roomMap.jsp"><span>숙박</span>
                         </a>
-                   
-                    
-                        <a id="cafe" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="cafeMap.jsp">
-                           <span>카페</span>
+                        <a id="cafe" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="cafeMap.jsp"><span>카페</span>
                         </a>
-                   
-                    
-                        <a id="rastaurant" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="rastaurantMap.jsp">
-                            <span>식당</span>
+                        <a id="rastaurant" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="rastaurantMap.jsp"><span>식당</span>
                         </a>
-                   
                 </ul>
             </div>
     
@@ -127,20 +118,7 @@
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a243ec3aa0d2e63578927b17e122deb3&libraries=clusterer"></script>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a243ec3aa0d2e63578927b17e122deb3"></script>
 	<script>
-		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-    	mapOption = { 
-        center: new kakao.maps.LatLng(36.2683, 127.6358), // 지도의 중심좌표
-        level: 14 // 지도의 확대 레벨
-    	};
-
-		var map = new kakao.maps.Map(mapContainer, mapOption); 
-		// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
 		
-		var mapTypeControl = new kakao.maps.MapTypeControl();
-		map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-		
-		var zoomControl = new kakao.maps.ZoomControl();
-		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     	mapOption = { 
         center: new kakao.maps.LatLng(36.2683, 127.6358), // 지도의 중심좌표

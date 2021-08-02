@@ -102,7 +102,6 @@
     <!-- Start Content -->
     <div class="container py-5">
         <div class="row">
-
             <div class="col-lg-3">
                 <h1 class="h2 pb-4">애견동반시설</h1>
                 <table class="list-unstyled templatemo-accordion">
