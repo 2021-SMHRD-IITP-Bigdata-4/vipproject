@@ -46,6 +46,7 @@
     
 <!-- 작성 -->
 	<input type="submit" class="btn btn-outline-dark" value = "작성하기">
+	<a href = "boardMain.jsp"><button class="btn btn-outline-dark">취소</button></a>
 </form>
 </body>
 </html>

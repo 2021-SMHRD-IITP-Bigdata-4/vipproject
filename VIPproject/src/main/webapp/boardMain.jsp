@@ -1,3 +1,4 @@
+<%@page import="Model.VipMemberDTO"%>
 <%@page import="Model.CommunityDAO"%>
 <%@page import="Model.CommunityDTO"%>
 <%@page import="java.util.ArrayList"%>
@@ -23,8 +24,10 @@
 
 	<% 
 	CommunityDAO dao = new CommunityDAO();
-	ArrayList<CommunityDTO> list = dao.selectAll(); 
+	ArrayList<CommunityDTO> list = dao.selectAll();
+	VipMemberDTO info = (VipMemberDTO)session.getAttribute("info");
 	%>
+	
 <h4>자유 게시판</h4>
   <div class="form-group">
       <!-- 타입 선택 -->
@@ -71,8 +74,9 @@
 
 <!-- 홈, 글쓰기 -->
 <a href = "index.jsp"><button type="button" class="btn btn-outline-dark">Home</button></a>
-<a href = "boardWrite.jsp"><button type="button" class="btn btn-dark">Write</button></a>
-
+<%if (info != null){ %>
+	<a href = "boardWrite.jsp"><button type="button" class="btn btn-dark">Write</button></a>
+<%} %>
 <!-- 페이징 -->
 <div>
   <ul class="pagination">

@@ -17,8 +17,8 @@ import Model.CommunityDAO;
 import Model.CommunityDTO;
 import Model.VipMemberDTO;
 
-@WebServlet("/BoardWriteService")
-public class BoardWriteService extends HttpServlet {
+@WebServlet("/BoardUpdateService")
+public class BoardUpdateService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -26,7 +26,7 @@ public class BoardWriteService extends HttpServlet {
 		
 		HttpSession session = request.getSession();
 		VipMemberDTO info = (VipMemberDTO)session.getAttribute("info");
-
+		
 		String post_photo = null;
 		String saveDri = request.getServletContext().getRealPath("img");
 		int maxSize = 5*1024*1024;
@@ -37,21 +37,24 @@ public class BoardWriteService extends HttpServlet {
 			post_photo = multi.getParameter("post_photo");
 		}
 		
+		String post_num1 = multi.getParameter("post_num");
+		int post_num = Integer.parseInt(post_num1);
+		
 		String user_id = info.getUser_id();
 		String display_name = info.getDisplay_name();
 		String post_sort = multi.getParameter("post_sort");
 		String post_title = multi.getParameter("post_title");
 		String post_memo = multi.getParameter("post_memo");
 		
-		CommunityDTO dto = new CommunityDTO(user_id, display_name, post_sort, post_title, post_memo, post_photo);
+		CommunityDTO dto = new CommunityDTO(post_num ,user_id, display_name, post_sort, post_title, post_memo, post_photo);
 		CommunityDAO dao = new CommunityDAO();
 		
-		int cnt = dao.insertBoard(dto);
+		int cnt = dao.updateBoard(dto);
 		
 		if (cnt > 0) {
-			System.out.println("업로드 성공");
+			System.out.println("수정 성공");
 		} else {
-			System.out.println("업로드 실패");		
+			System.out.println("수정 실패");		
 		}
 		response.sendRedirect("boardMain.jsp");
  		

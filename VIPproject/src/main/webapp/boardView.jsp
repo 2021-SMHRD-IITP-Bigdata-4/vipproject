@@ -1,3 +1,4 @@
+<%@page import="Model.VipMemberDTO"%>
 <%@page import="Model.CommunityDTO"%>
 <%@page import="Model.CommunityDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
@@ -15,24 +16,33 @@
 	String post_num = request.getParameter("post_num");
 	CommunityDAO dao = new CommunityDAO();
 	CommunityDTO dto = dao.selectOne(post_num);
+	VipMemberDTO info = (VipMemberDTO)session.getAttribute("info");
+	
 %>
 <!-- 게시글 -->
 <table class="table table-hover">
   <thead>
     <tr>
       <th scope="col"><%= dto.getPost_sort() %></th>
-      <th scope="col"><%= dto.getPost_title()%></th>
-      <th scope="col"><%= dto.getDisplay_name()%></th>
+      <th scope="col" colspan ="5"><%= dto.getPost_title()%></th>
     </tr>
     <tr>
       <th scope="col"><%= dto.getPost_date()%></th>
+      <th scope="col"><%= dto.getDisplay_name()%></th>
+      <% if (info.getUser_id().equals(dto.getUser_id())){ %>
+   	  	<th scope="col"><a href = "boardUpdate.jsp?post_num=<%=dto.getPost_num()%>">수정</a></th>
+     	<th scope="col"><a href = "BoardDeleteService?post_num=<%=dto.getPost_num()%>">삭제</a></th>
+      <%} else {%>
+      	<th scope = "col">수정 불가</th>
+      	<th scope = "col">삭제 불가</th>
+      <%} %>
       <th scope="col">좋아요 수</th>
       <th scope="col">댓글 수</th>
     </tr>
   </thead>
     <tbody>
      <tr>
-      <td colspan = "3">
+      <td colspan = "6">
       	<% if (dto.getPost_photo() != null) {%>
       		<img src = "./img/<%=dto.getPost_photo()%>">
       	<%} %>
@@ -63,8 +73,9 @@
 
 <!-- 목록, 글쓰기 -->
 <a href = "boardMain.jsp"><button type="button" class="btn btn-outline-dark">목록</button></a>
+<% if (info != null){ %>
 <a href = "boardWrite.jsp"><button type="button" class="btn btn-dark">글쓰기</button></a>
-
+ <%} %>
 
 </body>
 </html>
