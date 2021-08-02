@@ -155,8 +155,6 @@ https://templatemo.com/tm-559-zay-shop
                         </a>
                         <ul id="collapseTwo" class="collapse list-unstyled pl-3">
                             <li><a class="text-decoration-none" href="#">정책</a></li>
-                        </ul>
-                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
                             <li><a class="text-decoration-none" href="#">기타 정책</a></li>
                         </ul>
                     </li>
@@ -167,8 +165,6 @@ https://templatemo.com/tm-559-zay-shop
                         </a>
                         <ul id="collapseTwo" class="collapse list-unstyled pl-3">
                             <li><a class="text-decoration-none" href="#">광주광역시</a></li>
-                        </ul>
-                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
                             <li><a class="text-decoration-none" href="#">기타 지역</a></li>
                         </ul>
                     </li>
@@ -252,22 +248,54 @@ https://templatemo.com/tm-559-zay-shop
                         </div>
                     </div>
             		<!----------법과 정책 > 정책 ------------->
-                	<div class="col-md-4">
-                        <div class="card mb-4 product-wap rounded-0">
-                         정책
-                            <div class="card rounded-0">
+            		<div class="col-md-4">
+            			<div class="card mb-4 product-wap rounded-0">
+            			정책
+            				<div class="card rounded-0">
                             > 동물보호 복지대책
                             </div>
                             <div class="card-body">
-                            양파
-                                <p class="text-center mb-0"> 버리며, 심한 경우에는 급성 빈혈을 일으켜 죽기도 한다.</p>
+                            주요정책 대상
+                                <p class="text-center mb-0">국민, 동물소유자, 동물실험관계자, 동물생산·판매 등 영업자 등</p>
+                            </div>
+                            <div class="card rounded-0">
+                            </div>
+                            <div class="card-body">
+                            정책추진 배경
+                                <p class="text-center mb-0">1. 1인 가구의 증가, 저출산과 고령화 등으로 인한 반려동물 가구 수가 증가하고 있는 반면에 올바른 반려문화에 대한 인식 부족<br>
+                                2. 반려동물 및 보유가구의 급격한 증가에 따른 관련 산업 육성 요구 증가<br>
+                                3. 살충제 계란 파동 등으로 인해 밀식사육 등 축산 사육환경 개선 필요성 제기
+                                <br>
+                                <br>
+                                <br>
+                                전체 내용 보기
+                                <br>
+                                </p>
+                            </div>
+                            <div class="card-body">
+                            주요 추진 내용
+                            <p class="text-center mb-0">1. 제도 개선<br>
+                            -반려견 목줄길이를 2m 이내로 제한하는 동물보호법 시행규칙 개정 시행(21.2.12.)<br>
+                            -맹견 소유자의 관리의무 신설 등 동물보호법 하위법령 개정 마련 시행(19.3.21.)<br>
+                            -맹견 소유자 책임보험 의무가입 관련 동물보호」 하위법령 개정 시행(21.2.12.)<br>
+                            -등록대상동물을 주택 준주택에서 기르거나 반려목적으로 기르는 2개월령 이상의 개로 확대하는 「동물보호법」 시행령 개정 시행(20.3.11.)<br>
+                            -고양이 소유자 중 등록을 원하는 경우 등록할 수 있도록 ‘고양이 동물등록 시범사업’ 실시(`18~)<br>
+                            -동물학대 행위에 대한 처벌 및 반려동물 관련 영업 관리 강화 등 「동물보호법」 하위법령 개정 마련 시행(18.3.22)<br>
+                            -동물생산업 신고제에서 허가제 전환(17.3.21) 및 동물 신규서비스업 등록시행(’18.3.22)<br>
+                            2. 동물보호 및 복지 교육홍보 추진<br>
+                            -동물보호를 통한 생명존중에 대한 올바른 가치관 형성을 위해 초등학생 대상 동물보호 교육 실시<br>
+                			-일반인과 반려인이 함께하는 동물보호 문화축제 개최(17: 대전, 18: 부산, 19: 제주, 20: 부산)<br>
+                            <br>
+                            전체 내용 보기
+                            <br>
+                            </p>
                             </div>
                             <div class="card rounded-0">
                             > 기타 정책
                             </div>
                             <div class="card-body">
-                            주요내용
-                                <p class="text-center mb-0">다.</p>
+                            -
+                                <p class="text-center mb-0">-</p>
                             </div>
                         </div>
                     </div>
@@ -315,8 +343,8 @@ https://templatemo.com/tm-559-zay-shop
                             > 기타 지역
                             </div>
                             <div class="card-body">
-                            호흡기
-                                <p class="text-center mb-0">콧물,</p>
+                            -
+                                <p class="text-center mb-0">-</p>
                           	</div>
                          </div>
                     </div>
