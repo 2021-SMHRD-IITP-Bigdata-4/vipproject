@@ -5,8 +5,7 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-</head>
-<body>
+
 	<div id="map" style="width:100%;height:500px;"></div>
 	
 	<input type="button" value="숙소">
@@ -30,11 +29,7 @@
 		var zoomControl = new kakao.maps.ZoomControl();
 		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 		
-		var clusterer = new kakao.maps.MarkerClusterer({
-	        map: map, // 마커들을 클러스터로 관리하고 표시할 지도 객체 
-	        averageCenter: true, // 클러스터에 포함된 마커들의 평균 위치를 클러스터 마커 위치로 설정 
-	        minLevel: 10 // 클러스터 할 최소 지도 레벨 
-	    });
+		
 		
 		$("input").on("click", function() {
 			$.ajax({
@@ -70,6 +65,12 @@
 						return maks;
 					 	
 			        });
+					
+					var clusterer = new kakao.maps.MarkerClusterer({
+				        map: map, // 마커들을 클러스터로 관리하고 표시할 지도 객체 
+				        averageCenter: true, // 클러스터에 포함된 마커들의 평균 위치를 클러스터 마커 위치로 설정 
+				        minLevel: 10 // 클러스터 할 최소 지도 레벨 
+				    });
 					
 					 	kakao.maps.event.addListener(clusterer, 'clusterclick', function(cluster) {
 					        // 현재 지도 레벨에서 1레벨 확대한 레벨
