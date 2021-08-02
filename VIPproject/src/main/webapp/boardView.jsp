@@ -1,3 +1,5 @@
+<%@page import="Model.CommunityDTO"%>
+<%@page import="Model.CommunityDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -8,23 +10,34 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+<% 
+	String post_num = request.getParameter("post_num");
+	CommunityDAO dao = new CommunityDAO();
+	CommunityDTO dto = dao.selectOne(post_num);
+%>
 <!-- 게시글 -->
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">Type</th>
-      <th scope="col">Title</th>
-      <th scope="col">Writer</th>
+      <th scope="col"><%= dto.getPost_sort() %></th>
+      <th scope="col"><%= dto.getPost_title()%></th>
+      <th scope="col"><%= dto.getDisplay_name()%></th>
     </tr>
     <tr>
-      <th scope="col">작성시간</th>
-      <th scope="col">좋아요</th>
-      <th scope="col">댓글</th>
+      <th scope="col"><%= dto.getPost_date()%></th>
+      <th scope="col">좋아요 수</th>
+      <th scope="col">댓글 수</th>
     </tr>
   </thead>
     <tbody>
      <tr>
-      <td colspan = "3">content</td>
+      <td colspan = "3">
+      	<% if (dto.getPost_photo() != null) {%>
+      		<img src = "./img/<%=dto.getPost_photo()%>">
+      	<%} %>
+      	<%= dto.getPost_memo()%>
+      </td>
     </tr>
     </tbody>
 </table>

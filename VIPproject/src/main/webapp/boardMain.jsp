@@ -1,3 +1,6 @@
+<%@page import="Model.CommunityDAO"%>
+<%@page import="Model.CommunityDTO"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -17,16 +20,21 @@
 	
 </style>
 <body>
+
+	<% 
+	CommunityDAO dao = new CommunityDAO();
+	ArrayList<CommunityDTO> list = dao.selectAll(); 
+	%>
 <h4>자유 게시판</h4>
   <div class="form-group">
       <!-- 타입 선택 -->
       <label for="exampleSelect1" class="form-label mt-4">Type</label>
       <select class="form-select" id="exampleSelect1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
+        <option>강아지</option>
+        <option>법과정책</option>
+        <option>동반시설</option>
+        <option>용품</option>
+        <option>자유</option>
       </select>
       
       <!-- 추천글, 북마크 -->
@@ -46,23 +54,18 @@
       <th scope="col">Like</th>      
     </tr>
   </thead>
-   <tbody>
-     <tr class="table-active">
-      <th scope="row">Active</th>   
-      <td><a href = "boardView.jsp">Column content</a></td>    
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-    </tr>
+  <tbody>
+     <% if (list != null){ %>
+     	<% for (int i = 0; i <list.size(); i++){ %>  
      <tr>
-      <th scope="row">Default</th>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
-      <td>Column content</td>
+      <th scope="row"><%= list.get(i).getPost_sort() %></th>
+      <td><a href = "boardView.jsp?post_num=<%=list.get(i).getPost_num()%>"><%= list.get(i).getPost_title()%></a></td>
+      <td><%= list.get(i).getDisplay_name()%></td>
+      <td><%= list.get(i).getPost_date()%></td>
+      <td>댓글 수</td>
+      <td>좋아요 수</td>      
     </tr>
+     <%} }%>
    </tbody>
 </table>
 
