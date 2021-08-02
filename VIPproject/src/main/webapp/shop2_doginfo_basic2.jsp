@@ -185,7 +185,6 @@ https://templatemo.com/tm-559-zay-shop
 
             <div class="col-lg-9">
                 <div class="row">
-                <div class="row">
                 <!-----------건강 정보>식사관리------------>
                 	<div class="col-md-4">
                     건강 정보
@@ -300,6 +299,7 @@ https://templatemo.com/tm-559-zay-shop
                             기생충
                                 <p class="text-center mb-0">분비물에서 기생충을 발견하는 경우, 배가 부어 오르는 경우, 설사, 항문에서 이 물질을 발견 하는 경우, 체중 감소</p>
                             </div>
+                         </div>
                          <div class="card mb-4 product-wap rounded-0">
                          > 응급처치방법
                             <div class="card rounded-0">
@@ -316,7 +316,7 @@ https://templatemo.com/tm-559-zay-shop
 응급처치는 신속하게 정확하게 한다. 긴 타월을 이용해 개의 복부를 타월로 감싸고 목 부분을 묶은 뒤 개를 안아서 운반한다.
 판자나 두꺼운 시트를 들 것 대용으로 이용할 경우, 개를 바닥으로 미끄러지듯이 부드럽게 이동시킨다.
 개가 떨어지거나 충격을 받지 않도록 하기 위하여 끈이나 부드러운 천을 이용해 묶어</p>
-                            
+                            </div>
                         </div>
                     </div>
                     <!----------건강 정보>임신과 출산 ------------->
