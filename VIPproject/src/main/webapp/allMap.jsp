@@ -1,3 +1,4 @@
+<%@page import="Model.VipMemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -21,6 +22,9 @@
     
 </head>
 <body>
+	<% 
+		VipMemberDTO info = (VipMemberDTO)session.getAttribute("info"); 
+	%>
 	
 	
 	<!-- Header -->
@@ -66,12 +70,15 @@
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
+                    <%if (info != null){ %>                   
                     	<a href = "userUpdate.jsp">개인정보수정</a> <br>                  	
                     	<a href = "Logout">로그아웃</a>
+                    <%} else {%>
                     <a class="nav-icon position-relative text-decoration-none" href="login.jsp">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                     </a>
+                    <%}%>
                 </div>
             </div>
 
@@ -98,26 +105,17 @@
 
             <div class="col-lg-3">
                 <h1 class="h2 pb-4">애견동반시설</h1>
-                <ul class="list-unstyled templatemo-accordion">
-                    <li class="pb-3">
-                        <a id="room" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="roomMap.jsp">
-                            <span>숙박</span>
-                        </a>
-                    </li>
-                    <li class="pb-3">
-                        <a id="cafe" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="cafeMap.jsp">
-                           <span>카페</span>
-                        </a>
-                    </li>
-                    <li class="pb-3">
-                        <a id="rastaurant" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="rastaurantMap.jsp">
-                            <span>식당</span>
-                        </a>
-                    </li>
-                </ul>
+                <table class="list-unstyled templatemo-accordion">
+                	<tr>
+                      <td style="float:left;margin-left:5px"><a id="room" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="roomMap.jsp"><span>숙박</span></a></td>
+                      <td style="float:left;margin-left:30px;"><a id="cafe" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="cafeMap.jsp"><span>카페</span></a></td>
+                      <td style="float:left;margin-left:30px;"><a id="rastaurant" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="rastaurantMap.jsp"><span>식당</span></a></td>
+                    </tr>
+               </table>
             </div>
+            <br>
     
-	<div class="map" id="map" style="width:75%;height:600px; display:inline;"></div>
+	<div class="map" id="map" style="width:80%;height:600px; display:inline;"></div>
 	
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="assets/js/jquery-1.11.0.min.js"></script>
@@ -144,18 +142,18 @@
 		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 		
 		
-		$("#cafe").on("click", function() {
+		$("#map").ready(function() {
 			$.ajax({
-				url : "cafe",//똑같은 프로젝트 폴더 내부에서는 url mapping값만 가지고 이동가능
+				url : "allMap",//똑같은 프로젝트 폴더 내부에서는 url mapping값만 가지고 이동가능
 				dataType : "json",
 				contentType : "application/json; charset=utf-8",
 				success : function(data) {
-					/* console.log(data); */
+					//console.log(data);
 					
-					var list1 = {data};
+					var list = {data};
 					//console.log(list);
 					
-					var markers = list1.data.map(function(i, position) {
+					var markers = list.data.map(function(i, position) {
 						
 					/* console.log(i); //리스트
 					console.log(position); //리스트 인덱스 번호 */
@@ -163,7 +161,7 @@
 			            var maks = new kakao.maps.Marker({
 			                position : new kakao.maps.LatLng(i.fac_lati, i.fac_long)
 			            });
-			            	console.log(maks.position);
+			            	//console.log(maks.position);
 					
  			            var content ='<div style="width:150px;text-align:bottom;padding:4px 0;font-size:11px;">'
  			            +"도로명 주소"+'<br>'+i.fac_address+'<br><a href ='+i.fac_intro+'>상세정보</div>'; 
@@ -185,140 +183,6 @@
 				        minLevel: 10 // 클러스터 할 최소 지도 레벨 
 				    });
 					
-						
-					 	kakao.maps.event.addListener(clusterer, 'clusterclick', function(cluster) {
-					        // 현재 지도 레벨에서 1레벨 확대한 레벨
-					        var level = map.getLevel()-1;
-					        // 지도를 클릭된 클러스터의 마커의 위치를 기준으로 확대합니다
-					        map.setLevel(level, {anchor: clusterer.getCenter()});
-					    });
-					 	
-					 	clusterer.addMarkers(markers);
-					 	// 인포윈도우를 표시하는 클로저를 만드는 함수입니다 
-					 	function makeOverListener(map, marker, infowindow) {
-					        infowindow.close();
-					        return function() {
-					            infowindow.open(map, marker);
-					        };
-					    }
-					 	// 인포윈도우를 닫는 클로저를 만드는 함수입니다 
-					 	function makeOutListener(infowindow) {
-					        return function() {
-					            infowindow.close();
-					        };
-					    }
-				    }
-				});
-			});
-		$("#room").on("click", function() {
-			$.ajax({
-				url : "room",//똑같은 프로젝트 폴더 내부에서는 url mapping값만 가지고 이동가능
-				dataType : "json",
-				contentType : "application/json; charset=utf-8",
-				success : function(data) {
-					//console.log(data);
-					
-					var list2 = {data};
-					//console.log(list);
-					
-					var markers = list2.data.map(function(i, position) {
-						
-					/* console.log(i); //리스트
-					console.log(position); //리스트 인덱스 번호 */
-					
-			            var maks = new kakao.maps.Marker({
-			                position : new kakao.maps.LatLng(i.fac_lati, i.fac_long)
-			            });
-			            	console.log(maks.position);
-					
- 			            var content ='<div style="width:150px;text-align:bottom;padding:4px 0;font-size:11px;">'
- 			            +"도로명 주소"+'<br>'+i.fac_address+'<br><a href ='+i.fac_intro+'>상세정보</div>'; 
-					 	
-						var infowindow = new daum.maps.InfoWindow({
-							content: content,
-			                removable : true,
-			            });
-						
-						daum.maps.event.addListener(maks, 'click', makeOverListener(map, maks, infowindow));
-						
-						return maks;
-						
-			        });
-					
-						var clusterer = new kakao.maps.MarkerClusterer({
-				       		map: map, // 마커들을 클러스터로 관리하고 표시할 지도 객체 
-				        	averageCenter: true, // 클러스터에 포함된 마커들의 평균 위치를 클러스터 마커 위치로 설정 
-				       		minLevel: 10 // 클러스터 할 최소 지도 레벨 
-				    	});
-						
-						
-					 	kakao.maps.event.addListener(clusterer, 'clusterclick', function(cluster) {
-					        // 현재 지도 레벨에서 1레벨 확대한 레벨
-					        var level = map.getLevel()-1;
-					        // 지도를 클릭된 클러스터의 마커의 위치를 기준으로 확대합니다
-					        map.setLevel(level, {anchor: clusterer.getCenter()});
-					    });
-					 	
-					 	clusterer.addMarkers(markers);
-						
-					 	// 인포윈도우를 표시하는 클로저를 만드는 함수입니다 
-					 	function makeOverListener(map, marker, infowindow) {
-					        infowindow.close();
-					        return function() {
-					            infowindow.open(map, marker);
-					        };
-					    }
-					 	// 인포윈도우를 닫는 클로저를 만드는 함수입니다 
-					 	function makeOutListener(infowindow) {
-					        return function() {
-					            infowindow.close();
-					        };
-					    }
-				    }
-				});
-			clusterer = null;
-			});
-		
-		$("#rastaurant").on("click", function() {
-			$.ajax({
-				url : "rastaurant",//똑같은 프로젝트 폴더 내부에서는 url mapping값만 가지고 이동가능
-				dataType : "json",
-				contentType : "application/json; charset=utf-8",
-				success : function(data) {
-					//console.log(data);
-					
-					var list3 = {data};
-					//console.log(list);
-					
-					var markers = list3.data.map(function(i, position) {
-						
-					/* console.log(i); //리스트
-					console.log(position); //리스트 인덱스 번호 */
-					
-			            var maks = new kakao.maps.Marker({
-			                position : new kakao.maps.LatLng(i.fac_lati, i.fac_long)
-			            });
-			            	console.log(maks.position);
-					
- 			            var content ='<div style="width:150px;text-align:bottom;padding:4px 0;font-size:11px;">'
- 			            +"도로명 주소"+'<br>'+i.fac_address+'<br><a href ='+i.fac_intro+'>상세정보</div>'; 
-					 	
-						var infowindow = new daum.maps.InfoWindow({
-							content: content,
-			                removable : true,
-			            });
-						
-						daum.maps.event.addListener(maks, 'click', makeOverListener(map, maks, infowindow));
-						
-						return maks;
-			        });
-					
-						var clusterer = new kakao.maps.MarkerClusterer({
-				        	map: map, // 마커들을 클러스터로 관리하고 표시할 지도 객체 
-				        	averageCenter: true, // 클러스터에 포함된 마커들의 평균 위치를 클러스터 마커 위치로 설정 
-				        	minLevel: 10 // 클러스터 할 최소 지도 레벨 
-				    	});
-					
 					 	kakao.maps.event.addListener(clusterer, 'clusterclick', function(cluster) {
 					        // 현재 지도 레벨에서 1레벨 확대한 레벨
 					        var level = map.getLevel()-1;
@@ -344,7 +208,6 @@
 				    }
 				});
 			});
-		
 		
 	</script>
 </body>
