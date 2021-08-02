@@ -202,7 +202,8 @@ https://templatemo.com/tm-559-zay-shop
                             </div>
                             <div class="card-body">
                             하딩 도그
-                                <p class="text-center mb-0">목양견, 목축견, 호양견 등 목축에 이용되는 개의 총칭. 콜리나 보더 콜리 등이 대표적인 견종. 하딩은 영어로 '가축들을 모은다'는 뜻이다.</p>
+                                <p class="text-center mb-0">목양견, 목축견, 호양견 등 목축에 이용되는 개의 총칭. 
+                                콜리나 보더 콜리 등이 대표적인 견종. 하딩은 영어로 '가축들을 모은다'는 뜻이다.</p>
                             </div>
                             <div class="card-body">
                             목축견
@@ -210,11 +211,13 @@ https://templatemo.com/tm-559-zay-shop
                             </div>
                             <div class="card-body">
                             목양견
-                                <p class="text-center mb-0">양떼를 감시, 유도하는 개. 대표적인 견종으로 콜리가 있다.</p>
+                                <p class="text-center mb-0">양떼를 감시, 유도하는 개. 대표적인 견종으로 
+                                콜리가 있다.</p>
                             </div>
                             <div class="card-body">
                             호양견
-                                <p class="text-center mb-0">해수나 적으로부터 양을 지키는 푸리나 코몬도르 등의 개. 늑대에게도 맞서 싸울 만큼 용맹하다.</p>
+                                <p class="text-center mb-0">해수나 적으로부터 양을 지키는 푸리나 코몬도르 등의 개. 
+                                늑대에게도 맞서 싸울 만큼 용맹하다.</p>
                             </div>
                             <div class="card-body">
                             캐틀 도그
@@ -222,15 +225,20 @@ https://templatemo.com/tm-559-zay-shop
                             </div>
                             <div class="card-body">
                             건 독
-                                <p class="text-center mb-0">새를 쫓아내는 잉글리시 코커스패니얼이나 사냥감이 있는 장소를 알리는 포인터나 세터, 사냥꾼이 쏜 사냥감을 회수하는 리트리버 등, 새사냥을 돕는 조렵견을 뜻한다.</p>
+                                <p class="text-center mb-0">새를 쫓아내는 잉글리시 코커스패니얼이나 사냥감이 있는 
+                                장소를 알리는 포인터나 세터, 사냥꾼이 쏜 사냥감을 회수하는 리트리버 등, 새사냥을 돕는 
+                                조렵견을 뜻한다.</p>
                             </div>
                             <div class="card-body">
                             스피츠 계열
-                                <p class="text-center mb-0">스피츠나 시바견 등 뾰족하게 선 귀와 뾰족한 구문(입 주변 전체)를 가진 견종.</p>
+                                <p class="text-center mb-0">스피츠나 시바견 등 뾰족하게 선 귀와 뾰족한 구문
+                                (입 주변 전체)를 가진 견종.</p>
                             </div>
                             <div class="card-body">
                             테리어
-                                <p class="text-center mb-0">오소리나 여우, 쥐사냥 등에 이용되는 수렵견종의 총칭. 땅굴 속에 숨어 있는 사냥감을 쫓아내거나 끌어내는 등 사냥을 돕는 데서 '땅'이라는 뜻을 가진 라틴어 이름이 붙었다.</p>
+                                <p class="text-center mb-0">오소리나 여우, 쥐사냥 등에 이용되는 수렵견종의 총칭. 
+                                땅굴 속에 숨어 있는 사냥감을 쫓아내거나 끌어내는 등 사냥을 돕는 데서 '땅'이라는 뜻을 가진 
+                                라틴어 이름이 붙었다.</p>
                             </div>
                             <div class="card-body">
                             하운드
@@ -242,43 +250,53 @@ https://templatemo.com/tm-559-zay-shop
                             </div>
                             <div class="card-body">
                             사이트 하운드
-                                <p class="text-center mb-0">멀리서 사냥감을 발견하면 전력질주해서 쫓는 시각형 하운드. 스마트한 체형이다.</p>
+                                <p class="text-center mb-0">멀리서 사냥감을 발견하면 전력질주해서 쫓는 시각형 
+                                하운드. 스마트한 체형이다.</p>
                             </div>
                             <div class="card-body">
                             워킹 도그
-                                <p class="text-center mb-0">경비나 호위, 구조, 탐색, 하차인도, 썰매끌기 등 사냥 외에도 인간을 위해서 일하는 개.</p>
+                                <p class="text-center mb-0">경비나 호위, 구조, 탐색, 하차인도, 썰매끌기 등 
+                                사냥 외에도 인간을 위해서 일하는 개.</p>
                             </div>
                             <div class="card-body">
                             워터 도그
-                                <p class="text-center mb-0">바다나 강, 호수 등에서 수중작업을 하는 수영 실력이 뛰어난 개.</p>
+                                <p class="text-center mb-0">바다나 강, 호수 등에서 수중작업을 하는 수영 실력이 
+                                뛰어난 개.</p>
                             </div>
                             <div class="card-body">
                             마타기견
-                                <p class="text-center mb-0">일본에서 오래전부터 사냥에 이용된 개의 총칭. 아키타견 등이 그 피를 이어받았다.</p>
+                                <p class="text-center mb-0">일본에서 오래전부터 사냥에 이용된 개의 총칭. 아키타견 
+                                등이 그 피를 이어받았다.</p>
                             </div>
                             <div class="card-body">
                             투견
-                                <p class="text-center mb-0">개끼리 싸움을 시키는 것. 토사견이나 옛날의 스태포드셔 불 테리어 등이 유명.</p>
+                                <p class="text-center mb-0">개끼리 싸움을 시키는 것. 토사견이나 옛날의 스태포드셔 
+                                불 테리어 등이 유명.</p>
                             </div>
                             <div class="card-body">
                             군용견
-                                <p class="text-center mb-0">전령이나 감시 등의 군병 일을 돕는 개. 독일 셰퍼드 도그나 도베르만, 그레이트 데인 등이 대표 견종.</p>
+                                <p class="text-center mb-0">전령이나 감시 등의 군병 일을 돕는 개. 독일 셰퍼드 
+                                도그나 도베르만, 그레이트 데인 등이 대표 견종.</p>
                             </div>
                             <div class="card-body">
                             경찰견
-                                <p class="text-center mb-0">경찰의 범죄수사에서 냄새를 추적하거나 순찰 등에 활약하는 개. 한국에서는 독일 셰퍼드나 래브라도 리트리버 등 3견종이 이용된다.</p>
+                                <p class="text-center mb-0">경찰의 범죄수사에서 냄새를 추적하거나 순찰 등에 활약하는 
+                                개. 한국에서는 독일 셰퍼드나 래브라도 리트리버 등 3견종이 이용된다.</p>
                             </div>
                             <div class="card-body">
                             마약견
-                                <p class="text-center mb-0">공항 등에서 화물에 숨겨진 마약류의 냄새를 맡고 찾아내는 개.</p>
+                                <p class="text-center mb-0">공항 등에서 화물에 숨겨진 마약류의 냄새를 맡고 찾아내는 
+                                개.</p>
                             </div>
                             <div class="card-body">
                             화재구조견
-                                <p class="text-center mb-0">화재시 무너진 잔해에 깔린 생존자를 냄새로 탐색하고 구조하는 개.</p>
+                                <p class="text-center mb-0">화재시 무너진 잔해에 깔린 생존자를 냄새로 탐색하고 
+                                구조하는 개.</p>
                             </div>
                             <div class="card-body">
                             해상구조견
-                                <p class="text-center mb-0">해상재난을 당한 사람을 구조하는 개. 뉴펀들랜드가 유명</p>
+                                <p class="text-center mb-0">해상재난을 당한 사람을 구조하는 개. 뉴펀들랜드가 
+                                유명</p>
                             </div>
                             <div class="card-body">
                             맹도견
@@ -286,7 +304,8 @@ https://templatemo.com/tm-559-zay-shop
                             </div>
                             <div class="card-body">
                             청도견
-                                <p class="text-center mb-0">청각장애인을 돕는 개. 견종에 상관없이 애완견도 청도견이 될 수 있다.</p>
+                                <p class="text-center mb-0">청각장애인을 돕는 개. 견종에 상관없이 애완견도 
+                                청도견이 될 수 있다.</p>
                             </div>
                             <div class="card-body">
                             간호견
@@ -294,7 +313,8 @@ https://templatemo.com/tm-559-zay-shop
                             </div>
                             <div class="card-body">
                             세라피견
-                                <p class="text-center mb-0">의료나 복지현장에서 인간의 마음을 치유하는 애니멀 세라피(동물치료요법)에 종사하는 개.</p>
+                                <p class="text-center mb-0">의료나 복지현장에서 인간의 마음을 치유하는 애니멀 
+                                세라피(동물치료요법)에 종사하는 개.</p>
                             </div>
                             <div class="card-body">
                             토착견
@@ -311,11 +331,13 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           서클
-                              <p class="text-center mb-0">철제나 플라스틱제 펜스를 뜻하며 주로 개를 실내 사육할 때 사용한다. 평소 개가 머무는 공간을 둘러싸고 안에 하우스나 화장실, 식기 등을 넣어준다.</p>
+                              <p class="text-center mb-0">철제나 플라스틱제 펜스를 뜻하며 주로 개를 실내 사육할 
+                              때 사용한다. 평소 개가 머무는 공간을 둘러싸고 안에 하우스나 화장실, 식기 등을 넣어준다.</p>
                           </div>
                           <div class="card-body">
                           하우스
-                              <p class="text-center mb-0">개가 침대로 사용하는 사육용품. 개가 안심하고 지낼 수 있는 동굴 모양이 좋다.</p>
+                              <p class="text-center mb-0">개가 침대로 사용하는 사육용품. 개가 안심하고 지낼 수 
+                              있는 동굴 모양이 좋다.</p>
                           </div>
                           <div class="card-body">
                           화장실
@@ -323,35 +345,45 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           화장실 시트
-                              <p class="text-center mb-0">화장실에 까는 시트 형태의 종이. 강아지가 화장실 버릇을 익힐 때까지 서클 전체에 깔아두고 아무 데서나 볼일을 봐도 괜찮도록 적응기간을 둔다.</p>
+                              <p class="text-center mb-0">화장실에 까는 시트 형태의 종이. 강아지가 화장실 버릇을 
+                              익힐 때까지 서클 전체에 깔아두고 아무 데서나 볼일을 봐도 괜찮도록 적응기간을 둔다.</p>
                           </div>
                           <div class="card-body">
                           펫히터
-                              <p class="text-center mb-0">펫 전용 전기히터. 방석 모양의 펫히터를 이불 밑에 깔고 사용한다.</p>
+                              <p class="text-center mb-0">펫 전용 전기히터. 방석 모양의 펫히터를 이불 밑에 깔고 
+                              사용한다.</p>
                           </div>
                           <div class="card-body">
                           캐리어
-                              <p class="text-center mb-0">개를 안에 넣어 운반할 수 있는 용구. 캐스터가 달렸거나 가방 모양, 등에 매는 모양, 케이지 모양, 연결해서 넓은 공간으로 사용할 수 있는 모양 등 여러 가지 타입이 있다.</p>
+                              <p class="text-center mb-0">개를 안에 넣어 운반할 수 있는 용구. 캐스터가 달렸거나 
+                              가방 모양, 등에 매는 모양, 케이지 모양, 연결해서 넓은 공간으로 사용할 수 있는 모양 등 여러 
+                              가지 타입이 있다.</p>
                           </div>
                           <div class="card-body">
                           리드
-                              <p class="text-center mb-0">목줄. 벨트 모양이나 단면이 둥근 끈, 체인 등 여러 가지 타입이 있다.</p>
+                              <p class="text-center mb-0">목줄. 벨트 모양이나 단면이 둥근 끈, 체인 등 여러 가지 
+                              타입이 있다.</p>
                           </div>
                           <div class="card-body">
                           초커
-                              <p class="text-center mb-0">목걸이와 일체화된 타입의 리드. 뒤로 잡아당기면 목줄 부분이 조이므로, 산책시 훈련에 이용하면 효과적이다.</p>
+                              <p class="text-center mb-0">목걸이와 일체화된 타입의 리드. 뒤로 잡아당기면 목줄 부분이 
+                              조이므로, 산책시 훈련에 이용하면 효과적이다.</p>
                           </div>
                           <div class="card-body">
                           솔 브러시
-                              <p class="text-center mb-0">돼지털 등으로 만든 브러시. 단모종을 빗질할 때 편리하며 털에 윤기를 내준다.</p>
+                              <p class="text-center mb-0">돼지털 등으로 만든 브러시. 단모종을 빗질할 때 편리하며 털에 
+                              윤기를 내준다.</p>
                           </div>
                           <div class="card-body">
                           슬리커 브러시
-                              <p class="text-center mb-0">금속제로 바늘 모양의 핀을 심은 브러시. 빠진 털을 제거하거나 엉킨 털을 풀거나 결을 정리하는 용도이며, 털이 부드러운 장모견에게 적합하다. 바늘이 개의 피부에 닿으면 상처가 나므로 몸에는 닿지 않게 사용해야 한다.</p>
+                              <p class="text-center mb-0">금속제로 바늘 모양의 핀을 심은 브러시. 빠진 털을 제거하거나 
+                              엉킨 털을 풀거나 결을 정리하는 용도이며, 털이 부드러운 장모견에게 적합하다. 바늘이 개의 피부에 닿으면 
+                              상처가 나므로 몸에는 닿지 않게 사용해야 한다.</p>
                           </div>
                           <div class="card-body">
                           핀 브러시
-                              <p class="text-center mb-0">끝이 둥근 핀을 심은 브러시. 오버코트에서 빠진 털을 제거하거나 엉킨 장모의 결을 정돈한다. 피부에 자극을 주는 효과도 있다.</p>
+                              <p class="text-center mb-0">끝이 둥근 핀을 심은 브러시. 오버코트에서 빠진 털을 제거하거나 
+                              엉킨 장모의 결을 정돈한다. 피부에 자극을 주는 효과도 있다.</p>
                           </div>
                           <div class="card-body">
                           일자빗(comb)
@@ -367,23 +399,32 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           기생충
-                              <p class="text-center mb-0">동물의 몸에 기생해 질병을 발생시키는 벌레. 벼룩이나 진드기 등 몸의 외부에 기생하는 외부기생충과 개사상충(필라리아)이나 회충 등 심장이나 장내 등 내부에 기생하는 것이 있다.</p>
+                              <p class="text-center mb-0">동물의 몸에 기생해 질병을 발생시키는 벌레. 벼룩이나 진드기 
+                              등 몸의 외부에 기생하는 외부기생충과 개사상충(필라리아)이나 회충 등 심장이나 장내 등 내부에 기생하는 
+                              것이 있다.</p>
                           </div>
                           <div class="card-body">
                           필라리아
-                              <p class="text-center mb-0">개사상충 등의 기생충이 혈관에 들어가 증식하면서 개의 몸을 좀먹는 질병. 이 기생충의 매개인 모기가 발생하기 1개월 전부터, 보이지 않는 1개월 후까지 예방약을 먹이면 대부분 막을 수 있다.</p>
+                              <p class="text-center mb-0">개사상충 등의 기생충이 혈관에 들어가 증식하면서 개의 몸을 
+                              좀먹는 질병. 이 기생충의 매개인 모기가 발생하기 1개월 전부터, 보이지 않는 1개월 후까지 예방약을 
+                              먹이면 대부분 막을 수 있다.</p>
                           </div>
                           <div class="card-body">
                           광견병
-                              <p class="text-center mb-0">일단 발병하면 치료방법이 없고, 거의 100퍼센트 사망에 이르는 무서운 바이러스성 감염증. 신경이 망가지고 끔찍한 증상을 보이며 사람을 공격하기도 한다. 광견병바이러스는 개뿐만 아니라 다른 동물에게서도 옮으며, 사람을 포함한 모든 포유류에게 감염된다. 때문에 주인은 봄·가을 광견병 예방주사를 해주는 것이 좋다.</p>
+                              <p class="text-center mb-0">일단 발병하면 치료방법이 없고, 거의 100퍼센트 사망에 이르는 
+                              무서운 바이러스성 감염증. 신경이 망가지고 끔찍한 증상을 보이며 사람을 공격하기도 한다. 광견병바이러스는 
+                              개뿐만 아니라 다른 동물에게서도 옮으며, 사람을 포함한 모든 포유류에게 감염된다. 때문에 주인은 봄·가을 
+                              광견병 예방주사를 해주는 것이 좋다.</p>
                           </div>
                           <div class="card-body">
                           백신주사
-                              <p class="text-center mb-0">개의 전염병을 예방하는 주사. 연2회의 접종으로 전염병을 예방할 수 있으니 맞히는 것이 좋다. 특히 새끼 때는 반드시 백신주사를 맞혀야 한다.</p>
+                              <p class="text-center mb-0">개의 전염병을 예방하는 주사. 연2회의 접종으로 전염병을 예방할 
+                              수 있으니 맞히는 것이 좋다. 특히 새끼 때는 반드시 백신주사를 맞혀야 한다.</p>
                           </div>
                           <div class="card-body">
                           항문선
-                              <p class="text-center mb-0">냄새를 유발하는 원인이 집결되어 있는 취선으로 항문 옆에 있다. 내버려두면 파열될 수 있으니 정기적으로 짜주는 것이 좋다.</p>
+                              <p class="text-center mb-0">냄새를 유발하는 원인이 집결되어 있는 취선으로 항문 옆에 있다. 
+                              내버려두면 파열될 수 있으니 정기적으로 짜주는 것이 좋다.</p>
                           </div>
                       </div>
                   </div>
@@ -395,7 +436,8 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           트리밍
-                              <p class="text-center mb-0">개나 고양이의 외모를 깨끗하게 정돈해주기 위해서 털을 깎거나 목욕시키는 것.</p>
+                              <p class="text-center mb-0">개나 고양이의 외모를 깨끗하게 정돈해주기 위해서 털을 깎거나 
+                              목욕시키는 것.</p>
                           </div>
                           <div class="card-body">
                           그루밍
@@ -407,7 +449,8 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           자유운동
-                              <p class="text-center mb-0">개에게 리드를 달지 않고 자유롭게 달리거나 놀게 하는 운동. 도그런 등에서 한다.</p>
+                              <p class="text-center mb-0">개에게 리드를 달지 않고 자유롭게 달리거나 놀게 하는 운동. 
+                              도그런 등에서 한다.</p>
                           </div>
                           <div class="card-body">
                           도그런
@@ -423,23 +466,29 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           환모기(털갈이 시기)
-                              <p class="text-center mb-0">피모가 빠지고 새로 나는 시기로, 계절의 기온변화에 의해 일어난다. 10~11월경 생겨난 언더코트는 겨울털이 되었다가 4~5월경 빠지기 시작한다.</p>
+                              <p class="text-center mb-0">피모가 빠지고 새로 나는 시기로, 계절의 기온변화에 의해 
+                              일어난다. 10~11월경 생겨난 언더코트는 겨울털이 되었다가 4~5월경 빠지기 시작한다.</p>
                           </div>
                           <div class="card-body">
                           패드
-                              <p class="text-center mb-0">발바닥의 육구. 다리에 가해지는 부담을 완화시키는 쿠션 역할을 하며 미끄러짐 방지 효과도 있다.</p>
+                              <p class="text-center mb-0">발바닥의 육구. 다리에 가해지는 부담을 완화시키는 쿠션 역할을 
+                              하며 미끄러짐 방지 효과도 있다.</p>
                           </div>
                           <div class="card-body">
                           늑대발톱
-                              <p class="text-center mb-0">개의 다리에 있는 발톱으로 퇴화된 엄지 부분에 있다. 오래 전 늑대였을 때의 흔적으로 보통은 제거한다. 대개는 앞다리에 있는데, 그레이트 피레네는 뒷다리에도 있다.</p>
+                              <p class="text-center mb-0">개의 다리에 있는 발톱으로 퇴화된 엄지 부분에 있다. 오래 전 
+                              늑대였을 때의 흔적으로 보통은 제거한다. 대개는 앞다리에 있는데, 그레이트 피레네는 뒷다리에도 있다.</p>
                           </div>
                           <div class="card-body">
                           단이
-                              <p class="text-center mb-0">도베르만이나 복서, 그레이트 데인 등 본래 늘어진 귀를 가진 견종의 귀를 뾰족하게 선 귀로 만들기 위해서 생후 3~5개월경 마취시키고 귀의 일부를 절제하는 것이다. 유럽 여러 나라에서는 금지시키며, 단이시킨 개는 아예 수입 금지되기도 한다.</p>
+                              <p class="text-center mb-0">도베르만이나 복서, 그레이트 데인 등 본래 늘어진 귀를 가진 
+                              견종의 귀를 뾰족하게 선 귀로 만들기 위해서 생후 3~5개월경 마취시키고 귀의 일부를 절제하는 것이다. 
+                              유럽 여러 나라에서는 금지시키며, 단이시킨 개는 아예 수입 금지되기도 한다.</p>
                           </div>
                           <div class="card-body">
                           단미
-                              <p class="text-center mb-0">외모를 정돈하기 위해서 생후 10일경 꼬리를 절단하는 것이다. 유럽 여러 나라에서는 금지되어 있고, 단미시킨 개는 아예 수입 금지되기도 한다.</p>
+                              <p class="text-center mb-0">외모를 정돈하기 위해서 생후 10일경 꼬리를 절단하는 것이다. 
+                              유럽 여러 나라에서는 금지되어 있고, 단미시킨 개는 아예 수입 금지되기도 한다.</p>
                           </div>
                           <div class="card-body">
                           영역
@@ -447,7 +496,8 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           마킹
-                              <p class="text-center mb-0">주로 산책할 때 개가 여러 장소에 오줌을 눠 냄새를 묻히는 것. 개의 두상이나 몸에 들어간 무늬를 가리키기도 한다.</p>
+                              <p class="text-center mb-0">주로 산책할 때 개가 여러 장소에 오줌을 눠 냄새를 묻히는 것. 
+                              개의 두상이나 몸에 들어간 무늬를 가리키기도 한다.</p>
                           </div>
                           <div class="card-body">
                           헛울음
@@ -455,11 +505,14 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           스탠더드
-                              <p class="text-center mb-0">이상적인 견종의 형태를 규정한 견종표준. 체격의 크기나 모질색, 두상의 형태 등 기준치 외에 결점에 관한 규정도 있다. 단체에 따라 조금씩 차이가 있다.</p>
+                              <p class="text-center mb-0">이상적인 견종의 형태를 규정한 견종표준. 체격의 크기나 모질색, 
+                              두상의 형태 등 기준치 외에 결점에 관한 규정도 있다. 단체에 따라 조금씩 차이가 있다.</p>
                           </div>
                           <div class="card-body">
                           공인견종
-                              <p class="text-center mb-0">견종단체에 공인되어 있는 견종. 각국의 켄넬클럽이나 견종 단체에 따라서 독자적으로 공인되어 있는 견종도 있지만, 본서에서는 FCI(국제축견연맹)에 공인되어 있는 개를 '공인견종'으로 하고, FCI의 견종번호를 표기했다.</p>
+                              <p class="text-center mb-0">견종단체에 공인되어 있는 견종. 각국의 켄넬클럽이나 견종 단체에 
+                              따라서 독자적으로 공인되어 있는 견종도 있지만, 본서에서는 FCI(국제축견연맹)에 공인되어 있는 개를 
+                              '공인견종'으로 하고, FCI의 견종번호를 표기했다.</p>
                           </div>
                       </div>
                   </div>
@@ -483,15 +536,18 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           헤어리스
-                              <p class="text-center mb-0">피모가 없는 타입. 차이니즈 크레스티드 도그나 멕시칸 헤어리스 도그가 유명.</p>
+                              <p class="text-center mb-0">피모가 없는 타입. 차이니즈 크레스티드 도그나 멕시칸 헤어리스 
+                              도그가 유명.</p>
                           </div>
                           <div class="card-body">
                           오버코트
-                              <p class="text-center mb-0">개의 몸 표면에 있는 털을 가리키는데 상모, 강모, 병모라고도 한다. 언더코트와 달리 뻣뻣.</p>
+                              <p class="text-center mb-0">개의 몸 표면에 있는 털을 가리키는데 상모, 강모, 병모라고도 
+                              한다. 언더코트와 달리 뻣뻣.</p>
                           </div>
                           <div class="card-body">
                           언더코트
-                              <p class="text-center mb-0">오버코트 아래의 조밀하게 난 부드러운 털로 하모라고도 한다. 몸을 보온하거나 방수하는 역할을 하고, 가을에 생기기 시작해서 초여름에는 빠진다. 언더코트가 없는 견종도 있다.</p>
+                              <p class="text-center mb-0">오버코트 아래의 조밀하게 난 부드러운 털로 하모라고도 한다. 
+                              몸을 보온하거나 방수하는 역할을 하고, 가을에 생기기 시작해서 초여름에는 빠진다. 언더코트가 없는 견종도 있다.</p>
                           </div>
                           <div class="card-body">
                           싱글코트
@@ -516,7 +572,8 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           반점
-                              <p class="text-center mb-0">바탕색과는 다른 색깔이나 짙은 무늬가 띄엄띄엄 흩어진 것. 마킹이라고도 한다.</p>
+                              <p class="text-center mb-0">바탕색과는 다른 색깔이나 짙은 무늬가 띄엄띄엄 흩어진 것. 
+                              마킹이라고도 한다.</p>
                           </div>
                           <div class="card-body">
                           스폿
@@ -532,7 +589,8 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           마스크
-                              <p class="text-center mb-0">입이나 이마 앞부분의 피모 색깔이 진한 부분으로, 복서나 마스티프 등의 견종에게서 보이는 특징. 피모색이 거뭇한 것은 블랙마스크라고 한다.</p>
+                              <p class="text-center mb-0">입이나 이마 앞부분의 피모 색깔이 진한 부분으로, 복서나 
+                              마스티프 등의 견종에게서 보이는 특징. 피모색이 거뭇한 것은 블랙마스크라고 한다.</p>
                           </div>
                           <div class="card rounded-0">
                           > 개의 여러가지 컬러
@@ -571,7 +629,8 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           트라이 컬러
-                              <p class="text-center mb-0">흰색과 검은색, 턴(황갈색)의 삼색에서 비롯된 모색. 와이어 폭스 테리어가 유명.</p>
+                              <p class="text-center mb-0">흰색과 검은색, 턴(황갈색)의 삼색에서 비롯된 모색. 와이어 
+                              폭스 테리어가 유명.</p>
                           </div>
                           <div class="card-body">
                           파티 컬러
@@ -591,7 +650,8 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           블랙 앤 탄
-                              <p class="text-center mb-0">검은색 바탕에 눈 위나 다리, 가슴 등에 규칙적인 턴(황갈색) 무늬가 들어 있다.</p>
+                              <p class="text-center mb-0">검은색 바탕에 눈 위나 다리, 가슴 등에 규칙적인 턴(황갈색) 
+                              무늬가 들어 있다.</p>
                           </div>
                           <div class="card-body">
                           블랙
@@ -659,7 +719,8 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           흑호(黑虎)
-                              <p class="text-center mb-0">검은 바탕에 붉은 털의 줄무늬가 들어간 피모. 호(虎)보다 검은 부분이 많아 몸 전체가 검게 보인다.</p>
+                              <p class="text-center mb-0">검은 바탕에 붉은 털의 줄무늬가 들어간 피모. 호(虎)보다 검은 
+                              부분이 많아 몸 전체가 검게 보인다.</p>
                           </div>
                           <div class="card-body">
                           호마
@@ -748,27 +809,34 @@ https://templatemo.com/tm-559-zay-shop
                           </div>
                           <div class="card-body">
                           직립 귀(프릭 이어)
-                              <p class="text-center mb-0">시바견이나 셰퍼드 등의 견종에게서 볼 수 있는 직립 귀의 형태. 선 귀라고도 한다. 귀를 잘라 늘어진 귀를 세우는 그레이트 데인이나 도베르만 같은 견종도 있지만, 현재 유럽에서는 단이가 금지되어 있다.</p>
+                              <p class="text-center mb-0">시바견이나 셰퍼드 등의 견종에게서 볼 수 있는 직립 귀의 형태. 
+                              선 귀라고도 한다. 귀를 잘라 늘어진 귀를 세우는 그레이트 데인이나 도베르만 같은 견종도 있지만, 현재 
+                              유럽에서는 단이가 금지되어 있다.</p>
                           </div>
                           <div class="card-body">
                           반직립 귀(세미프릭 이어)
-                              <p class="text-center mb-0">직립 귀 끝의 4분의 1 정도가 늘어져 있는 귀. 러프 콜리나 셰틀랜드 십독 등이 대표적. 로즈 귀나 V자형 귀도 반직립 귀에 포함된다.</p>
+                              <p class="text-center mb-0">직립 귀 끝의 4분의 1 정도가 늘어져 있는 귀. 러프 콜리나 
+                              셰틀랜드 십독 등이 대표적. 로즈 귀나 V자형 귀도 반직립 귀에 포함된다.</p>
                           </div>
                           <div class="card-body">
                           버튼 귀
-                              <p class="text-center mb-0">늘어진 귀의 일종으로 귓불 끝이 늘어지고 귀의 동굴을 막고 있는 형태의 귀. 에어데일 테리어가 전형적인 버튼 귀.</p>
+                              <p class="text-center mb-0">늘어진 귀의 일종으로 귓불 끝이 늘어지고 귀의 동굴을 막고 있는 
+                              형태의 귀. 에어데일 테리어가 전형적인 버튼 귀.</p>
                           </div>
                           <div class="card-body">
                           V자형 귀
-                              <p class="text-center mb-0">삼각형 귀. 시베리안 허스키 같은 직립 타입과 불 마스티프 같은 늘어진 귀 등 두 가지 타입이 있다.</p>
+                              <p class="text-center mb-0">삼각형 귀. 시베리안 허스키 같은 직립 타입과 불 마스티프 같은 
+                              늘어진 귀 등 두 가지 타입이 있다.</p>
                           </div>
                           <div class="card-body">
                           로즈 귀(로즈 이어)
-                              <p class="text-center mb-0">반직립 귀의 일종으로 귀를 재우거나 접으면 외이 안의 요철이 보이는 형태. 요철 부분이 장미 꽃잎처럼 보여 로즈 귀라고 불린다. 불독의 귀가 전형적인 형태.</p>
+                              <p class="text-center mb-0">반직립 귀의 일종으로 귀를 재우거나 접으면 외이 안의 요철이 
+                              보이는 형태. 요철 부분이 장미 꽃잎처럼 보여 로즈 귀라고 불린다. 불독의 귀가 전형적인 형태.</p>
                           </div>
                           <div class="card-body">
                           박쥐 귀(배트 이어)
-                              <p class="text-center mb-0">직립 귀의 일종으로 귀의 폭이 넓고 끝이 둥글어 박쥐의 날개처럼 보인다. 프렌치 불독의 귀가 전형적인 형태.</p>
+                              <p class="text-center mb-0">직립 귀의 일종으로 귀의 폭이 넓고 끝이 둥글어 박쥐의 날개처럼 
+                              보인다. 프렌치 불독의 귀가 전형적인 형태.</p>
                           </div>
                       </div>
                   </div>
