@@ -144,10 +144,6 @@
 		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 		
 		
-		
-		var joonBok = [];
-		
-		
 		$("#cafe").on("click", function() {
 			$.ajax({
 				url : "cafe",//똑같은 프로젝트 폴더 내부에서는 url mapping값만 가지고 이동가능
@@ -156,10 +152,10 @@
 				success : function(data) {
 					/* console.log(data); */
 					
-					var list = {data};
+					var list1 = {data};
 					//console.log(list);
 					
-					var markers = list.data.map(function(i, position) {
+					var markers = list1.data.map(function(i, position) {
 						
 					/* console.log(i); //리스트
 					console.log(position); //리스트 인덱스 번호 */
@@ -188,6 +184,7 @@
 				        averageCenter: true, // 클러스터에 포함된 마커들의 평균 위치를 클러스터 마커 위치로 설정 
 				        minLevel: 10 // 클러스터 할 최소 지도 레벨 
 				    });
+					
 						
 					 	kakao.maps.event.addListener(clusterer, 'clusterclick', function(cluster) {
 					        // 현재 지도 레벨에서 1레벨 확대한 레벨
@@ -221,10 +218,10 @@
 				success : function(data) {
 					//console.log(data);
 					
-					var list = {data};
+					var list2 = {data};
 					//console.log(list);
 					
-					var markers = list.data.map(function(i, position) {
+					var markers = list2.data.map(function(i, position) {
 						
 					/* console.log(i); //리스트
 					console.log(position); //리스트 인덱스 번호 */
@@ -254,6 +251,7 @@
 				       		minLevel: 10 // 클러스터 할 최소 지도 레벨 
 				    	});
 						
+						
 					 	kakao.maps.event.addListener(clusterer, 'clusterclick', function(cluster) {
 					        // 현재 지도 레벨에서 1레벨 확대한 레벨
 					        var level = map.getLevel()-1;
@@ -278,7 +276,9 @@
 					    }
 				    }
 				});
+			clusterer = null;
 			});
+		
 		$("#rastaurant").on("click", function() {
 			$.ajax({
 				url : "rastaurant",//똑같은 프로젝트 폴더 내부에서는 url mapping값만 가지고 이동가능
@@ -287,10 +287,10 @@
 				success : function(data) {
 					//console.log(data);
 					
-					var list = {data};
+					var list3 = {data};
 					//console.log(list);
 					
-					var markers = list.data.map(function(i, position) {
+					var markers = list3.data.map(function(i, position) {
 						
 					/* console.log(i); //리스트
 					console.log(position); //리스트 인덱스 번호 */
