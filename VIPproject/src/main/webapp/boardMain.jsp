@@ -32,12 +32,12 @@
   <div class="form-group">
       <!-- 타입 선택 -->
       <label for="exampleSelect1" class="form-label mt-4">Type</label>
-      <select class="form-select" id="exampleSelect1">
-        <option>강아지</option>
-        <option>법과정책</option>
-        <option>동반시설</option>
-        <option>용품</option>
-        <option>자유</option>
+      <select class="form-select" id="exampleSelect1" name = "post_sort">
+        <option value = "강아지">강아지</option>
+        <option value = "법과정책">법과정책</option>
+        <option value = "동반시설">동반시설</option>
+        <option value = "용품">용품</option>
+        <option value = "자유">자유</option> 
       </select>
       
       <!-- 추천글, 북마크 -->

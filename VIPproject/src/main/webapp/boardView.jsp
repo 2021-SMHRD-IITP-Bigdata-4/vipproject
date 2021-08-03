@@ -29,7 +29,7 @@
     <tr>
       <th scope="col"><%= dto.getPost_date()%></th>
       <th scope="col"><%= dto.getDisplay_name()%></th>
-      <% if (info.getUser_id().equals(dto.getUser_id())){ %>
+      <% if (info != null && dto.getUser_id().equals(info.getUser_id())){ %> 
    	  	<th scope="col"><a href = "boardUpdate.jsp?post_num=<%=dto.getPost_num()%>">수정</a></th>
      	<th scope="col"><a href = "BoardDeleteService?post_num=<%=dto.getPost_num()%>">삭제</a></th>
       <%} else {%>
