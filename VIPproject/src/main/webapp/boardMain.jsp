@@ -1,3 +1,4 @@
+<%@page import="Model.BoardPage"%>
 <%@page import="Model.VipMemberDTO"%>
 <%@page import="Model.CommunityDAO"%>
 <%@page import="Model.CommunityDTO"%>
@@ -23,9 +24,21 @@
 <body>
 
 	<% 
+	
 	CommunityDAO dao = new CommunityDAO();
-	ArrayList<CommunityDTO> list = dao.selectAll();
 	VipMemberDTO info = (VipMemberDTO)session.getAttribute("info");
+	
+	int pageNum = 1;
+	if(request.getParameter("pageNum") != null) {
+		pageNum = Integer.parseInt(request.getParameter("pageNum"));		
+	}
+	
+	int totalCount = dao.totalCount(); 	
+	BoardPage bp = new BoardPage(totalCount,10,10,pageNum);
+	bp.pagingCount();	
+	
+	ArrayList<CommunityDTO> list = dao.pagingBoard(pageNum);
+	
 	%>
 	
 <h4>자유 게시판</h4>
@@ -61,7 +74,7 @@
      <% if (list != null){ %>
      	<% for (int i = 0; i <list.size(); i++){ %>  
      <tr>
-      <th scope="row"><%= list.get(i).getPost_sort() %></th>
+      <th scope="row" id = "post_sort"><%= list.get(i).getPost_sort() %></th>
       <td><a href = "boardView.jsp?post_num=<%=list.get(i).getPost_num()%>"><%= list.get(i).getPost_title()%></a></td>
       <td><%= list.get(i).getDisplay_name()%></td>
       <td><%= list.get(i).getPost_date()%></td>
@@ -77,30 +90,40 @@
 <%if (info != null){ %>
 	<a href = "boardWrite.jsp"><button type="button" class="btn btn-dark">Write</button></a>
 <%} %>
+
 <!-- 페이징 -->
 <div>
   <ul class="pagination">
-    <li class="page-item disabled">
-      <a class="page-link" href="#">&laquo;</a>
+    <%if(bp.getStartPage() > 1) {  %>
+    <li class="page-item">
+      <a class="page-link" href="BoardPaging?pageNum=1">처음</a>
     </li>
+    <%} %>
+    <%if(bp.getNowPage() > 1) { %>
+    <li class="page-item">
+      <a class="page-link" href="BoardPaging?pageNum=<%=bp.getNowPage()-1%>">&laquo;</a>
+    </li>
+    <%}%>
+    <% for (int i = bp.getStartPage(); i <= bp.getEndPage() ; i++) {
+		if (i == bp.getNowPage()) { %>
     <li class="page-item active">
-      <a class="page-link" href="#">1</a>
+      <b class="page-link"><%=i%></b>      
     </li>
+    <%} else { %>
     <li class="page-item">
-      <a class="page-link" href="#">2</a>
+      <a class="page-link" href="BoardPaging?pageNum=<%=i%>"><%=i%></a>
     </li>
+    <%	}	} %>
+    <% if (bp.getNowPage() < bp.getTotalPage()) { %>
     <li class="page-item">
-      <a class="page-link" href="#">3</a>
+      <a class="page-link" href="BoardPaging?pageNum=<%=bp.getNowPage()+1%>">&raquo;</a>
     </li>
+    <%} %>
+    <%if (bp.getEndPage() < bp.getTotalPage()) { %>
     <li class="page-item">
-      <a class="page-link" href="#">4</a>
+      <a class="page-link" href="BoardPaging?pageNum=<%=bp.getTotalPage()%>">끝</a>
     </li>
-    <li class="page-item">
-      <a class="page-link" href="#">5</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">&raquo;</a>
-    </li>
+    <%} %>
   </ul>
 </div>
 
@@ -109,7 +132,7 @@
         <input class="form-control me-sm-2" type="text" placeholder="Search">
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
    </form>
-      
-	
+ 
+
 </body>
 </html>

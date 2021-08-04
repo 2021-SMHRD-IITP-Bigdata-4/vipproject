@@ -14,7 +14,10 @@ public class CommunityDAO {
 	ResultSet rs = null;
 	int cnt = 0;
 	CommunityDTO postDto = null;
+	CommunityDTO pageDto = null;
 	ArrayList<CommunityDTO> list = null;
+	ArrayList<CommunityDTO> pageList = null;
+	int totalCount = 0;
 	
 	public void conn() {
 		try {
@@ -114,12 +117,12 @@ public class CommunityDAO {
 				String user_id = rs.getString(3);
 				String display_name = rs.getString(4);
 				String post_sort = rs.getString(5);
-				String psot_title = rs.getString(6);
+				String post_title = rs.getString(6);
 				String post_memo = rs.getString(7);
 				String post_photo = rs.getString(8);
 				String post_date = rs.getString(9);
 				
-				postDto = new CommunityDTO(post_num, post_like_num, user_id, display_name, post_sort, psot_title, post_memo, post_photo, post_date);
+				postDto = new CommunityDTO(post_num, post_like_num, user_id, display_name, post_sort, post_title, post_memo, post_photo, post_date);
 			}
 			
 		} catch (SQLException e) {
@@ -167,4 +170,71 @@ public class CommunityDAO {
 		return cnt;
 	}
 	
+	public int totalCount() {
+		conn();
+		String sql = "select count(*) as totalCount from community";
+		
+		try {
+			psmt = conn.prepareStatement(sql);
+			
+			rs = psmt.executeQuery();
+			
+			if(rs.next()) {
+				totalCount = rs.getInt(1);
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+				
+		return totalCount;
+	}
+	
+	public ArrayList<CommunityDTO> pagingBoard(int pageNum) {
+		conn();
+		String sql = "select X.* from ( select rownum as rnum, A.* from ( select * from community order by post_date desc) A where rownum <= ?) X where rnum >= ?";
+		int startNum = (pageNum*10) - 9;
+		int endNum = pageNum*10;
+		pageList = new ArrayList<CommunityDTO>();
+		try {
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, endNum);
+			psmt.setInt(2, startNum);
+			
+			rs = psmt.executeQuery();
+			
+			while(rs.next()) {
+				int post_num = rs.getInt(2);
+				int post_like_num =rs.getInt(3);
+				String user_id = rs.getString(4);
+				String display_name = rs.getString(5);
+				String post_sort = rs.getString(6);
+				String post_title = rs.getString(7);
+				String post_memo = rs.getString(8);
+				String post_photo = rs.getString(9);
+				String post_date = rs.getString(10);
+				
+				pageDto = new CommunityDTO(post_num, post_like_num, user_id, display_name, post_sort, post_title, post_memo, post_photo, post_date);
+				
+				pageList.add(pageDto);
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		
+		return pageList;
+		
+		
+		
+	}
+	
 }
+
+
+
+
+
+
