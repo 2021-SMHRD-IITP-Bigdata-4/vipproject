@@ -1,8 +1,9 @@
 <%@page import="Model.VipMemberDTO"%>
-<%@page import="Model.CommunityDTO"%>
-<%@page import="Model.CommunityDAO"%>
+<%@page import="Model.BoardDTO"%>
+<%@page import="Model.BoardDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,12 +13,11 @@
 </head>
 <body>
 
-<% 
-	String post_num = request.getParameter("post_num");
-	CommunityDAO dao = new CommunityDAO();
-	CommunityDTO dto = dao.selectOne(post_num);
+<%
+    String post_num = request.getParameter("post_num");
+	BoardDAO dao = new BoardDAO();
+	BoardDTO dto = dao.selectOne(post_num);
 	VipMemberDTO info = (VipMemberDTO)session.getAttribute("info");
-	
 %>
 <!-- 게시글 -->
 <table class="table table-hover">
@@ -53,20 +53,21 @@
 </table>
 <!-- 추천 기능 -->
 <div>
-	<button type="button" class="btn btn-outline-success">좋아요</button>
-	<button type="button" class="btn btn-outline-danger">싫어요</button>	
+	<button type="button" class="btn btn-outline-success" id = "likeButton">좋아요 <span>0</span></button>
+	<button type="button" class="btn btn-outline-danger" id = "hateButton">싫어요 <span>0</span></button>	
 </div>
 
 <!-- 댓글 기능 -->
-<table class="table table-hover">
+<table class="table table-hover" id = "commentList">
   <tbody>
 	<tr>
-	  <td colspan = "3">content</td>
+  	  <th>writer</th>
+	  <td colspan = "2">content</td>
 	</tr>
   </tbody>
 </table>
 <div class="form-group">
-  <label for="exampleTextarea" class="form-label mt-4">댓글 작성</label>
+  <label for="exampleTextarea" class="form-label mt-4">댓글 (<span id = "commentCnt"></span>)</label>
   <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
   <button type="button" class="btn btn-success">등록</button>
 </div>
@@ -76,6 +77,7 @@
 <% if (info != null){ %>
 <a href = "boardWrite.jsp"><button type="button" class="btn btn-dark">글쓰기</button></a>
  <%} %>
+
 
 </body>
 </html>

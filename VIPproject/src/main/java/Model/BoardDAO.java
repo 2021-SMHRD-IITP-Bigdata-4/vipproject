@@ -7,14 +7,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class CommunityDAO {
+public class BoardDAO {
 
 	Connection conn = null;
 	PreparedStatement psmt = null;
 	ResultSet rs = null;
 	int cnt = 0;
-	CommunityDTO postDto = null;
-	ArrayList<CommunityDTO> list = null;
+	BoardDTO postDto = null;
+	BoardDTO pageDto = null;
+	ArrayList<BoardDTO> list = null;
+	ArrayList<BoardDTO> pageList = null;
+	int totalCount = 0;
 	
 	public void conn() {
 		try {
@@ -44,9 +47,9 @@ public class CommunityDAO {
 		}
 	}
 	
-	public int insertBoard(CommunityDTO dto) {
+	public int insertBoard(BoardDTO dto) {
 		conn();
-		String sql = "insert into community values(community_SEQ.nextval, post_like_SEQ.nextval,?,?,?,?,?,?, sysdate)";
+		String sql = "insert into community values(community_SEQ.nextval,?,?,?,?,?,?, sysdate)";
 		try {
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getUser_id());
@@ -66,10 +69,10 @@ public class CommunityDAO {
 		return cnt;
 	}
 	
-	public ArrayList<CommunityDTO> selectAll() {
+	public ArrayList<BoardDTO> selectAll() {
 		conn();
 		String sql = "select * from community";
-		list = new ArrayList<CommunityDTO>();
+		list = new ArrayList<BoardDTO>();
 		try {
 			psmt = conn.prepareStatement(sql);
 			
@@ -77,16 +80,15 @@ public class CommunityDAO {
 			
 			while(rs.next()) {
 				int post_num = rs.getInt(1);
-				int post_like_num =rs.getInt(2);
-				String user_id = rs.getString(3);
-				String display_name = rs.getString(4);
-				String post_sort = rs.getString(5);
-				String psot_title = rs.getString(6);
-				String post_memo = rs.getString(7);
-				String post_photo = rs.getString(8);
-				String post_date = rs.getString(9);
+				String user_id = rs.getString(2);
+				String display_name = rs.getString(3);
+				String post_sort = rs.getString(4);
+				String psot_title = rs.getString(5);
+				String post_memo = rs.getString(6);
+				String post_photo = rs.getString(7);
+				String post_date = rs.getString(8);
 				
-				postDto = new CommunityDTO(post_num, post_like_num, user_id, display_name, post_sort, psot_title, post_memo, post_photo, post_date);
+				postDto = new BoardDTO(post_num, user_id, display_name, post_sort, psot_title, post_memo, post_photo, post_date);
 				
 				list.add(postDto);
 			}	
@@ -99,7 +101,7 @@ public class CommunityDAO {
 		return list;
 	}
 	
-	public CommunityDTO selectOne(String num) {
+	public BoardDTO selectOne(String num) {
 		conn();
 		String sql = "select * from community where post_num = ?";
 		try {
@@ -110,16 +112,15 @@ public class CommunityDAO {
 			
 			if(rs.next()) {
 				int post_num = rs.getInt(1);
-				int post_like_num =rs.getInt(2);
-				String user_id = rs.getString(3);
-				String display_name = rs.getString(4);
-				String post_sort = rs.getString(5);
-				String psot_title = rs.getString(6);
-				String post_memo = rs.getString(7);
-				String post_photo = rs.getString(8);
-				String post_date = rs.getString(9);
+				String user_id = rs.getString(2);
+				String display_name = rs.getString(3);
+				String post_sort = rs.getString(4);
+				String post_title = rs.getString(5);
+				String post_memo = rs.getString(6);
+				String post_photo = rs.getString(7);
+				String post_date = rs.getString(8);
 				
-				postDto = new CommunityDTO(post_num, post_like_num, user_id, display_name, post_sort, psot_title, post_memo, post_photo, post_date);
+				postDto = new BoardDTO(post_num, user_id, display_name, post_sort, post_title, post_memo, post_photo, post_date);
 			}
 			
 		} catch (SQLException e) {
@@ -146,7 +147,7 @@ public class CommunityDAO {
 		return cnt;
 	}
 	
-	public int updateBoard(CommunityDTO dto) {
+	public int updateBoard(BoardDTO dto) {
 		conn();
 		String sql = "update community set post_sort =?, post_title=?, post_memo=?, post_photo=?, post_date=sysdate where post_num = ?";
 		try {
@@ -167,4 +168,70 @@ public class CommunityDAO {
 		return cnt;
 	}
 	
+	public int totalCount() {
+		conn();
+		String sql = "select count(*) as totalCount from community";
+		
+		try {
+			psmt = conn.prepareStatement(sql);
+			
+			rs = psmt.executeQuery();
+			
+			if(rs.next()) {
+				totalCount = rs.getInt(1);
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+				
+		return totalCount;
+	}
+	
+	public ArrayList<BoardDTO> pagingBoard(int pageNum) {
+		conn();
+		String sql = "select X.* from ( select rownum as rnum, A.* from ( select * from community order by post_date desc) A where rownum <= ?) X where rnum >= ?";
+		int startNum = (pageNum*10) - 9;
+		int endNum = pageNum*10;
+		pageList = new ArrayList<BoardDTO>();
+		try {
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, endNum);
+			psmt.setInt(2, startNum);
+			
+			rs = psmt.executeQuery();
+			
+			while(rs.next()) {
+				int post_num = rs.getInt(2);
+				String user_id = rs.getString(3);
+				String display_name = rs.getString(4);
+				String post_sort = rs.getString(5);
+				String post_title = rs.getString(6);
+				String post_memo = rs.getString(7);
+				String post_photo = rs.getString(8);
+				String post_date = rs.getString(9);
+				
+				pageDto = new BoardDTO(post_num, user_id, display_name, post_sort, post_title, post_memo, post_photo, post_date);
+				
+				pageList.add(pageDto);
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		
+		return pageList;
+		
+		
+		
+	}
+	
 }
+
+
+
+
+
+

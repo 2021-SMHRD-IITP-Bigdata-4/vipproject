@@ -1,5 +1,5 @@
-<%@page import="Model.CommunityDAO"%>
-<%@page import="Model.CommunityDTO"%>
+<%@page import="Model.BoardDAO"%>
+<%@page import="Model.BoardDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -15,10 +15,10 @@
 	}	
 </style>
 <body>
-	<% 
-		String post_num = request.getParameter("post_num");
-		CommunityDAO dao = new CommunityDAO();
-		CommunityDTO dto = dao.selectOne(post_num);
+	<%
+	String post_num = request.getParameter("post_num");
+		BoardDAO dao = new BoardDAO();
+		BoardDTO dto = dao.selectOne(post_num);
 	%>
 <!-- е╦ют -->
 <form action="BoardUpdateService?post_num=<%=post_num%>" method="post" enctype="multipart/form-data">

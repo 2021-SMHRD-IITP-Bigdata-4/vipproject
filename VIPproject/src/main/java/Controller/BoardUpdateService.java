@@ -1,5 +1,6 @@
 package Controller;
 
+
 import java.io.IOException;
 import java.net.URLEncoder;
 
@@ -13,8 +14,8 @@ import javax.servlet.http.HttpSession;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
-import Model.CommunityDAO;
-import Model.CommunityDTO;
+import Model.BoardDAO;
+import Model.BoardDTO;
 import Model.VipMemberDTO;
 
 @WebServlet("/BoardUpdateService")
@@ -46,8 +47,8 @@ public class BoardUpdateService extends HttpServlet {
 		String post_title = multi.getParameter("post_title");
 		String post_memo = multi.getParameter("post_memo");
 		
-		CommunityDTO dto = new CommunityDTO(post_num ,user_id, display_name, post_sort, post_title, post_memo, post_photo);
-		CommunityDAO dao = new CommunityDAO();
+		BoardDTO dto = new BoardDTO(post_num ,user_id, display_name, post_sort, post_title, post_memo, post_photo);
+		BoardDAO dao = new BoardDAO();
 		
 		int cnt = dao.updateBoard(dto);
 		

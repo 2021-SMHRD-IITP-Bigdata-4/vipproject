@@ -1,5 +1,6 @@
 package Controller;
 
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import Model.CommunityDAO;
+import Model.BoardDAO;
 
 @WebServlet("/BoardDeleteService")
 public class BoardDeleteService extends HttpServlet {
@@ -16,7 +17,7 @@ public class BoardDeleteService extends HttpServlet {
 		
 		String post_num = request.getParameter("post_num");
 		
-		CommunityDAO dao = new CommunityDAO();
+		BoardDAO dao = new BoardDAO();
 		int cnt = dao.deleteOne(post_num);
 		
 		if (cnt>0) {
