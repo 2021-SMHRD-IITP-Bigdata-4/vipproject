@@ -1,6 +1,6 @@
 package Model;
 
-public class BoardPage {
+public class BoardPaging {
 
 	private int totalCount;
 	private int countList; 
@@ -10,7 +10,7 @@ public class BoardPage {
 	private int	startPage;
 	private int endPage;
 	
-	public BoardPage(int totalCount, int countList, int countPage, int nowPage) {
+	public BoardPaging(int totalCount, int countList, int countPage, int nowPage) {
 		this.totalCount = totalCount;
 		this.countList = countList;
 		this.countPage = countPage;

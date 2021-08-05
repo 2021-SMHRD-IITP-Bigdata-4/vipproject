@@ -1,7 +1,7 @@
-<%@page import="Model.BoardPage"%>
+<%@page import="Model.BoardPaging"%>
 <%@page import="Model.VipMemberDTO"%>
-<%@page import="Model.CommunityDAO"%>
-<%@page import="Model.CommunityDTO"%>
+<%@page import="Model.BoardDAO"%>
+<%@page import="Model.BoardDTO"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
@@ -23,22 +23,20 @@
 </style>
 <body>
 
-	<% 
-	
-	CommunityDAO dao = new CommunityDAO();
-	VipMemberDTO info = (VipMemberDTO)session.getAttribute("info");
-	
-	int pageNum = 1;
-	if(request.getParameter("pageNum") != null) {
-		pageNum = Integer.parseInt(request.getParameter("pageNum"));		
-	}
-	
-	int totalCount = dao.totalCount(); 	
-	BoardPage bp = new BoardPage(totalCount,10,10,pageNum);
-	bp.pagingCount();	
-	
-	ArrayList<CommunityDTO> list = dao.pagingBoard(pageNum);
-	
+	<%
+			BoardDAO dao = new BoardDAO();
+			VipMemberDTO info = (VipMemberDTO)session.getAttribute("info");
+			
+			int pageNum = 1;
+			if(request.getParameter("pageNum") != null) {
+			pageNum = Integer.parseInt(request.getParameter("pageNum"));		
+			}
+			
+			int totalCount = dao.totalCount(); 	
+			BoardPaging bp = new BoardPaging(totalCount,10,10,pageNum);
+			bp.pagingCount();	
+			
+			ArrayList<BoardDTO> list = dao.pagingBoard(pageNum);
 	%>
 	
 <h4>자유 게시판</h4>

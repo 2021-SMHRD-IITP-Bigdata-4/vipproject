@@ -1,6 +1,6 @@
 package Model;
 
-public class CommunityDTO {
+public class BoardDTO {
 
 	private int post_num;
 	private String user_id;
@@ -11,7 +11,7 @@ public class CommunityDTO {
 	private String post_photo;
 	private String post_date;
 	
-	public CommunityDTO(int post_num, String user_id, String display_name, String post_sort,
+	public BoardDTO(int post_num, String user_id, String display_name, String post_sort,
 			String post_title, String post_memo, String post_photo, String post_date) {
 		this.post_num = post_num;
 		this.user_id = user_id;
@@ -23,7 +23,7 @@ public class CommunityDTO {
 		this.post_date = post_date;
 	}
 	
-	public CommunityDTO(String user_id, String display_name, String post_sort, String post_title, String post_memo,
+	public BoardDTO(String user_id, String display_name, String post_sort, String post_title, String post_memo,
 			String post_photo) {
 		this.user_id = user_id;
 		this.display_name = display_name;
@@ -35,7 +35,7 @@ public class CommunityDTO {
 	
 	
 	
-	public CommunityDTO(int post_num, String user_id, String display_name, String post_sort, String post_title,
+	public BoardDTO(int post_num, String user_id, String display_name, String post_sort, String post_title,
 			String post_memo, String post_photo) {
 		
 		this.post_num = post_num;
