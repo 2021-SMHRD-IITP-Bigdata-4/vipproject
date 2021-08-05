@@ -6,7 +6,6 @@
 <head>
 <meta charset="EUC-KR">
 <title>애견동반숙박</title>
-
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -179,13 +178,11 @@
 	  </div>
      </div>
 
+	<div id="map" style="width:100%;height:500px;"></div>
+	
+	<input type="button" value="숙소">
 	
 	<script src="js/jquery-3.6.0.min.js"></script>
-	<script src="assets/js/jquery-1.11.0.min.js"></script>
-	<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a243ec3aa0d2e63578927b17e122deb3&libraries=clusterer"></script>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a243ec3aa0d2e63578927b17e122deb3"></script>
 	<script>
@@ -218,7 +215,7 @@
 		
 		
 		
-		$("#room").ready(function() {
+		$("input").on("click", function() {
 			$.ajax({
 				url : "room",//똑같은 프로젝트 폴더 내부에서는 url mapping값만 가지고 이동가능
 				dataType : "json",
