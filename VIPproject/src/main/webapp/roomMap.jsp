@@ -33,7 +33,7 @@
     	text-align: left;
     }
     .faciti1{
-    	font-size: 18px!important;
+    	font-size: 16px!important;
     	font-weight: bold;
     }
     table {
@@ -178,25 +178,28 @@
 	  </div>
      </div>
 
-	<div id="map" style="width:100%;height:500px;"></div>
-	
-	<input type="button" value="숙소">
-	
 	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+	<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a243ec3aa0d2e63578927b17e122deb3&libraries=clusterer"></script>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a243ec3aa0d2e63578927b17e122deb3"></script>
 	<script>
 	
 	//검색기능(사용자가 검색하는 글자로 도로명주소를 추려준다)
- 	$(document).ready(function() {
-   		$("#search").keyup(function() {
-   	 	var k = $(this).val();
-   	 	$("#user-table > tbody > tr").hide();
-   	 	var temp = $("#user-table > tbody > tr > td:nth-child(3n+2):contains('" + k + "')");
-		
-   	 	$(temp).parent().show();
-    	})
-	});	
+ 	//검색기능(사용자가 지역을 검색하면 리스트 추려주기)
+	 $(document).ready(function() {
+         $("#search").keyup(function() {
+        	 window.scrollBy(0,0) //스크롤 값을 막는다
+        	 var k = $(this).val();
+        	 $("#user-table > tbody > tr").hide();
+        	 var temp = $("#user-table > tbody > tr > td:nth-child(3n+2):contains('" + k + "')");
+			
+        	 $(temp).parent().show();
+         })
+     })
 		
 		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     	mapOption = { 
@@ -215,16 +218,17 @@
 		
 		
 		
-		$("input").on("click", function() {
+		
+		$("#room").ready(function() {
 			$.ajax({
 				url : "room",//똑같은 프로젝트 폴더 내부에서는 url mapping값만 가지고 이동가능
 				dataType : "json",
 				contentType : "application/json; charset=utf-8",
 				success : function(data) {
-					//console.log(data);
+					/* console.log(data); */
 					
 					var list = {data};
-					console.log(list);
+					//console.log(list);
 					
 					var markers = list.data.map(function(i, position) {
 						
@@ -249,13 +253,13 @@
 						return maks;
 					 	
 			        });
+						
 					
 					var clusterer = new kakao.maps.MarkerClusterer({
 				        map: map, // 마커들을 클러스터로 관리하고 표시할 지도 객체 
 				        averageCenter: true, // 클러스터에 포함된 마커들의 평균 위치를 클러스터 마커 위치로 설정 
 				        minLevel: 10 // 클러스터 할 최소 지도 레벨 
 				    });
-					
 					 	kakao.maps.event.addListener(clusterer, 'clusterclick', function(cluster) {
 					        // 현재 지도 레벨에서 1레벨 확대한 레벨
 					        var level = map.getLevel()-1;
@@ -278,6 +282,7 @@
 					            infowindow.close();
 					        };
 					    }
+					 	
 					 	//시설 리스트 뽑기
 					 	buildTable(data)
 					 	function buildTable(result) {

@@ -33,7 +33,7 @@
     	text-align: left;
     }
     .faciti1{
-    	font-size: 18px!important;
+    	font-size: 16px!important;
     	font-weight: bold;
     }
     table {
