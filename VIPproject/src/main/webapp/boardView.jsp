@@ -78,79 +78,7 @@
 <a href = "boardWrite.jsp"><button type="button" class="btn btn-dark">글쓰기</button></a>
  <%} %>
 
-<script src = "js/jquery-3.6.0.min.js"></script>
-<script>
 
-// 댓글 등록 
-
-$('.btn.btn-success').on('click',function(){
-	let comment = $('#exampleTextarea').val();
-	$.ajax({
-		url: 'CommentAddService',
-		type: 'post',
-		data: {
-			comment : comment,
-			post_num : <%= post_num %>
-			},
-		success: function(result){
-			if (result > 0){
-				getCommentList();		
-			}
-		},
-		error: function(){
-			alert("등록 실패")
-		}
-	})
-});
-	
-// 페이지 로딩 시 댓글 불러오기
-// $(function(){}) 로 써도 됨
-$(document).ready(function(){ 
-	getCommentList();
-});
-	
-// 댓글 불러오기 (ajax)
-function getCommentList(){
-	let comment = $('#exampleTextarea').val();	
-	$.ajax({
-		url: 'CommentListService',
-		type: 'get',
-		dataType: 'json',
-		data: {
-			comment : comment,
-			post_num : <%= post_num %>
-			},
-		success: function(result){
-			let html = "";
-			let commentCnt = result.length;
-			
-			if (result.length > 0){
-				for (let i = 0; i<data.length; i++){
-					html += "<tr>";
-					html += "<th>"+result[i].getUser_id+"</th>";
-					html += "<td>"+result[i].getReply_memo+"</td>";
-					html += "</tr>";
-				}
-			} else {
-					html += "<tr>";
-					html += "<td>등록된 댓글이 없습니다.</td>";
-					html += "</tr>";				
-			}
-			
-			$("#commentCnt").html(commentCnt);
-			$("#commentList").html(html);
-		},
-		
-		error: function(){
-			alert("error");
-		}
-		
-	})
-	
-}
-
-
-</script>
 
 </body>
 </html>
