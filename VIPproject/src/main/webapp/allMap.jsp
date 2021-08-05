@@ -20,6 +20,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     
+    <style type="text/css">
+    .faciti{
+    	font-size: 15px;
+    	padding-top: 10px;
+    	text-align: left;
+    }
+    .faciti1{
+    	font-size: 18px!important;
+    	font-weight: bold;
+    }
+    table {
+    	width: 330px;
+    	border-collapse: collapse;
+    }
+   th{text-align:left;}
+   td{
+   padding: 5px;
+   }
+    
+    
+    </style>
 </head>
 <body>
 	<% 
@@ -31,7 +52,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">Zay</a>
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">vip</a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -99,23 +120,24 @@
             </form>
         </div>
     </div>
+    
     <!-- Start Content -->
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-3">
-                <h1 class="h2 pb-4">애견동반시설</h1>
                 <table class="list-unstyled templatemo-accordion">
                 	<tr>
-                      <td style="float:left;margin-left:5px"><a id="room" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="roomMap.jsp"><span>숙박</span></a></td>
-                      <td style="float:left;margin-left:30px;"><a id="cafe" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="cafeMap.jsp"><span>카페</span></a></td>
-                      <td style="float:left;margin-left:30px;"><a id="rastaurant" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="rastaurantMap.jsp"><span>식당</span></a></td>
+                	  <th class="h2 pb-4"><span class="faciti1">애견동반시설</span></th>
+                      <td style="float:left;margin-left:30px"><a id="room" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="roomMap.jsp"><span class="faciti">숙박</span></a></td>
+                      <td style="float:left;margin-left:30px;"><a id="cafe" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="cafeMap.jsp"><span class="faciti">카페</span></a></td>
+                      <td style="float:left;margin-left:30px;"><a id="rastaurant" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="rastaurantMap.jsp"><span class="faciti">식당</span></a></td>
                     </tr>
                </table>
             </div>
             <br>
-    
-	<div class="map" id="map" style="width:80%;height:600px; display:inline;"></div>
-	
+	<div class="map" id="map" style="width:100%!important;height:600px; display:inline;"></div>
+	</div>
+	</div>
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="assets/js/jquery-1.11.0.min.js"></script>
 	<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
@@ -147,7 +169,7 @@
 				dataType : "json",
 				contentType : "application/json; charset=utf-8",
 				success : function(data) {
-					//console.log(data);
+					console.log(data);
 					
 					var list = {data};
 					//console.log(list);
@@ -173,6 +195,7 @@
 						daum.maps.event.addListener(maks, 'click', makeOverListener(map, maks, infowindow));
 						
 						return maks;
+						
 					 	
 			        });
 					
@@ -208,6 +231,7 @@
 				});
 			});
 		
+		 	
 	</script>
 </body>
 </html>

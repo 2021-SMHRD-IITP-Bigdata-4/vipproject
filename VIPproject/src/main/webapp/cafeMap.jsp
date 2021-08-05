@@ -1,3 +1,4 @@
+<%@page import="Model.VipMemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -17,18 +18,62 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 
     <!-- Load fonts style after rendering the layout styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    
+    <style type="text/css">
+    .user-table{
+    	width: 100%!important;
+    	border-collapse: collapse;
+    	font-size: 5px;
+    	
+    }
+    .faciti{
+    	font-size: 15px;
+    	padding-top: 10px;
+    	text-align: left;
+    }
+    .faciti1{
+    	font-size: 18px!important;
+    	font-weight: bold;
+    }
+    table {
+    	width: 330px;
+    	border-collapse: collapse;
+    	}
+    th{
+    	padding-bottom: 5px;
+    }
+    td{
+   		padding: 6px;
+   		}
+	.fac-name{
+		width:80px;
+    	padding: 2px;
+		}
+	.fac-address{
+		width:150px;
+    	padding: 2px;
+		}
+	.fac-intro{
+		width:80px;
+		padding: 2px;
+		
+		}
+	.intro{
+		font-size: 10px;
+	}
+    </style>
     
 </head>
 <body>
-	
+	<% 
+		VipMemberDTO info = (VipMemberDTO)session.getAttribute("info"); 
+	%>
 	
 	<!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">Zay</a>
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">vip</a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,7 +92,7 @@
                             <a class="nav-link" href="shop.jsp">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a id="allMap"class="nav-link" href="allMap.jsp">애견동반시설</a>
+                            <a id="allMap"class="nav-link" href="allMap.jsp">애견동반 서비스</a>
                         </li>
                     </ul>
                 </div>
@@ -67,12 +112,15 @@
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
+                    <%if (info != null){ %>                   
                     	<a href = "userUpdate.jsp">개인정보수정</a> <br>                  	
                     	<a href = "Logout">로그아웃</a>
+                    <%} else {%>
                     <a class="nav-icon position-relative text-decoration-none" href="login.jsp">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                     </a>
+                    <%}%>
                 </div>
             </div>
 
@@ -96,30 +144,40 @@
     <!-- Start Content -->
     <div class="container py-5">
         <div class="row">
-
             <div class="col-lg-3">
-                <h1 class="h2 pb-4">애견동반시설</h1>
-                <ul class="list-unstyled templatemo-accordion">
-                    
-                        <a id="room" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="roomMap.jsp">
-                            <span>숙박</span>
-                        </a>
-                   
-                    
-                        <a id="cafe" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="cafeMap.jsp">
-                           <span>카페</span>
-                        </a>
-                   
-                    
-                        <a id="rastaurant" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="rastaurantMap.jsp">
-                            <span>식당</span>
-                        </a>
-                   
-                </ul>
+                <table class="list-unstyled templatemo-accordion">
+                	<tr>
+                	  <th class="h2 pb-4"><span class="faciti1">애견동반시설</span></th>
+                      <td class="fac-sort"style="float:left;margin-left:30px"><a id="room" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="roomMap.jsp"><span class="faciti">숙박</span></a></td>
+                      <td class="fac-sort"style="float:left;margin-left:30px;"><a id="cafe" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="cafeMap.jsp"><span class="faciti">카페</span></a></td>
+                      <td class="fac-sort"style="float:left;margin-left:30px;"><a id="rastaurant" class="collapsed d-flex justify-content-between h3 text-decoration-none" href="rastaurantMap.jsp"><span class="faciti">식당</span></a></td>
+                    </tr>
+               </table>
             </div>
-    
-	<div class="map" id="map" style="width:75%;height:600px; display:inline;"></div>
+            
+	<div class="map" id="map" style="width:100%!important;height:450px; display:inline;"></div>
+	<p></p> <!--공간 벌려주기  -->
+	  <div id="search-form">
+      <label>카페시설: <input type="text" id="search" placeholder="지역을 검색하세요."></label>
+      </div>
+      
+	 <div class="head">
+	   <table class="user-table"id="user-table">
+		 <thead>
+		  <tr> 
+			<th>시설이름</th>
+			<th>도로명주소</th>
+			<th>상세정보</th> 
+		  </tr>
+		  </thead>
+		  <tbody class="table1"id="table1"> 
+		  </tbody> 
+	    </table>
+	  </div>
+	  </div>
+      </div>
 	
+
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="assets/js/jquery-1.11.0.min.js"></script>
 	<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
@@ -129,6 +187,19 @@
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a243ec3aa0d2e63578927b17e122deb3&libraries=clusterer"></script>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a243ec3aa0d2e63578927b17e122deb3"></script>
 	<script>
+	
+	 //검색기능(사용자가 지역을 검색하면 리스트 추려주기)
+	 $(document).ready(function() {
+         $("#search").keyup(function() {
+        	 window.scrollBy(0,0) //스크롤 값을 막는다
+        	 var k = $(this).val();
+        	 $("#user-table > tbody > tr").hide();
+        	 var temp = $("#user-table > tbody > tr > td:nth-child(3n+2):contains('" + k + "')");
+			
+        	 $(temp).parent().show();
+         })
+     })
+	
 		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     	mapOption = { 
         center: new kakao.maps.LatLng(36.2683, 127.6358), // 지도의 중심좌표
@@ -208,6 +279,18 @@
 					            infowindow.close();
 					        };
 					    }
+					 	
+					 	//시설 리스트 뽑기
+					 	buildTable(data)
+					 	function buildTable(result) {
+					 		//console.log(result);
+					 		var table = document.getElementById('table1') 
+					 		for (var i=0; i < result.length; i++) {
+					 			var row = '<tr><td class="fac-name"><span">'+result[i].fac_name+'</span></td>'+
+					 			'<td class="fac-address"><span">'+result[i].fac_address+'</span></td>'+
+					 			'<td class="fac-intro"><a href="'+result[i].fac_intro+'"><span class="intro">'+result[i].fac_intro+'</span></a></td></tr>';
+					 			//console.log(row);
+					 			table.innerHTML += row; } }
 				    }
 				});
 			});
