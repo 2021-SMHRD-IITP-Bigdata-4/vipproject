@@ -3,7 +3,6 @@ package Model;
 public class CommunityDTO {
 
 	private int post_num;
-	private int post_like_num;
 	private String user_id;
 	private String display_name;
 	private String post_sort;
@@ -12,10 +11,9 @@ public class CommunityDTO {
 	private String post_photo;
 	private String post_date;
 	
-	public CommunityDTO(int post_num, int post_like_num, String user_id, String display_name, String post_sort,
+	public CommunityDTO(int post_num, String user_id, String display_name, String post_sort,
 			String post_title, String post_memo, String post_photo, String post_date) {
 		this.post_num = post_num;
-		this.post_like_num = post_like_num;
 		this.user_id = user_id;
 		this.display_name = display_name;
 		this.post_sort = post_sort;
@@ -57,14 +55,6 @@ public class CommunityDTO {
 
 	public void setPost_num(int post_num) {
 		this.post_num = post_num;
-	}
-
-	public int getPost_like_num() {
-		return post_like_num;
-	}
-
-	public void setPost_like_num(int post_like_num) {
-		this.post_like_num = post_like_num;
 	}
 
 	public String getUser_id() {

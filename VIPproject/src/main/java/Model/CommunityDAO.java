@@ -49,7 +49,7 @@ public class CommunityDAO {
 	
 	public int insertBoard(CommunityDTO dto) {
 		conn();
-		String sql = "insert into community values(community_SEQ.nextval, post_like_SEQ.nextval,?,?,?,?,?,?, sysdate)";
+		String sql = "insert into community values(community_SEQ.nextval,?,?,?,?,?,?, sysdate)";
 		try {
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getUser_id());
@@ -80,16 +80,15 @@ public class CommunityDAO {
 			
 			while(rs.next()) {
 				int post_num = rs.getInt(1);
-				int post_like_num =rs.getInt(2);
-				String user_id = rs.getString(3);
-				String display_name = rs.getString(4);
-				String post_sort = rs.getString(5);
-				String psot_title = rs.getString(6);
-				String post_memo = rs.getString(7);
-				String post_photo = rs.getString(8);
-				String post_date = rs.getString(9);
+				String user_id = rs.getString(2);
+				String display_name = rs.getString(3);
+				String post_sort = rs.getString(4);
+				String psot_title = rs.getString(5);
+				String post_memo = rs.getString(6);
+				String post_photo = rs.getString(7);
+				String post_date = rs.getString(8);
 				
-				postDto = new CommunityDTO(post_num, post_like_num, user_id, display_name, post_sort, psot_title, post_memo, post_photo, post_date);
+				postDto = new CommunityDTO(post_num, user_id, display_name, post_sort, psot_title, post_memo, post_photo, post_date);
 				
 				list.add(postDto);
 			}	
@@ -113,16 +112,15 @@ public class CommunityDAO {
 			
 			if(rs.next()) {
 				int post_num = rs.getInt(1);
-				int post_like_num =rs.getInt(2);
-				String user_id = rs.getString(3);
-				String display_name = rs.getString(4);
-				String post_sort = rs.getString(5);
-				String post_title = rs.getString(6);
-				String post_memo = rs.getString(7);
-				String post_photo = rs.getString(8);
-				String post_date = rs.getString(9);
+				String user_id = rs.getString(2);
+				String display_name = rs.getString(3);
+				String post_sort = rs.getString(4);
+				String post_title = rs.getString(5);
+				String post_memo = rs.getString(6);
+				String post_photo = rs.getString(7);
+				String post_date = rs.getString(8);
 				
-				postDto = new CommunityDTO(post_num, post_like_num, user_id, display_name, post_sort, post_title, post_memo, post_photo, post_date);
+				postDto = new CommunityDTO(post_num, user_id, display_name, post_sort, post_title, post_memo, post_photo, post_date);
 			}
 			
 		} catch (SQLException e) {
@@ -205,16 +203,15 @@ public class CommunityDAO {
 			
 			while(rs.next()) {
 				int post_num = rs.getInt(2);
-				int post_like_num =rs.getInt(3);
-				String user_id = rs.getString(4);
-				String display_name = rs.getString(5);
-				String post_sort = rs.getString(6);
-				String post_title = rs.getString(7);
-				String post_memo = rs.getString(8);
-				String post_photo = rs.getString(9);
-				String post_date = rs.getString(10);
+				String user_id = rs.getString(3);
+				String display_name = rs.getString(4);
+				String post_sort = rs.getString(5);
+				String post_title = rs.getString(6);
+				String post_memo = rs.getString(7);
+				String post_photo = rs.getString(8);
+				String post_date = rs.getString(9);
 				
-				pageDto = new CommunityDTO(post_num, post_like_num, user_id, display_name, post_sort, post_title, post_memo, post_photo, post_date);
+				pageDto = new CommunityDTO(post_num, user_id, display_name, post_sort, post_title, post_memo, post_photo, post_date);
 				
 				pageList.add(pageDto);
 			}
