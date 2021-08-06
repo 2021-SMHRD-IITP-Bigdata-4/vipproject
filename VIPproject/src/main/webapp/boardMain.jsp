@@ -1,3 +1,4 @@
+<%@page import="Model.CommentDAO"%>
 <%@page import="Model.BoardPage"%>
 <%@page import="Model.VipMemberDTO"%>
 <%@page import="Model.BoardDAO"%>
@@ -24,7 +25,7 @@
 <body>
 
 	<%
-	BoardDAO dao = new BoardDAO();
+		BoardDAO dao = new BoardDAO();
 		VipMemberDTO info = (VipMemberDTO)session.getAttribute("info");
 		
 		int pageNum = 1;
@@ -37,6 +38,8 @@
 		bp.pagingCount();	
 		
 		ArrayList<BoardDTO> list = dao.pagingBoard(pageNum);
+		
+		CommentDAO cDao = new CommentDAO();
 	%>
 	
 <h4>자유 게시판</h4>
@@ -44,6 +47,7 @@
       <!-- 타입 선택 -->
       <label for="exampleSelect1" class="form-label mt-4">Type</label>
       <select class="form-select" id="exampleSelect1" name = "post_sort">
+        <option value = "전체">전체</option>
         <option value = "강아지">강아지</option>
         <option value = "법과정책">법과정책</option>
         <option value = "동반시설">동반시설</option>
@@ -76,7 +80,7 @@
       <td><a href = "boardView.jsp?post_num=<%=list.get(i).getPost_num()%>"><%= list.get(i).getPost_title()%></a></td>
       <td><%= list.get(i).getDisplay_name()%></td>
       <td><%= list.get(i).getPost_date()%></td>
-      <td>댓글 수</td>
+      <td>댓글 <%= cDao.countComment(list.get(i).getPost_num()) %></td>
       <td>좋아요 수</td>      
     </tr>
      <%} }%>

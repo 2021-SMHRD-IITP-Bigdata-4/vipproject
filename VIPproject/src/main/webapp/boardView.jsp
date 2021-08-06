@@ -37,7 +37,7 @@
       	<th scope = "col">삭제 불가</th>
       <%} %>
       <th scope="col">좋아요 수</th>
-      <th scope="col">댓글 수</th>
+      <th scope="col">댓글 (<span class = "commentCnt"></span>)</th>
     </tr>
   </thead>
     <tbody>
@@ -58,16 +58,16 @@
 </div>
 
 <!-- 댓글 기능 -->
-<table class="table table-hover" id = "commentList">
-  <tbody>
-	<tr>
-  	  <th>writer</th>
-	  <td colspan = "2">content</td>
-	</tr>
-  </tbody>
-</table>
 <div class="form-group">
-  <label for="exampleTextarea" class="form-label mt-4">댓글 (<span id = "commentCnt"></span>)</label>
+  <label for="exampleTextarea" class="form-label mt-4">댓글 (<span class = "commentCnt"></span>)</label>
+	<table class="table table-hover" >
+	  	<tbody id = "commentList">
+			<tr>
+  	  		  <th>writer</th>
+	  		  <td colspan = "2">content</td>
+			</tr>
+	  </tbody>
+	</table>
   <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
   <button type="button" class="btn btn-success">등록</button>
 </div>
@@ -78,6 +78,79 @@
 <a href = "boardWrite.jsp"><button type="button" class="btn btn-dark">글쓰기</button></a>
  <%} %>
 
+<script src = "js/jquery-3.6.0.min.js"></script>
+<script>
+// 댓글 작성
+$('.btn.btn-success').on('click',function(){
+	let comment = $('#exampleTextarea').val();
+	$.ajax({
+		url: 'CommentAddService',
+		type: 'post',
+		dataType : 'json',
+		data: {
+			comment : comment,
+			post_num : <%= post_num %>
+			},
+		success: function(result){
+			if (result > 0){
+				getCommentList();
+				$('#exampleTextarea').val("");
+				alert("등록 성공");
+			}
+		},
+		error: function(){
+			alert("등록 실패");
+		}
+	})
+});
+	
+// 페이지 로딩 시 댓글 불러오기
+$(document).ready(function(){ 
+	getCommentList();
+});
+	
+// 댓글 불러오기 
+function getCommentList(){
+	let comment = $('#exampleTextarea').val();	
+	$.ajax({
+		url: 'CommentListService',
+		type: 'get',
+		dataType : 'json',
+		data: {
+			comment : comment,
+			post_num : <%= post_num %>
+			},
+		success: function(result){
+			let html = "";
+			let commentCnt = result.length;
+			
+			if (result.length > 0){
+				for (let i = 0; i<result.length; i++){
+					html += "<tr>";
+					html += "<th>"+result[i].display_name+"</th>";
+					html += "<td>"+result[i].reply_memo+"</td>";
+					html += "</tr>";
+				}
+			} else {
+					html += "<tr>";
+					html += "<td>등록된 댓글이 없습니다.</td>";
+					html += "</tr>";				
+			}
+			
+			$(".commentCnt").html(commentCnt);
+			$("#commentList").html(html); 
+		},
+		
+		error: function(){
+			alert("error");
+		}
+		
+	})
+	
+}
+
+
+</script>
 
 </body>
 </html>
