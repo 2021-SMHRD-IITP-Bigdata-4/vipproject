@@ -61,7 +61,7 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container d-flex justify-content-between align-items-center">
 
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">
-                Zay
+                vip
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,19 +72,23 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.jsp">Home</a>
+                            <a class="nav-link" href="index.jsp">홈</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.jsp">About</a>
+                            <a class="nav-link" href="about.jsp">사이트 설명</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="boardMain.jsp">Community</a>
+                            <a class="nav-link" href="boardMain.jsp">커뮤니티</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.jsp">Shop</a>
+                            <a class="nav-link" href="shop.jsp">애견물품</a>
                         </li>
                         <li class="nav-item">
+                        <%if (info != null){  %>
                             <a class="nav-link" href="allMap.jsp">애견동반시설</a>
+                            <%}else{ %>
+                            <a class="nav-link" id="egun"href="login.jsp">애견동반시설</a>
+                            <%} %>
                         </li>
                     </ul>
                 </div>
@@ -442,6 +446,11 @@ https://templatemo.com/tm-559-zay-shop
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+     $("#egun").on("click",function(){
+    	 alert("로그인을 하신 후 이용해 주시기 바랍니다")
+     });
+    </script>
     <!-- End Script -->
 </body>
 
