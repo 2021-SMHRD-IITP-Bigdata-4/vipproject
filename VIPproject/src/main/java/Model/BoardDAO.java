@@ -129,12 +129,12 @@ public class BoardDAO {
 		return postDto;
 	}
 	
-	public int deleteOne(String post_num) {
+	public int deleteOne(int post_num) {
 		conn();
 		String sql = "delete from community where post_num = ?";
 		try {
 			psmt = conn.prepareStatement(sql);
-			psmt.setString(1, post_num);
+			psmt.setInt(1, post_num);
 			
 			cnt = psmt.executeUpdate();
 			

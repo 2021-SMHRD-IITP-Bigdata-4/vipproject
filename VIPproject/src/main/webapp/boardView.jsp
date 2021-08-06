@@ -69,7 +69,7 @@
 	  </tbody>
 	</table>
   <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-  <button type="button" class="btn btn-success">등록</button>
+  <button type="button" class="btn btn-success">댓글 등록</button>
 </div>
 
 <!-- 목록, 글쓰기 -->
@@ -99,7 +99,7 @@ $('.btn.btn-success').on('click',function(){
 			}
 		},
 		error: function(){
-			alert("등록 실패");
+			alert("로그인을 하신 후 이용해 주시기 바랍니다");
 		}
 	})
 });

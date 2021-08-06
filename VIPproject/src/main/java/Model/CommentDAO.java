@@ -117,6 +117,24 @@ public class CommentDAO {
 		return replyCount;
 	}
 	
+	public int deleteComment(int post_num) {
+		conn();
+		String sql = "delete from reply where post_num = ?";
+		try {
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, post_num);
+			
+			cnt = psmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return cnt;
+		
+	}
+	
 	
 	
 }
