@@ -33,12 +33,13 @@
 		if(request.getParameter("pageNum") != null) {
 		pageNum = Integer.parseInt(request.getParameter("pageNum"));		
 		}
-		
+		int countList = 20;
+		int countPage = 10;
 		int totalCount = dao.totalCount(); 	
-		BoardPage bp = new BoardPage(totalCount,10,10,pageNum);
+		BoardPage bp = new BoardPage(totalCount,countList,countPage,pageNum);
 		bp.pagingCount();	
 		
-		ArrayList<BoardDTO> list = dao.pagingBoard(pageNum);
+		ArrayList<BoardDTO> list = dao.pagingBoard(pageNum, countList);
 		
 		CommentDAO cDao = new CommentDAO();
 		LikeDAO lDao = new LikeDAO();

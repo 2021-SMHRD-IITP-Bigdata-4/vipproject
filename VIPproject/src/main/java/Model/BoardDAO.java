@@ -188,11 +188,11 @@ public class BoardDAO {
 		return totalCount;
 	}
 	
-	public ArrayList<BoardDTO> pagingBoard(int pageNum) {
+	public ArrayList<BoardDTO> pagingBoard(int pageNum, int countList) {
 		conn();
 		String sql = "select X.* from ( select rownum as rnum, A.* from ( select * from community order by post_date desc) A where rownum <= ?) X where rnum >= ?";
-		int startNum = (pageNum*10) - 9;
-		int endNum = pageNum*10;
+		int startNum = (pageNum*countList) - countList+1;
+		int endNum = pageNum*countList;
 		pageList = new ArrayList<BoardDTO>();
 		try {
 			psmt = conn.prepareStatement(sql);

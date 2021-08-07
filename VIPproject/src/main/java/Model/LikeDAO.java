@@ -117,7 +117,7 @@ public class LikeDAO {
 			rs = psmt.executeQuery();
 			
 			if (rs.next()) {
-				result = -1;				
+				result = -1;		
 			}
 			
 		} catch (SQLException e) {
