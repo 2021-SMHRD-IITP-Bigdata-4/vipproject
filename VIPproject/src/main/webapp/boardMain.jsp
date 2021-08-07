@@ -61,7 +61,7 @@
   <div class="form-group">
       <!-- 타입 선택 -->
       <label for="exampleSelect1" class="form-label mt-4">Type</label>
-      <select class="form-select" id="exampleSelect1" name = "post_sort">
+      <select class="form-select" id="typeSelectBox" name = "post_sort">
         <option value = "전체">전체</option>
         <option value = "강아지">강아지</option>
         <option value = "법과정책">법과정책</option>
@@ -70,6 +70,8 @@
         <option value = "자유">자유</option> 
       </select>  
     </div>
+    
+ <!-- 베스트 게시글 -->
 <table class="table table-hover">
   <thead>
     <tr>
@@ -103,7 +105,7 @@
       <th scope="col">Like</th>      
     </tr>
   </thead>
-  <tbody>
+  <tbody id = "boardList">
      <% if (list != null){ %>
      	<% for (int i = 0; i <list.size(); i++){ %>  
      <tr>
@@ -173,7 +175,40 @@
  
 <script src = "js/jquery-3.6.0.min.js"></script>
 <script>
-	
+	$('#typeSelectBox').on('change', function(){
+		let post_type = $(this).val();
+		/* console.log(post_type); */
+		$.ajax({
+			url:'BoardCategoryService',
+			type: 'post',
+			data:{post_type : post_type},
+			dataType:'json',
+			success: function(result){
+				let html = "";
+				if(result.length > 0){
+					for (let i = 0; i < result.length;i++){
+						html += "<tr>";
+						html += "<th scope='row' id = 'post_sort'>"+result[i].post_sort+"</th>";
+						html += "<td><a href = 'boardView.jsp?post_num="+ result[i].post_num +"'>"+result[i].post_title+"</a></td>";
+						html += "<td>"+result[i].display_name+"</td>";
+						html += "<td>"+result[i].post_date+"</td>";
+						html += "<td>댓글</td>"
+						html += "<td>좋아요</td>"
+						html += "</tr>";
+					
+					}
+		    
+					/* alert("전송 성공"); */					
+				}
+				
+				$('#boardList').html(html);			
+			},
+			error:function(){
+				alert("전송 실패");	
+			}			
+		})			
+		
+	})
 </script>
 
 </body>

@@ -16,9 +16,11 @@ public class BoardDAO {
 	BoardDTO postDto = null;
 	BoardDTO pageDto = null;
 	BoardDTO searchDto = null;
+	BoardDTO catDto = null;
 	ArrayList<BoardDTO> list = null;
 	ArrayList<BoardDTO> pageList = null;
 	ArrayList<BoardDTO> searchList = null;
+	ArrayList<BoardDTO> catList = null;
 	int totalCount = 0;
 	
 	public void conn() {
@@ -85,12 +87,12 @@ public class BoardDAO {
 				String user_id = rs.getString(2);
 				String display_name = rs.getString(3);
 				String post_sort = rs.getString(4);
-				String psot_title = rs.getString(5);
+				String post_title = rs.getString(5);
 				String post_memo = rs.getString(6);
 				String post_photo = rs.getString(7);
 				String post_date = rs.getString(8);
 				
-				postDto = new BoardDTO(post_num, user_id, display_name, post_sort, psot_title, post_memo, post_photo, post_date);
+				postDto = new BoardDTO(post_num, user_id, display_name, post_sort, post_title, post_memo, post_photo, post_date);
 				
 				list.add(postDto);
 			}	
@@ -275,8 +277,72 @@ public class BoardDAO {
 		return searchList;
 	}
 	
+	public ArrayList<BoardDTO> selectCat(String post_sort){
+		conn();
+		String sql = "select * from community where post_sort = ? order by post_date desc";				
+		catList = new ArrayList<BoardDTO>();
+		try {
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, post_sort);
+
+			rs = psmt.executeQuery();	
+			
+			while(rs.next()) {
+				int post_num = rs.getInt(1);
+				String user_id = rs.getString(2);
+				String display_name = rs.getString(3);
+				String post_sort2 = rs.getString(4);
+				String post_title = rs.getString(5);
+				String post_memo = rs.getString(6);
+				String post_photo = rs.getString(7);
+				String post_date = rs.getString(8);
+				
+				catDto = new BoardDTO(post_num, user_id, display_name, post_sort2, post_title, post_memo, post_photo, post_date);
+				
+				catList.add(catDto);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+				
+		return catList;
+	}
+	
+	public ArrayList<BoardDTO> selectAllCat(){
+		conn();
+		String sql = "select * from community order by post_date desc";				
+		catList = new ArrayList<BoardDTO>();
+		try {
+			psmt = conn.prepareStatement(sql);
+			rs = psmt.executeQuery();	
+			
+			while(rs.next()) {
+				int post_num = rs.getInt(1);
+				String user_id = rs.getString(2);
+				String display_name = rs.getString(3);
+				String post_sort2 = rs.getString(4);
+				String post_title = rs.getString(5);
+				String post_memo = rs.getString(6);
+				String post_photo = rs.getString(7);
+				String post_date = rs.getString(8);
+				
+				catDto = new BoardDTO(post_num, user_id, display_name, post_sort2, post_title, post_memo, post_photo, post_date);
+				
+				catList.add(catDto);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+				
+		return catList;
+	}
 }
 
+	
 
 
 
