@@ -1,3 +1,4 @@
+<%@page import="Model.LikeDAO"%>
 <%@page import="Model.CommentDAO"%>
 <%@page import="Model.BoardPage"%>
 <%@page import="Model.VipMemberDTO"%>
@@ -40,6 +41,7 @@
 		ArrayList<BoardDTO> list = dao.pagingBoard(pageNum);
 		
 		CommentDAO cDao = new CommentDAO();
+		LikeDAO lDao = new LikeDAO();
 	%>
 	
 <h4>자유 게시판</h4>
@@ -81,7 +83,7 @@
       <td><%= list.get(i).getDisplay_name()%></td>
       <td><%= list.get(i).getPost_date()%></td>
       <td>댓글 <%= cDao.countComment(list.get(i).getPost_num()) %></td>
-      <td>좋아요 수</td>      
+      <td>좋아요 <%= lDao.countLike(list.get(i).getPost_num()) %></td>      
     </tr>
      <%} }%>
    </tbody>

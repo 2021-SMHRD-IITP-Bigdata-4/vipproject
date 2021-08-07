@@ -1,3 +1,4 @@
+<%@page import="Model.LikeDAO"%>
 <%@page import="Model.VipMemberDTO"%>
 <%@page import="Model.BoardDTO"%>
 <%@page import="Model.BoardDAO"%>
@@ -18,6 +19,8 @@
 	BoardDAO dao = new BoardDAO();
 	BoardDTO dto = dao.selectOne(post_num);
 	VipMemberDTO info = (VipMemberDTO)session.getAttribute("info");
+	
+	LikeDAO ldao = new LikeDAO();
 %>
 <!-- 게시글 -->
 <table class="table table-hover">
@@ -36,8 +39,8 @@
       	<th scope = "col">수정 불가</th>
       	<th scope = "col">삭제 불가</th>
       <%} %>
-      <th scope="col">좋아요 수</th>
-      <th scope="col">댓글 (<span class = "commentCnt"></span>)</th>
+      <th scope="col">좋아요 <span class = "likeCnt"><%= ldao.countLike(Integer.parseInt(post_num)) %></span></th>
+      <th scope="col">댓글 <span class = "commentCnt"></span></th>
     </tr>
   </thead>
     <tbody>
@@ -53,8 +56,8 @@
 </table>
 <!-- 추천 기능 -->
 <div>
-	<button type="button" class="btn btn-outline-success" id = "likeButton">좋아요 <span>0</span></button>
-	<button type="button" class="btn btn-outline-danger" id = "hateButton">싫어요 <span>0</span></button>	
+	<button type="button" class="btn btn-outline-success" id = "likeButton">좋아요 <span class = "likeCnt"><%= ldao.countLike(Integer.parseInt(post_num)) %></span></button>
+	<button type="button" class="btn btn-outline-danger" id = "hateButton">싫어요 <span class = "hateCnt"><%= ldao.countHate(Integer.parseInt(post_num)) %></span></button>	
 </div>
 
 <!-- 댓글 기능 -->
@@ -80,6 +83,59 @@
 
 <script src = "js/jquery-3.6.0.min.js"></script>
 <script>
+// 좋아요 
+$('#likeButton').on('click', function(){
+	$.ajax({
+		url: 'BoardLikeAddService',
+		type: 'post',
+		dataType:'json',
+		data : {
+			post_num : <%=post_num%>,
+			like : 1,
+			hate : 0
+		},
+		success : function(result){
+			if(result>0){
+				alert('이 글을 좋아합니다');
+				$('.likeCnt').html(<%= ldao.countLike(Integer.parseInt(post_num)) %> + 1)
+			} else {
+				alert('이미 추천/비추천한 게시물입니다');
+			}
+		},
+		error : function(){
+			alert('로그인을 하신 후 이용해 주시기 바랍니다');
+		}
+		
+	})
+	
+});
+// 싫어요
+$('#hateButton').on('click', function(){
+	$.ajax({
+		url: 'BoardLikeAddService',
+		type: 'post',
+		dataType:'json',
+		data : {
+			post_num : <%=post_num%>,
+			like : 0,
+			hate : 1
+		},
+		success : function(result){
+			if(result>0){
+				alert('이 글을 싫어합니다');
+				$('.hateCnt').html(<%= ldao.countHate(Integer.parseInt(post_num)) %> + 1)
+			} else {
+				alert('이미 추천/비추천한 게시물입니다');
+			}
+		},
+		error : function(){
+			alert('로그인을 하신 후 이용해 주시기 바랍니다');
+		}
+		
+	})
+	
+});
+
 // 댓글 작성
 $('.btn.btn-success').on('click',function(){
 	let comment = $('#exampleTextarea').val();
