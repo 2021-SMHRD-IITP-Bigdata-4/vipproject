@@ -1,10 +1,13 @@
+<%@page import="Model.DogInfoDTO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="Model.DogInfoDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>VIP - Dog Information Page</title>
+    <title>about dog basic info</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,18 +25,23 @@
 </head>
 
 <body>
-    <!-- Header -->
+
+<!-- 개 목록 이 페이지에서 보여주기 위해 생성 -->
+
+<%
+	DogInfoDAO dao = new DogInfoDAO();
+	ArrayList<DogInfoDTO> list = dao.selectAll();
+
+%>
+	<!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
-
             <a class="navbar-brand text-success logo h1 align-self-center" href="about_dogInfo.jsp">
                 V.I.P.
             </a>
-
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
@@ -53,7 +61,7 @@
                             <a class="nav-link" href="boardMain.jsp">커뮤니티 게시판</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about_dogInfo.jsp">반려견 캘린더</a>
+                            <a class="nav-link" href="about_dogInfo.jsp">내 반려견 캘린더</a>
                         </li>
                     </ul>
                 </div>
@@ -72,64 +80,104 @@
     </nav>
     <!-- Close Header -->
 
-    <section class="bg-success py-5">
-        <div class="container">
-            <div class="row align-items-center py-5">
-                <div class="col-md-8 text-white">
-                    <p>
-                        내가 기르는 반려견은 어떤 아이일까요?
-                        어떤걸 좋아하고 어떨때 행복할까요?
-                        우리는 서로 알아가는게 필요해요
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/img/dog1_aboutDog-removebg-preview.png" alt="About Hero">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Close Banner -->
-
-    <!-- Start Section -->
-    <section class="container py-5">
+    <!-- Start Content -->
+    <div class="container py-5">
         <div class="row">
-            <div class="col-md-6 col-lg-3 pb-5">
-                <div class="h-100 py-5 services-icon-wap shadow">
-                    <div class="h1 text-success text-center"><img src="assets/img/dog (1).png" alt="About Hero"><!-- <i class="fa fa-truck fa-lg"></i> --></div>
-                    <h2 class="h5 mt-4 text-center">
-                     <a href="doginfo_basic1.jsp">기초 상식</a>
-                    </h2>
-                </div>
+            
+            <!-- 견종별 특징 목차  -->
+            <div class="col-lg-3">
+                <ul class="list-unstyled templatemo-accordion">
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            견종별 특징
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
+                        	
+                        	<%for(int i = 0;i<list.size();i++){ %> 
+                           	<li ><a class="text-decoration-none" id = "dogname" href="#tag_<%=i%>"><%=list.get(i).getT_type()%></a></li>
+                            <%}%>
+                            <li>
+                            	<a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">맨 위로 </a>
+                            </li>
+                        </ul>
+                        
+                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
+                            <li>	
+                            	<a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">맨 위로 </a>
+                            	
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-
-            <div class="col-md-6 col-lg-3 pb-5">
-                <div class="h-100 py-5 services-icon-wap shadow">
-                    <div class="h1 text-success text-center"><img src="assets/img/dog (2).png" alt="About Hero"></div>
-                    <h2 class="h5 mt-4 text-center">
-                    	<a href="doginfo_basic2.jsp">건강 정보</a>
-                    </h2>
-                </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="card mb-4 product-wap rounded-0">
+                        <!-- 하나의 견종에 대한 특성을 보여줌 -->
+                 		<%for(int i = 0;i<list.size();i++){ %> 
+                        <div class="card-body" id = "tag_<%=i%>">
+                        	<!-- 1 -->
+                       		<%=list.get(i).getT_type()%>
+                       		<br><br>
+                       		<!-- 2 --> 
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <p class="text-center mb-0">원산지</p>
+                            </ul>
+                            	<p class="text-center mb-0"><%=list.get(i).getT_origin()%></p>
+                            <br>
+                            <!-- 3 --> 	
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <p class="text-center mb-0">성격</p>
+                            </ul>
+                            	<p class="text-center mb-0"><%=list.get(i).getT_personality()%></p>
+                            <br>
+                            <!-- 4 --> 	
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <p class="text-center mb-0">크기</p>
+                            </ul>
+                            	<p class="text-center mb-0"><%=list.get(i).getT_size()%></p>
+                            <br>
+                            <!-- weight -->
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <p class="text-center mb-0">크기</p>
+                            </ul>
+                            	<p class="text-center mb-0"><%=list.get(i).getT_weight()%></p>
+                            <br>
+                            <!-- 유전병 -->
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <p class="text-center mb-0">유전병</p>
+                            </ul>
+                            	<p class="text-center mb-0"><%=list.get(i).getT_disease()%></p>
+                            <br>
+                            <!-- 내한성 -->
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <p class="text-center mb-0">내한성</p>
+                            </ul>
+                            	<p class="text-center mb-0"><%=list.get(i).getT_resistance()%></p>
+                            <br>
+                            <!-- 운동량 -->
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <p class="text-center mb-0">운동량</p>
+                            </ul>
+                            	<p class="text-center mb-0"><%=list.get(i).getT_workout()%></p>
+                            <br>
+				                <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">맨 위로 </a>
+                        </div>
+                       	<%}%>
+                    </div>
+				</div>                   
             </div>
-
-            <div class="col-md-6 col-lg-3 pb-5">
-                <div class="h-100 py-5 services-icon-wap shadow">
-                    <div class="h1 text-success text-center"><img src="assets/img/dog (3).png" alt="About Hero"></div>
-                    <h2 class="h5 mt-4 text-center">
-                    	<a href="doginfo_basic3_type.jsp">견종별 특성</a>
-                   	</h2>
-                </div>
-            </div>
-
         </div>
-    </section>
-    <!-- End Section -->
+    </div>
+    <!-- End Content -->
 
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">V.I.P.</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">V.I.P</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
@@ -141,8 +189,16 @@
                         </li>
                     </ul>
                 </div>
-                
                 <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">다른 애완견 정보 보기</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="doginfo_basic1.jsp">기초 상식</a></li>
+                        <li><a class="text-decoration-none" href="doginfo_basic2.jsp">건강 정보</a></li>
+                        <li><a class="text-decoration-none" href="doginfo_basic3.jsp">견종별 특성</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">애완견 종합정보</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li><a class="text-decoration-none" href="about_dogInfo.jsp">애완견 정보</a></li>
                         <li><a class="text-decoration-none" href="about_law.jsp">동물법과 정책</a></li>
@@ -184,6 +240,7 @@
     </footer>
     <!-- End Footer -->
 
+
     <!-- Start Script -->
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
@@ -191,6 +248,8 @@
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
     <!-- End Script -->
+    
+    
 </body>
 
 </html>

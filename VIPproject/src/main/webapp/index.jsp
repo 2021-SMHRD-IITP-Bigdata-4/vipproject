@@ -226,7 +226,7 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container py-5">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1">Featured Product</h1>
+                    <h1 class="h1">반려견을 키우는 사람들에게 필요한 정보</h1>
                     <p>
                         Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         Excepteur sint occaecat cupidatat non proident.
@@ -236,7 +236,7 @@ https://templatemo.com/tm-559-zay-shop
             <div class="row">
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.jsp">
+                        <a href="doginfo_basic3.jsp">
                             <img src="./img/doginfo.png" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
@@ -249,7 +249,7 @@ https://templatemo.com/tm-559-zay-shop
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.jsp">
+                        <a href="about_law.jsp">
                             <img src="./img/lawbook.png" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
