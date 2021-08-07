@@ -15,8 +15,10 @@ public class BoardDAO {
 	int cnt = 0;
 	BoardDTO postDto = null;
 	BoardDTO pageDto = null;
+	BoardDTO searchDto = null;
 	ArrayList<BoardDTO> list = null;
 	ArrayList<BoardDTO> pageList = null;
+	ArrayList<BoardDTO> searchList = null;
 	int totalCount = 0;
 	
 	public void conn() {
@@ -226,6 +228,51 @@ public class BoardDAO {
 		
 		
 		
+	}
+	
+	public ArrayList<BoardDTO> searchBoard(int pageNum, int countList, String searchType, String searchKey) {
+		conn();
+		String sql = "";
+		if (searchType.equals("post_title")) {
+			sql = "select X.* from ( select rownum as rnum, A.* from (select * from community order by post_date desc) A where rownum <= ? and post_title like ?) X where rnum >= ?";
+		} else if (searchType.equals("post_memo")) {
+			sql = "select X.* from ( select rownum as rnum, A.* from (select * from community order by post_date desc) A where rownum <= ? and post_memo like ?) X where rnum >= ?";
+		} else if (searchType.equals("display_name")) {
+			sql = "select X.* from ( select rownum as rnum, A.* from (select * from community order by post_date desc) A where rownum <= ? and display_name like ?) X where rnum >= ?";
+		} 
+		int startNum = (pageNum*countList) - countList+1;
+		int endNum = pageNum*countList;
+		searchList = new ArrayList<BoardDTO>();
+		try {
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, endNum);
+			psmt.setString(2, "%"+searchKey+"%");
+			psmt.setInt(3, startNum);
+			
+			rs = psmt.executeQuery();
+			
+			while(rs.next()) {
+				int post_num = rs.getInt(2);
+				String user_id = rs.getString(3);
+				String display_name = rs.getString(4);
+				String post_sort = rs.getString(5);
+				String post_title = rs.getString(6);
+				String post_memo = rs.getString(7);
+				String post_photo = rs.getString(8);
+				String post_date = rs.getString(9);
+				
+				searchDto = new BoardDTO(post_num, user_id, display_name, post_sort, post_title, post_memo, post_photo, post_date);
+				
+				searchList.add(searchDto);
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		
+		return searchList;
 	}
 	
 }
