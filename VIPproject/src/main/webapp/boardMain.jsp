@@ -48,14 +48,27 @@
 			width : 30%;
 		}
 		.post-title{
-			font-size:11px;
+			font-size:12px;
 		}
 		.post-Atag{
-			font-size:12px;
+			font-size:14px!important;
 		}
 		.post-sort{
-			font-size:12px;
+			font-size:13px;
 		}
+		.post-comment{
+			font-size:14px;
+		}
+		.btn.btn-outline-dark{
+			font-size:14px;
+		}
+		.btn.btn-dark{
+			font-size:14px;
+		}
+		.page-link{
+			font-size:14px!important;
+		}
+
 		
     </style>
 <!--
@@ -222,45 +235,45 @@ https://templatemo.com/tm-559-zay-shop
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">Type</th>
-      <th scope="col">Title</th>
-      <th scope="col">Comment</th> 
+      <th scope="col" class = "post-title">Type</th>
+      <th scope="col" class = "post-title">Title</th>
+      <th scope="col" class = "post-title">Comment</th> 
     </tr>
   </thead>
   <tbody>
   <tr class="table-success">
-      <th scope="row" class = "post-sort">BEST</th>
+      <th scope="row" class = "post-sort" style ="width:20%;">BEST</th>
       <td class = "post-title"><a href = "#" class = "post-Atag">사다리타기 알고리즘 공개좀</a><br><br>발표맨<br>좋아요 11<br></td>
-      <td>17</td>
+      <td class = "post-comment">17</td>
   </tr>
   <tr class="table-success">
       <th scope="row" class = "post-sort">BEST</th>
       <td class = "post-title"><a href = "#" class = "post-Atag">내가 태연 팬은 아닌데, 태연 노래 좋더라</a><br><br>태연조하<br>좋아요 43<br></td>
-      <td>45</td>
+      <td class = "post-comment">45</td>
   </tr>
   <tr class="table-success">
       <th scope="row" class = "post-sort">BEST</th>
       <td class = "post-title"><a href = "#" class = "post-Atag">여기에 정치글 좀 올리지 마라</a><br><br>허경영<br>좋아요29</td>
-      <td>105</td>
+      <td class = "post-comment">105</td>
   </tr>
   </tbody>
 </table>
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">Type</th>
-      <th scope="col">Title</th>
-      <th scope="col">Comment</th>      
+      <th scope="col" class = "post-title">Type</th>
+      <th scope="col" class = "post-title">Title</th>
+      <th scope="col" class = "post-title">Comment</th>      
     </tr>
   </thead>
   <tbody id = "boardList">
      <% if (list != null){ %>
      	<% for (int i = 0; i <list.size(); i++){ %>  
      <tr>
-      <th scope="row" id = "post_sort" class = "post-sort"><%= list.get(i).getPost_sort() %></th>
+      <th scope="row" id = "post_sort" class = "post-sort" style ="width:20%;"><%= list.get(i).getPost_sort() %></th>
       <td class = "post-title"><a href = "boardView.jsp?post_num=<%=list.get(i).getPost_num()%>" class = "post-Atag"><%= list.get(i).getPost_title()%></a><br><br>
       <%= list.get(i).getDisplay_name()%><br>좋아요 <span><%= lDao.countLike(list.get(i).getPost_num()) %></span><br><%= list.get(i).getPost_date()%></td>
-      <td><%= cDao.countComment(list.get(i).getPost_num()) %></td>
+      <td class = "post-comment"><%= cDao.countComment(list.get(i).getPost_num()) %></td>
     </tr>
      <%} }%>
    </tbody>
@@ -311,9 +324,9 @@ https://templatemo.com/tm-559-zay-shop
 <!-- 검색창 -->
    <form class="d-flex" action = "./boardMain.jsp" method = "get">
    	  <select class="form-select" id="search-type" name = "searchType">
-        <option value = "post_title">제목</option>
-        <option value = "post_memo">내용</option>
-        <option value = "display_name">닉네임</option>
+        <option value = "post_title" class = "post-search-type">제목</option>
+        <option value = "post_memo" class = "post-search-type" >내용</option>
+        <option value = "display_name" class = "post-search-type">닉네임</option>
       </select> 
         <input class="form-control me-sm-2" type="text" placeholder="Search" name = "searchKey">
         <input class="btn btn-secondary my-2 my-sm-0" type="submit" value = "검색">

@@ -67,10 +67,10 @@
 			font-size : 15px;
 		}
 		#board-list-go{
-			font-size : 13px;
+			font-size : 14px;
 		}
 		#board-write-go{
-			font-size : 13px;
+			font-size : 14px;
 		}
     </style>
 <!--
@@ -206,12 +206,12 @@ https://templatemo.com/tm-559-zay-shop
       <td scope="col" class ="post-sort-title" colspan = "3">[<%= dto.getPost_sort() %>] <%= dto.getPost_title()%></td>
     </tr>
     <tr>
-      <td scope="col" class = "post-index"><%= dto.getDisplay_name()%>&nbsp;&nbsp;|&nbsp;&nbsp;<%= dto.getPost_date()%></td>
-      <td scope="col" class = "post-index">좋아요 <span class = "likeCnt"><%= ldao.countLike(Integer.parseInt(post_num)) %></span>&nbsp;&nbsp;&nbsp;|&nbsp;댓글&nbsp;<span class = "commentCnt"></span></td>
+      <td scope="col" class = "post-index"><%= dto.getDisplay_name()%><br><%= dto.getPost_date()%></td>
+      <td scope="col" class = "post-index">좋아요&nbsp;<span class = "likeCnt"><%= ldao.countLike(Integer.parseInt(post_num)) %></span><br>댓글&nbsp;<span class = "commentCnt"></span></td>
       <% if (info != null && dto.getUser_id().equals(info.getUser_id())){ %> 
-   	  	<td scope="col" class = "post-index"><a href = "boardUpdate.jsp?post_num=<%=dto.getPost_num()%>" class = "post-index">수정</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href = "BoardDeleteService?post_num=<%=dto.getPost_num()%>" class = "post-index">삭제</a></td>
+   	  	<td scope="col" class = "post-index"><a href = "boardUpdate.jsp?post_num=<%=dto.getPost_num()%>" class = "post-index">수정</a><br><a href = "BoardDeleteService?post_num=<%=dto.getPost_num()%>" class = "post-index">삭제</a></td>
       <%} else {%>
-      	<td scope = "col" class = "post-index">수정 불가&nbsp;&nbsp;|&nbsp;&nbsp;삭제 불가</td>
+      	<td scope = "col" class = "post-index">수정 불가<br>삭제 불가</td>
       <%} %>
     </tr>
   </thead>
@@ -453,8 +453,8 @@ https://templatemo.com/tm-559-zay-shop
     			if (result.length > 0){
     				for (let i = 0; i<result.length; i++){
     					html += "<tr>";
-    					html += "<th style='width:25%;'>"+result[i].display_name+"</th>";
-    					html += "<td style='width:75%;'>"+result[i].reply_memo+"</td>";
+    					html += "<th style='width:30%;'>"+result[i].display_name+"</th>";
+    					html += "<td style='width:70%;'>"+result[i].reply_memo+"</td>";
     					html += "</tr>";
     				}
     			} else {
