@@ -26,6 +26,40 @@ TemplateMo 559 Zay Shop
 https://templatemo.com/tm-559-zay-shop
 
 -->
+
+<style type="text/css">
+.p-text{
+	text-aline:center
+}
+.con{
+	padding-bottom: 3rem!important; 
+	width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.in{
+	font-size: 19px;
+	font-weight: bold;
+}
+.cate{
+	font-size: 18px;
+	font-weight: bold;
+}
+.img{
+	width: 100%;
+	height: 100%;
+}
+.categori{
+	height: 260px;
+}
+.img-fluids{
+	max-width: 100%;
+    height: 300px;
+    
+}
+</style>
 </head>
 
 <body>
@@ -63,22 +97,22 @@ https://templatemo.com/tm-559-zay-shop
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">
                 VIP
             </a>
-
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+			
+			
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.jsp">반려견 정보</a>
+                            <a class="nav-link" href="about_dogInfo.jsp"><span>반려견 정보</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.jsp">법과 정책</a>
+                            <a class="nav-link" href="about_law.jsp">법과 정책</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.jsp">애견용품순위</a>
+                            <a class="nav-link" href="about_rankOfProductByShop.jsp">애견용품순위</a>
                         </li>
                         <li class="nav-item">
                         <%if (info != null){  %>
@@ -96,25 +130,12 @@ https://templatemo.com/tm-559-zay-shop
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
-                    
                     <%if (info != null){ %>                   
                     	<a href = "userUpdate.jsp">개인정보수정</a> <br>                  	
                     	<a href = "Logout">로그아웃</a>
                     <%} else {%>
                     <a class="nav-icon position-relative text-decoration-none" href="login.jsp">
-                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span><!--숫자표현  전체수정-->
+                        <span>로그인</span><!--숫자표현  전체수정-->
                     </a>
                     <%}%>
                 </div>
@@ -155,56 +176,50 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_01.jpg" alt="">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left align-self-center">
-                                <h1 class="h1 text-success"><b>Zay</b> eCommerce</h1>
-                                <h3 class="h2">Tiny and Perfect eCommerce Template</h3>
-                                <p>
-                                    Zay Shop is an eCommerce HTML5 CSS template with latest version of Bootstrap 5 (beta 1). 
-                                    This template is 100% free provided by <a rel="sponsored" class="text-success" href="https://templatemo.com" target="_blank">TemplateMo</a> website. 
-                                    Image credits go to <a rel="sponsored" class="text-success" href="https://stories.freepik.com/" target="_blank">Freepik Stories</a>,
-                                    <a rel="sponsored" class="text-success" href="https://unsplash.com/" target="_blank">Unsplash</a> and
-                                    <a rel="sponsored" class="text-success" href="https://icons8.com/" target="_blank">Icons 8</a>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left">
-                                <h1 class="h1">Proident occaecat</h1>
-                                <h3 class="h2">Aliquip ex ea commodo consequat</h3>
-                                <p>
-                                    You are permitted to use this Zay CSS template for your commercial websites. 
-                                    You are <strong>not permitted</strong> to re-distribute the template ZIP file in any kind of template collection websites.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
                             <img class="img-fluid" src="./assets/img/banner_img_03.jpg" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1">Repr in voluptate</h1>
-                                <h3 class="h2">Ullamco laboris nisi ut </h3>
+                                <h1 class="h1"></h1>
+                                <h3 class="h2"></h3>
                                 <p>
-                                    We bring you 100% free CSS templates for your websites. 
-                                    If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
+                                    너를 더 알고싶어 내 애완견이 행복할 수 있게, 너는 누구니?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluids" src="./img/dogimg.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1"></h1>
+                                
+                                <p>
+                                <h3 class="h2">금주의 인기 반려견</h3>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluids" src="./img/hugeso.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="h1 text-success"></h1>
+                                <h3 class="h2"></h3>
+                                <p class="p-text">
+                                    우리집 댕댕이들도 함께쉬는 휴게소!
                                 </p>
                             </div>
                         </div>
@@ -223,10 +238,10 @@ https://templatemo.com/tm-559-zay-shop
 
     <!-- Start Featured Product -->
     <section class="bg-light">
-        <div class="container py-5">
+        <div class="con">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1">반려견을 키우는 사람들에게 필요한 정보</h1>
+                    <h1 class="h1"><span class="in">1000만 반려인들의 필수 정보</span></h1>
                     <p>
                         Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         Excepteur sint occaecat cupidatat non proident.
@@ -236,39 +251,36 @@ https://templatemo.com/tm-559-zay-shop
             <div class="row">
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="doginfo_basic3.jsp">
-                            <img src="./img/doginfo.png" class="card-img-top" alt="...">
+                        <a class="categori" href="about_dogInfo.jsp">
+                            <img src="./img/doginfo.png" class="img" alt="...">
                         </a>
                         <div class="card-body">
-                            <a href="shop-single.jsp" class="h2 text-decoration-none text-dark">반려견 정보</a>
+                            <a href="about_dogInfo.jsp" class="h2 text-decoration-none text-dark"><span class="cate">반려견 정보</span></a>
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="about_law.jsp">
-                            <img src="./img/lawbook.png" class="card-img-top" alt="...">
+                        <a class="categori" href="about_law.jsp">
+                            <img src="./img/lawbook.png" class="img" alt="...">
                         </a>
                         <div class="card-body">
-                            <a href="shop-single.jsp" class="h2 text-decoration-none text-dark">법과 정책</a>
+                            <a href="about_law.jsp" class="h2 text-decoration-none text-dark"><span class="cate">법과 정책</span></a>
                             <p class="card-text">
-                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="boardMain.jsp">
-                            <img src="./img/group.png" class="card-img-top" alt="...">
+                        <a class="categori" href="boardMain.jsp">
+                            <img src="./img/group.png" class="img" alt="...">
                         </a>
                         <div class="card-body">
-                            <a href="shop-single.jsp" class="h2 text-decoration-none text-dark">커뮤니티</a>
+                            <a href="boardMain.jsp" class="h2 text-decoration-none text-dark"><span class="cate">커뮤니티</span></a>
                             <p class="card-text">
-                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
                             </p>
                         </div>
                     </div>
@@ -297,16 +309,6 @@ https://templatemo.com/tm-559-zay-shop
                     </ul>
                 </div>
                 
-                <div class="col-md-4 pt-5">
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="about_dogInfo.jsp">반려견 정보</a></li>
-                        <li><a class="text-decoration-none" href="about_law.jsp">법과 정책</a></li>
-                        <li><a class="text-decoration-none" href="about_rankOfProductByShop.jsp">애견용품순위</a></li>
-                        <li><a class="text-decoration-none" href="allMap.jsp">애견동반시설</a></li>
-                        <li><a class="text-decoration-none" href="boardMain.jsp">커뮤니티</a></li>
-                        <li><a class="text-decoration-none" href="about_dogInfo.jsp">반려견 캘린더</a></li>
-                    </ul>
-                </div>
             </div>
             <div class="row text-light mb-4">
                 <div class="col-12 mb-3">
