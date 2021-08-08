@@ -178,7 +178,7 @@
                    
                     <!-- G付南 -->
                     <div class="col-md-4">
-                    	<div class="card-body" id="tag_2"><br><br>G付南</div>
+                    	<div class="card-body" id="tag_2"><br>G付南</div>
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/img/mallG (1).jpg">
@@ -262,7 +262,7 @@
                     
                     <!-- 捻莆 -->
                     <div class="col-md-4">
-                    	<div class="card-body" id="tag_3"><br><br>捻莆</div>
+                    	<div class="card-body" id="tag_3"><br>捻莆</div>
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/img/mallCoupang (1).jpg">
@@ -346,7 +346,7 @@
                     
                     <!-- 内胶飘内 -->
                     <div class="col-md-4">
-                    	<div class="card-body" id="tag_4"><br><br>内胶飘内</div>
+                    	<div class="card-body" id="tag_4"><br>内胶飘内</div>
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/img/mallCostco (1).jpg">

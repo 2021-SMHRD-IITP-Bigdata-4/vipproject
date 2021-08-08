@@ -17,7 +17,14 @@
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min2_doginfo.css">
+	
+	<style type="text/css">
+	.doginfo_left{
+		text-align: left!important;
+		margin-bottom: 0!important;
+	}
+	</style>
 
 </head>
 
@@ -103,7 +110,7 @@
                             <div class="card rounded-0">
                             </div>
                             <div class="card-body">
-                                <p class="text-center mb-0">동물체의 주요한 구성성분은 수분, 단백질, 지방, 광물질 
+                                <p class="doginfo_left">동물체의 주요한 구성성분은 수분, 단백질, 지방, 광물질 
                                 그리고 극히 소량의 탄수화물이며, 각각의 구성비율은 동물품종, 연령, 성별 및 동물의 상태에 따라 다르다.
                                 지방이나 소화관의 내용물을 제외하고는 동물체의 조성은 거의 물이 75%, 단백질 20%, 광물질 5% 및 
                                 탄수화물이 1% 이하로 되어 있다. 음식물은 에너지를 공급하는 고유의 음식물(탄수화물, 지방 및 단백질)과 
@@ -126,40 +133,40 @@
                             </div>
                             <div class="card-body">
                             양파
-                                <p class="text-center mb-0">어떤 식으로 요리해도 양파의 독성은 없어지지 않는다. 양파의 
+                                <p class="doginfo_left">어떤 식으로 요리해도 양파의 독성은 없어지지 않는다. 양파의 
                                 강한 독성은 개나 고양이의 적혈구를 녹여 버리며, 심한 경우에는 급성 빈혈을 일으켜 죽기도 한다.</p>
                             </div>
                             <div class="card-body">
                             초콜렛
-                                <p class="text-center mb-0">초콜렛은 중독을 일으킨다. 섭취 시 지나치게 활동적이거나 
+                                <p class="doginfo_left">초콜렛은 중독을 일으킨다. 섭취 시 지나치게 활동적이거나 
                                 흥분상태를 보이기도 하고, 다른 음식은 먹지도 않아도 구토를 자주 하게 되고 노란색의 점액질을 토해낸다.</p>
                             </div>
                             <div class="card-body">
                             우유
-                                <p class="text-center mb-0">우유에는 모유에는 없는 유당이 함유되어 있으나, 강아지는 
+                                <p class="doginfo_left">우유에는 모유에는 없는 유당이 함유되어 있으나, 강아지는 
                                 선천적으로 유당을 분해할 수 있는 효소가 없다. 어린 강아지에게 설사를 일으키는 원인이 되기도 하며 
                                 설사는 2차 감염원이 되기도 하므로 특별한 경우가 아니면 급여를 삼가해야 한다.</p>
                             </div>
                             <div class="card-body">
                             생선
-                                <p class="text-center mb-0">등푸른 생선에는 DHA가 많이 함유되어 있지만 어린강아지는
+                                <p class="doginfo_left">등푸른 생선에는 DHA가 많이 함유되어 있지만 어린강아지는
                                  DHA를 분해하는 효소가 없어서 소화가 되지 않고 바로 배설된다. 그리고 생선가시는 소화되지 않고 
                                  소화기관에 상처나 염증을 유발 할 수도 있다. 기름이 많이 함유된 생선통조림은 설사와 구토를 일으키고 
                                  많은 양의 기름은 강아지에게 소화장애를 일으키므로 급여를 삼가해야 한다.</p>
                             </div>
                             <div class="card-body">
                             닭뼈
-                                <p class="text-center mb-0">소화가 되었을 때 뼈가 날카롭게 분해되면서 소화기관에 상처를 
+                                <p class="doginfo_left">소화가 되었을 때 뼈가 날카롭게 분해되면서 소화기관에 상처를 
                                 내어 염증이나 혈변, 심한 경우에는 죽음에 이르게 할 수 있다.</p>
                             </div>
                             <div class="card-body">
                             마른 오징어
-                                <p class="text-center mb-0">개들은 음식을 씹지 않고 바로 소화기관으로 넘기므로 오징어나 
+                                <p class="doginfo_left">개들은 음식을 씹지 않고 바로 소화기관으로 넘기므로 오징어나 
                                 쥐포 등을 먹으면 입과 식도, 위까지 손상될 수 있으므로 주지 않는다.</p>
                             </div>
                             <div class="card-body">
                             채소류의 과잉섭취
-                                <p class="text-center mb-0">어느 정도의 채소류의 섭취는 섬유질이 있어 소화흡수에 도움이 
+                                <p class="doginfo_left">어느 정도의 채소류의 섭취는 섬유질이 있어 소화흡수에 도움이 
                                 되지만, 많은 양의 채소류는 공급과잉이 되며 체외로 배출되므로 적당량을 준다.</p>
                             </div>
                             	<a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">맨 위로 </a>
@@ -181,64 +188,64 @@
                             </div>
                             <div class="card-body">
                             호흡기
-                                <p class="text-center mb-0">콧물, 계속되는 재채기, 기침, 구역질, 호흡 곤란, 심한코골이</p>
+                                <p class="doginfo_left">콧물, 계속되는 재채기, 기침, 구역질, 호흡 곤란, 심한코골이</p>
                             </div>
                             <div class="card-body">
                             눈
-                                <p class="text-center mb-0">눈의 분비물, 시력 감퇴, 염증, 감염으로 인한 출혈, 흐린 
+                                <p class="doginfo_left">눈의 분비물, 시력 감퇴, 염증, 감염으로 인한 출혈, 흐린 
                                 테가 끼는 경우</p>
                             </div>
                             <div class="card-body">
                             귀
-                                <p class="text-center mb-0">귀 고름, 머리를 흔들어 대는 경우, 귀가 부어 오르는 경우, 
+                                <p class="doginfo_left">귀 고름, 머리를 흔들어 대는 경우, 귀가 부어 오르는 경우, 
                                 균형상실, 난청</p>
                             </div>
                             <div class="card-body">
                             입
-                                <p class="text-center mb-0">침을 질질 흘리는 경우, 식욕 저하, 잇몸의 염증, 구취, 
+                                <p class="doginfo_left">침을 질질 흘리는 경우, 식욕 저하, 잇몸의 염증, 구취, 
                                 이빨이 부러지거나 흔들리는 경우</p>
                             </div>
                             <div class="card-body">
                             외부기생충
-                                <p class="text-center mb-0">지나치게 핥는 경우, 기생충이 발견되는 경우, 비듬, 탈모, 
+                                <p class="doginfo_left">지나치게 핥는 경우, 기생충이 발견되는 경우, 비듬, 탈모, 
                                 긁적거림</p>
                             </div>
                             <div class="card-body">
                             피와 심장
-                                <p class="text-center mb-0">지나친 기침, 빈혈, 무기력증, 지나친 기침, 운동을 기피하는 
+                                <p class="doginfo_left">지나친 기침, 빈혈, 무기력증, 지나친 기침, 운동을 기피하는 
                                 경우</p>
                             </div>
                             <div class="card-body">
                             뼈, 근육, 관절
-                                <p class="text-center mb-0">감염된 부분의 부어 오름, 다리를 만지면 통증을 느끼는 경우, 
+                                <p class="doginfo_left">감염된 부분의 부어 오름, 다리를 만지면 통증을 느끼는 경우, 
                                 마비, 절룩거림</p>
                             </div>
                             <div class="card-body">
                             신경성
-                                <p class="text-center mb-0">발작이나 경련, 비틀거리는 걸음걸이 일부 또는 전신 마비</p>
+                                <p class="doginfo_left">발작이나 경련, 비틀거리는 걸음걸이 일부 또는 전신 마비</p>
                             </div>
                             <div class="card-body">
                             소화기
-                                <p class="text-center mb-0">행동상의 변화, 균형의 상실, 체중의 과도한 변화, 식욕 상실, 
+                                <p class="doginfo_left">행동상의 변화, 균형의 상실, 체중의 과도한 변화, 식욕 상실, 
                                 변비, 설사 구토</p>
                             </div>
                             <div class="card-body">
                             피부 및 털
-                                <p class="text-center mb-0">갑자기 씹어 대거나 핥는 경우, 염증 또는 종양, 탈모, 계속 
+                                <p class="doginfo_left">갑자기 씹어 대거나 핥는 경우, 염증 또는 종양, 탈모, 계속 
                                 긁어 대는 경우</p>
                             </div>
                             <div class="card-body">
                             생식기
-                                <p class="text-center mb-0">유방의 통증, 생식 불능, 유산, 출산 후의 이상, 이상 분비물</p>
+                                <p class="doginfo_left">유방의 통증, 생식 불능, 유산, 출산 후의 이상, 이상 분비물</p>
                             </div>
                             <div class="card-body">
                             비뇨기
-                                <p class="text-center mb-0">배뇨가 힘든 경우, 혈뇨, 대소변 실금, 소변량의 증가, 배뇨의 
+                                <p class="doginfo_left">배뇨가 힘든 경우, 혈뇨, 대소변 실금, 소변량의 증가, 배뇨의 
                                 감소</p>
                             </div>
                             <div class="card-body">
                             기생충
-                                <p class="text-center mb-0">분비물에서 기생충을 발견하는 경우, 배가 부어 오르는 경우, 
+                                <p class="doginfo_left">분비물에서 기생충을 발견하는 경우, 배가 부어 오르는 경우, 
                                 설사, 항문에서 이 물질을 발견 하는 경우, 체중 감소</p>
                             </div>
                          
@@ -250,7 +257,7 @@
                             </div>
                            <!--  -->
                             <div class="card-body">
-                                <p class="text-center mb-0">반려견의 교통사고, 일사병, 골절이나 화상, 급한 호흡의 곤란 
+                                <p class="doginfo_left">반려견의 교통사고, 일사병, 골절이나 화상, 급한 호흡의 곤란 
                                 등으로 인한 경우 빠르게 대응하여 애견을 사고로부터 구할 수 있다. 이런 사고를 당한 반려견은 쇼크나 
                                 통증으로 사납고 난폭해지므로 인간의 신체에 해가 가지 않게 해야한다. 특히 물지 못하도록 기본적인 
                                 안전장치를 한 다음 애견에 적절한 응급치료나 적당한 방법으로 병원으로 데려간다. 부상당한 장소가 
@@ -280,31 +287,31 @@
                             	</div>
                             </div>
                             <div class="card-body">
-                                <p class="text-center mb-0">발정은 품종, 개체, 발육 정도에 따라 차이가 있으나 조숙한 
+                                <p class="doginfo_left">발정은 품종, 개체, 발육 정도에 따라 차이가 있으나 조숙한 
                                 소형견은 5~7개월, 중형견은 8~10개월, 대형견은 1년 이상이 지나야 시작된다. 발정증상은 외음부가 
                                 팽창되고 혈액이 섞인 액체가 배출되며, 개가 안정적이지 못하고 외음부를 자주 핥는다. 발정주기는 난포의 
                                 발육, 성숙, 배란, 황체 형성 등에 따라 4기로 구분한다.</p>
                             </div>
                             <div class="card-body">
                             발정전기
-                                <p class="text-center mb-0">개가 안정적이지 못하고 배뇨회수가 증가하며 외음부가 점차 붓기 
+                                <p class="doginfo_left">개가 안정적이지 못하고 배뇨회수가 증가하며 외음부가 점차 붓기 
                                 시작하면서 충혈되며 출혈이 보이기도 한다.</p>
                             </div>
                             <div class="card-body">
                             발정기
-                                <p class="text-center mb-0">외음부의 붓기가 최고에 달하고 출혈의 색이 점차 엷어져서, 
+                                <p class="doginfo_left">외음부의 붓기가 최고에 달하고 출혈의 색이 점차 엷어져서, 
                                 보통의 분비물로 변한다. 발정이 처음 시작된 후 12일 정도 지난 시기에 배란이 일어나고, 이 시기가 
                                 교배의 적기 이다.</p>
                             </div>
                             <div class="card-body">
                             발정후기
-                                <p class="text-center mb-0">교배 시켜서 임신이 된 경우는 분비물 배출은 빨리 멈추지만, 
+                                <p class="doginfo_left">교배 시켜서 임신이 된 경우는 분비물 배출은 빨리 멈추지만, 
                                 임신이 되지 않은 경우에는 오랫동안 소량으로 분비된다. 점차 외음부가 작아져서 원래의 모양대로 돌아간다. 
                                 말기에는 위임신의 증세를 나타내는 개체도 있다. 그러나 발정후기가 끝난 후 확실한 증거를 볼 수 없다.</p>
                             </div>
                             <div class="card-body">
                             발정 휴지기
-                                <p class="text-center mb-0">발정횟수는 이 기간의 장단에 따라서 달라지는데, 대체적으로 개는 
+                                <p class="doginfo_left">발정횟수는 이 기간의 장단에 따라서 달라지는데, 대체적으로 개는 
                                 일년에 두번 발정을 일으키며 한 발정기가 한 3주 정도이다. 개체에 따라서 이보다 더 긴 경우도 있다.</p>
                             </div>
                             <div class="card rounded-0">
@@ -313,7 +320,7 @@
                             	</div>
                             </div>
                             <div class="card-body">
-                                <p class="text-center mb-0">모든 교배가 다 성공적으로 연결되는 것은 아니다. 교배 후에 임신 
+                                <p class="doginfo_left">모든 교배가 다 성공적으로 연결되는 것은 아니다. 교배 후에 임신 
                                 여부를 확인해야 하는데 실제로 임신의 징후가 나타나는것은 5주가 넘어서부터이다. 9주의 임신 기간 중 
                                 제일 먼저 나타나는 징후는 2주 정도부터 외음부의 이완, 유선의 적은 덩어리 등이 생기는 것이며 입덧으로 
                                 식욕이 떨어진다.그리고 3주부터는 복부가 약간 볼록해지며 위에서 보면 양쪽으로 늘어져서 재보면 배 둘레가 
@@ -327,18 +334,18 @@
                             </div>
                             <div class="card-body">
                             임신 기간
-                                <p class="text-center mb-0">개의 임신 기간은 평균 9주(63일)로 이 기간 중 아래쪽 젖에서 
+                                <p class="doginfo_left">개의 임신 기간은 평균 9주(63일)로 이 기간 중 아래쪽 젖에서 
                                 연한 초유가 분비되며 점점 짙어진다. 출산이 가까워지면 불안한 상태가 된다.
                                 교배일을 정확히 알면 그 교배일로부터 분만 예정일을 알 수 있다. 새끼의 발육 상태에 따라 2~3일의 편차는 있다.</p>
                             </div>
                             <div class="card-body">
                             출산 시 신체변화
-                                <p class="text-center mb-0">일정하지는 않지만 개의 품종이나 체격의 크기에 따라서 5~6 마리를
+                                <p class="doginfo_left">일정하지는 않지만 개의 품종이나 체격의 크기에 따라서 5~6 마리를
                                  낳는 중형견을 표준으로 할 때 배 둘레가 60% 정도 커진다.</p>
                             </div>
                             <div class="card-body">
                             임신 중인 반려견 관리
-                                <p class="text-center mb-0">임신 중인 개에게는 적당한 영양 섭취와 적당한 운동 및 산책이 
+                                <p class="doginfo_left">임신 중인 개에게는 적당한 영양 섭취와 적당한 운동 및 산책이 
                                 중요하다. 너무 무리하게 운동을 시키거나 많은 양의 사료를 급여해서는 안된다. 이는 난산이나 유산의 원인이
                                  되기도 한다. 적당한 영양섭취를 시켜 강아지가 비대해지지 않도록 한다. 임신 중인 개는 평소보다 많은 
                                  양의 에너지가 필요하므로 영양을 충분히 섭취 할 수 있도록 급여하면 된다. 사료의 양은 평소의 30%까지
@@ -347,13 +354,13 @@
                             </div>
                             <div class="card-body">
                             분만의 준비
-                                <p class="text-center mb-0">가급적이면 평소에 익숙해진 장소나 길들여진 개 집에서 분만하도록
+                                <p class="doginfo_left">가급적이면 평소에 익숙해진 장소나 길들여진 개 집에서 분만하도록
                                  한다. 분만 전후에는 신경이 예민해지고 경계심이 강해지고 공격적이어서 소란스럽거나
                                  사람의 왕래가 많은 곳은 피해야 한다.</p>
                             </div>
                             <div class="card-body">
                             분만의 경과
-                                <p class="text-center mb-0">분만이 다가온 개는 어두운 곳으로 들어가려 한다. 이러한 증상이
+                                <p class="doginfo_left">분만이 다가온 개는 어두운 곳으로 들어가려 한다. 이러한 증상이
                                  12시간이나 24시간 계속되다가 진통 때 신음을 하게 되며, 호흡 간격이 10분마다 하다가 차차 그 주기가
                                   짧아진다.호흡이 거칠어지고 몸을 떠는 개도 있다. 첫 강아지가 산도로 내려오기 때문에 뒷다리에 힘을 
                                   주며 뻗는데, 그 후 태반을 쓰고 움직이는 것이 나타난다. 본능적으로 어미개는 태반을 물어 뜯고 강아지의 
@@ -364,7 +371,7 @@
                             </div>
                             <div class="card-body">
                             출산견의 건강상태
-                                <p class="text-center mb-0">어미 개의 체온은 분만 24시간 전에 일시적으로 37도 정도로 
+                                <p class="doginfo_left">어미 개의 체온은 분만 24시간 전에 일시적으로 37도 정도로 
                                 떨어지나 분만 후에는 다시 정상 체온으로 돌아온다. 맥박은 평소보다 20 이상을 넘지만 분만 후에는 
                                 조금 떨어지고 수유하는 초기에는 높게 유지한다. 분만 후에는 자궁 등에 상처가 있어 2일 후에 열이 
                                 나는 수가 있다. 이 때 체온이 40도까지 올라가나 일주일쯤 지나면 정상으로 돌아온다.</p>
@@ -381,7 +388,7 @@
                          		</div>
                             </div>
                          	<div class="card-body">
-                                <p class="text-center mb-0">출생에서 3주까지 건강한 강아지는 대체로 평온하다. 강아지는 
+                                <p class="doginfo_left">출생에서 3주까지 건강한 강아지는 대체로 평온하다. 강아지는 
                                 90%의 시간은 잠을 자고 10%의 시간은 젖을 빨며 젖꼭지를 차지하기 위해 경쟁한다. 처음 이틀 동안은 
                                 머리를 밑으로 묻고 잠을 잔다. 자는 동안 강아지는 놀라기도 하고 소리에 반응을 나타내는데, 이것을 
                                 활동하는 잠이라고 한다. 활동 잠은 강아지들이 하는 유일한 운동 방법이고 후에 쓸 근육을 발달을 돕기도 
@@ -389,25 +396,25 @@
                             </div>
                             <div class="card-body">
                             분만~2주령
-                                <p class="text-center mb-0">눈을 뜨지 못함. 5~6일 뒤 귀 들림. 5~6일 탯줄 떨어짐. 
+                                <p class="doginfo_left">눈을 뜨지 못함. 5~6일 뒤 귀 들림. 5~6일 탯줄 떨어짐. 
                                 추위에 약함</p>
                             </div>
                             <div class="card-body">
                             3주령~4주령
-                                <p class="text-center mb-0">젖니 생성. 움직임 활발. 14~17일 눈뜸. 20시간 이상 수면</p>
+                                <p class="doginfo_left">젖니 생성. 움직임 활발. 14~17일 눈뜸. 20시간 이상 수면</p>
                             </div>
                             <div class="card-body">
                             5주령~2개월령
-                                <p class="text-center mb-0">젖니 모두 생성. 장난이 심함. 젖을 뗌. 체형의 완성. 전엽병 
+                                <p class="doginfo_left">젖니 모두 생성. 장난이 심함. 젖을 뗌. 체형의 완성. 전엽병 
                                 쉽게 노출</p>
                             </div>
                             <div class="card-body">
                             3개월~5개월령
-                                <p class="text-center mb-0">만 2개월 지나면 어미로부터 독립생활 가능</p>
+                                <p class="doginfo_left">만 2개월 지나면 어미로부터 독립생활 가능</p>
                             </div>
                             <div class="card-body">
                             9개월~12개월령
-                                <p class="text-center mb-0">성견의 80% 도달. 전체적인 균형 형성. 암캐의 경우 첫 발정시기</p>
+                                <p class="doginfo_left">성견의 80% 도달. 전체적인 균형 형성. 암캐의 경우 첫 발정시기</p>
                             </div>
                             	<a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">맨 위로 </a>
                         </div>
@@ -422,14 +429,14 @@
                             </div>
                             <div class="card-body">
                             훈련 시기
-                                <p class="text-center mb-0">훈육은 생후 2~3 개월부터 시작하는데, 처음에는 쉽고 간단하고 
+                                <p class="doginfo_left">훈육은 생후 2~3 개월부터 시작하는데, 처음에는 쉽고 간단하고 
                                 단시간에 끝낼 수 있는 배설요령 식사요령 등을 교육한다. 생후 7~8 개월이 되면 신체의 성장과 행동범위가 
                                 넓어지므로 본격적으로 훈련을 시작한다. 훈련은 훈육보다는 더 많은 시간과 노력이 필요하며 개도 더 많은 
                                 체력과 힘이 요구된다.</p>
                             </div>
                             <div class="card-body">
                             사회화
-                                <p class="text-center mb-0">생후 3주령에서 13주령까지의 시기로 이 시기에는 가능한 많은 
+                                <p class="doginfo_left">생후 3주령에서 13주령까지의 시기로 이 시기에는 가능한 많은 
                                 사람과 접촉시키고, 여러 소리나 상황을 경험 시키는 것이 환경에 잘 적응하는 개로 성장시킨다. 강아지도 
                                 실수를 할 수도 있다는 사실을 알아야하고 그 것으로 화내지는 말아야한다. 나쁜 습관은 나중에 고치려 하기 
                                 보다는 처음부터 갖지 않도록 하는 것이 좋다.강아지와 함께 시간을 보내고 같이 놀아주고, 말도 걸고, 
@@ -438,7 +445,7 @@
                             </div>
                             <div class="card-body">
                             훈육 및 훈련 시기
-                                <p class="text-center mb-0">훈육은 생후 2~3개월부터 시작하는데 처음에는 쉽고 간단하며 단시간에 
+                                <p class="doginfo_left">훈육은 생후 2~3개월부터 시작하는데 처음에는 쉽고 간단하며 단시간에 
                                 끝낼 수 있는 배설요령, 식사요령 등을 교육한다.생후 7~8 개월이 되면 신체의 성장과 행동범위가 넓어지므로 
                                 본격적으로 훈련을 시작한다.훈련은 훈육보다는 더 많은 시간과 노력이 필요하며 개에게도 더 많은 체력과 
                                 힘이 요구된다.</p>
@@ -455,33 +462,33 @@
                             	</div>
                             </div>
                             <div class="card-body">
-                                <p class="text-center mb-0">예방접종을 한 후에는 열, 침울, 통증, 종창 등의 접종반응이 나타날 
+                                <p class="doginfo_left">예방접종을 한 후에는 열, 침울, 통증, 종창 등의 접종반응이 나타날 
                                 수 있지만 대부분의 경우에 하루 정도 조용한 곳에 두면 자연히 괜찮아진다.
                                 그러나 증상이 심할 경우나 이상증상이 나타날 경우에는 담당 수의사에게 문의하는 것이 좋다.</p>
                             </div>
                             <div class="card-body">
                             혼합예방주사 (DHPPL)
-                                <p class="text-center mb-0">기초접종 : 생후 6 ~ 8주에 1차 접종</p>
-                                <p class="text-center mb-0">추가접종 : 1차 접종 후 2 ~ 4주 간격으로 2 ~ 4회</p>
-                                <p class="text-center mb-0">보강접종 : 추가접종 후 매년 1회 주사</p>
+                                <p class="doginfo_left">기초접종 : 생후 6 ~ 8주에 1차 접종</p>
+                                <p class="doginfo_left">추가접종 : 1차 접종 후 2 ~ 4주 간격으로 2 ~ 4회</p>
+                                <p class="doginfo_left">보강접종 : 추가접종 후 매년 1회 주사</p>
                             </div>
                             <div class="card-body">
                             코로나바이러스성 장염(Coronavirus)
-                                <p class="text-center mb-0">기초접종 : 생후 6 ~ 8주에 1차 접종</p>
-                                <p class="text-center mb-0">추가접종 : 1차 접종 후 2 ~ 4주 간격으로 1 ~ 2회</p>
-                                <p class="text-center mb-0">보강접종 : 추가접종 후 매년 1회 주사</p>
-                                <p class="text-center mb-0"></p>
+                                <p class="doginfo_left">기초접종 : 생후 6 ~ 8주에 1차 접종</p>
+                                <p class="doginfo_left">추가접종 : 1차 접종 후 2 ~ 4주 간격으로 1 ~ 2회</p>
+                                <p class="doginfo_left">보강접종 : 추가접종 후 매년 1회 주사</p>
+                                <p class="doginfo_left"></p>
                             </div>
                             <div class="card-body">
                             기관ㆍ기관지염 (Kennel Cough)
-                                <p class="text-center mb-0">기초접종 : 생후 6 ~ 8주에 1차 접종</p>
-                                <p class="text-center mb-0">추가접종 : 1차 접종 후 2 ~ 4주 간격으로 1 ~ 2회</p>
-                                <p class="text-center mb-0">보강접종 : 추가접종 후 매년 1회 주사</p>
+                                <p class="doginfo_left">기초접종 : 생후 6 ~ 8주에 1차 접종</p>
+                                <p class="doginfo_left">추가접종 : 1차 접종 후 2 ~ 4주 간격으로 1 ~ 2회</p>
+                                <p class="doginfo_left">보강접종 : 추가접종 후 매년 1회 주사</p>
                             </div>
                             <div class="card-body">
                             광견병
-                                <p class="text-center mb-0">기초접종 : 생후 3개월 이상 1회 접종</p>
-                                <p class="text-center mb-0">보강접종 : 6개월 간격으로 주사</p>
+                                <p class="doginfo_left">기초접종 : 생후 3개월 이상 1회 접종</p>
+                                <p class="doginfo_left">보강접종 : 6개월 간격으로 주사</p>
                             </div>
                             	<a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">맨 위로 </a>
                         </div>

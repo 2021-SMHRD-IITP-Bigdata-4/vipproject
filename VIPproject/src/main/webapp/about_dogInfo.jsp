@@ -1,3 +1,4 @@
+<%@page import="Model.VipMemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -22,12 +23,17 @@
 </head>
 
 <body>
-    <!-- Header -->
+
+<% 
+      VipMemberDTO info = (VipMemberDTO)session.getAttribute("info"); 
+   %>
+
+     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="about_dogInfo.jsp">
-                V.I.P.
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">
+                VIP
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,22 +44,26 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="about_dogInfo.jsp">애완견 정보</a>
+                            <a class="nav-link" href="about_dogInfo.jsp">반려견 정보</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about_law.jsp">동물법과 정책</a>
+                            <a class="nav-link" href="about_law.jsp">법과 정책</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about_rankOfProductByShop.jsp">잘 팔리는 용품</a>
+                            <a class="nav-link" href="about_rankOfProductByShop.jsp">애견용품순위</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="allMap.jsp">애완견 동반 서비스</a>
+                        <%if (info != null){  %>
+                            <a class="nav-link" href="allMap.jsp">애견동반시설</a>
+                            <%}else{ %>
+                            <a class="nav-link" id="egun"href="login.jsp">애견동반시설</a>
+                            <%} %>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="boardMain.jsp">커뮤니티 게시판</a>
+                            <a class="nav-link" href="boardMain.jsp">커뮤니티</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about_dogInfo.jsp">반려견 캘린더</a>
+                            <a class="nav-link" href="shop.jsp">반려견 캘린더</a>
                         </li>
                     </ul>
                 </div>
@@ -66,8 +76,22 @@
                             </div>
                         </div>
                     </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    
+                    <%if (info != null){ %>                   
+                       <a href = "userUpdate.jsp">개인정보수정</a> <br>                     
+                       <a href = "Logout">로그아웃</a>
+                    <%} else {%>
+                    <a class="nav-icon position-relative text-decoration-none" href="login.jsp">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span><!--숫자표현  전체수정-->
+                    </a>
+                    <%}%>
                 </div>
             </div>
+
         </div>
     </nav>
     <!-- Close Header -->
@@ -77,13 +101,13 @@
             <div class="row align-items-center py-5">
                 <div class="col-md-8 text-white">
                     <p>
-                        내가 기르는 반려견은 어떤 아이일까요?
-                        어떤걸 좋아하고 어떨때 행복할까요?
+                        내가 기르는 반려견은 어떤 아이일까요?<br>
+                        어떤걸 좋아하고 어떨때 행복할까요?<br>
                         우리는 서로 알아가는게 필요해요
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/img/dog1_aboutDog-removebg-preview.png" alt="About Hero">
+                    <img src="assets/img/dog/dogs-removebg-preview.png" alt="About Hero">
                 </div>
             </div>
         </div>
@@ -98,6 +122,8 @@
                     <div class="h1 text-success text-center"><img src="assets/img/dog (1).png" alt="About Hero"><!-- <i class="fa fa-truck fa-lg"></i> --></div>
                     <h2 class="h5 mt-4 text-center">
                      <a href="doginfo_basic1.jsp">기초 상식</a>
+                     <p><br>개종류 용품 질병 개신체 
+                     <br>용어를 알 수 있어요</p>
                     </h2>
                 </div>
             </div>
@@ -107,6 +133,8 @@
                     <div class="h1 text-success text-center"><img src="assets/img/dog (2).png" alt="About Hero"></div>
                     <h2 class="h5 mt-4 text-center">
                     	<a href="doginfo_basic2.jsp">건강 정보</a>
+                    	<p><br>식사관리 먹으면안되는음식 임신출산
+                    	<br>강아지성장 훈련 예방접종</p>
                     </h2>
                 </div>
             </div>
@@ -116,6 +144,7 @@
                     <div class="h1 text-success text-center"><img src="assets/img/dog (3).png" alt="About Hero"></div>
                     <h2 class="h5 mt-4 text-center">
                     	<a href="doginfo_basic3_type.jsp">견종별 특성</a>
+                    	<p><br>견종이름으로 특성을 검색할수 있어요</p>
                    	</h2>
                 </div>
             </div>
@@ -191,6 +220,11 @@
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
     <!-- End Script -->
+    <script type="text/javascript">
+    $("#egun").on("click",function(){
+    	alert("로그인을 하신 후 이용해 주시기 바랍니다")
+    });
+    </script>
 </body>
 
 </html>

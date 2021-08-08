@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
+		<style type="text/css">
+	.doginfo_left{
+		text-align: left!important;
+		margin-bottom: 0!important;
+	}
+	</style>
 </head>
 
 <body>
@@ -116,51 +122,55 @@
                     <div class="card mb-4 product-wap rounded-0">
                         <!-- 하나의 견종에 대한 특성을 보여줌 -->
                  		<%for(int i = 0;i<list.size();i++){ %> 
+                        <br>
+                        <br>
+                        <br>
                         <div class="card-body" id = "tag_<%=i%>">
+                        <div class="h1 text-success text-center"><img src="assets/img/dog/<%=i%>.jpg" alt="About Hero"></div>
                         	<!-- 1 -->
                        		<%=list.get(i).getT_type()%>
                        		<br><br>
                        		<!-- 2 --> 
                             <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                <p class="text-center mb-0">원산지</p>
+                                <p class="doginfo_left">원산지</p>
                             </ul>
-                            	<p class="text-center mb-0"><%=list.get(i).getT_origin()%></p>
+                            	<p class="doginfo_left"><%=list.get(i).getT_origin()%></p>
                             <br>
                             <!-- 3 --> 	
                             <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                <p class="text-center mb-0">성격</p>
+                                <p class="doginfo_left">성격</p>
                             </ul>
-                            	<p class="text-center mb-0"><%=list.get(i).getT_personality()%></p>
+                            	<p class="doginfo_left"><%=list.get(i).getT_personality()%></p>
                             <br>
                             <!-- 4 --> 	
                             <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                <p class="text-center mb-0">크기</p>
+                                <p class="doginfo_left">크기</p>
                             </ul>
-                            	<p class="text-center mb-0"><%=list.get(i).getT_size()%></p>
+                            	<p class="doginfo_left"><%=list.get(i).getT_size()%></p>
                             <br>
                             <!-- weight -->
                             <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                <p class="text-center mb-0">크기</p>
+                                <p class="doginfo_left">크기</p>
                             </ul>
-                            	<p class="text-center mb-0"><%=list.get(i).getT_weight()%></p>
+                            	<p class="doginfo_left"><%=list.get(i).getT_weight()%></p>
                             <br>
                             <!-- 유전병 -->
                             <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                <p class="text-center mb-0">유전병</p>
+                                <p class="doginfo_left">유전병</p>
                             </ul>
-                            	<p class="text-center mb-0"><%=list.get(i).getT_disease()%></p>
+                            	<p class="doginfo_left"><%=list.get(i).getT_disease()%></p>
                             <br>
                             <!-- 내한성 -->
                             <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                <p class="text-center mb-0">내한성</p>
+                                <p class="doginfo_left">내한성</p>
                             </ul>
-                            	<p class="text-center mb-0"><%=list.get(i).getT_resistance()%></p>
+                            	<p class="doginfo_left"><%=list.get(i).getT_resistance()%></p>
                             <br>
                             <!-- 운동량 -->
                             <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                <p class="text-center mb-0">운동량</p>
+                                <p class="doginfo_left">운동량</p>
                             </ul>
-                            	<p class="text-center mb-0"><%=list.get(i).getT_workout()%></p>
+                            	<p class="doginfo_left"><%=list.get(i).getT_workout()%></p>
                             <br>
 				                <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">맨 위로 </a>
                         </div>
