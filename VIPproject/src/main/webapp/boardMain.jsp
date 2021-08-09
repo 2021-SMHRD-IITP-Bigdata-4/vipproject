@@ -68,7 +68,84 @@
 		.page-link{
 			font-size:14px!important;
 		}
+		
+.p-text{
+	margin-top: 25px;
+	text-aline:center;
+	padding-bottom: 1rem;
+}
+.ptag1{
+	padding-bottom: 1rem;
+	text-aline:center;
+}
+.ptag2{
+	margin-top: 25px;
+	padding-bottom: 1rem;
+	text-aline:center;
+}
+.con{
+	padding-bottom: 3rem!important; 
+	width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.in{
+	font-size: 19px;
+	font-weight: bold;
+}
+.cate{
+	font-size: 18px;
+	font-weight: bold;
+}
+.img{
+	width: 100%;
+	height: 100%;
+}
+.categori{
+	height: 260px;
+}
+.img-fluids{
+	max-width: 100%;
+    height: 200px;
+}
+.img-fluid1{
+	max-width: 100%;
+    height: 205px;
+}
+.text{
+	font-size: 15px;
+}
 
+.address{
+	font-size: 12px;
+}
+.copy{
+	font-size: 12px;
+}
+.likeLike{
+	font-weight: bold;
+}
+#search-type{
+	height : 100%;
+}
+.form-control{
+	height : 100%;
+}
+.my-2{
+    margin-top: 0rem!important;
+    margin-bottom: 0rem!important;
+}
+.btn-secondary {
+    height: 36px;
+}
+.btn.btn-dark{
+	margin-bottom : 3px;
+}
+.btn.btn-outline-dark{
+	margin-bottom : 3px;
+}
 		
     </style>
 <!--
@@ -140,25 +217,29 @@ https://templatemo.com/tm-559-zay-shop
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">
                 VIP
             </a>
-
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+			
+			
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">                     
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.jsp">반려견 정보</a>
+                            <a class="nav-link" href="about_dogInfo.jsp"><span>반려견 정보</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.jsp">법과 정책</a>
+                            <a class="nav-link" href="about_law.jsp">법과 정책</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.jsp">애견용품순위</a>
+                            <a class="nav-link" href="about_rankOfProductByShop.jsp">애견용품순위</a>
                         </li>
                         <li class="nav-item">
+                        <%if (info != null){  %>
+                            <a class="nav-link" href="allMap.jsp">애견동반시설</a>
+                            <%}else{ %>
                             <a class="nav-link" id="egun"href="login.jsp">애견동반시설</a>
+                            <%} %>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="boardMain.jsp">커뮤니티</a>
@@ -169,23 +250,14 @@ https://templatemo.com/tm-559-zay-shop
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                    </a>
+                    <%if (info != null){ %>                   
+                    	<a href = "userUpdate.jsp">개인정보수정</a> <br>                  	
+                    	<a href = "Logout">로그아웃</a>
+                    <%} else {%>
                     <a class="nav-icon position-relative text-decoration-none" href="login.jsp">
-                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span>로그인</span><!--숫자표현  전체수정-->
                     </a>
+                    <%}%>
                 </div>
             </div>
 
@@ -243,17 +315,17 @@ https://templatemo.com/tm-559-zay-shop
   <tbody>
   <tr class="table-success">
       <th scope="row" class = "post-sort" style ="width:20%;">BEST</th>
-      <td class = "post-title"><a href = "#" class = "post-Atag">사다리타기 알고리즘 공개좀</a><br><br>발표맨<br>좋아요 11<br></td>
+      <td class = "post-title"><a href = "#" class = "post-Atag">사다리타기 알고리즘 공개좀</a><br><br>발표맨<br><span class = "likeLike">좋아요 11</span><br></td>
       <td class = "post-comment">17</td>
   </tr>
   <tr class="table-success">
       <th scope="row" class = "post-sort">BEST</th>
-      <td class = "post-title"><a href = "#" class = "post-Atag">내가 태연 팬은 아닌데, 태연 노래 좋더라</a><br><br>태연조하<br>좋아요 43<br></td>
+      <td class = "post-title"><a href = "#" class = "post-Atag">내가 태연 팬은 아닌데, 태연 노래 좋더라</a><br><br>태연조하<br><span class = "likeLike">좋아요 43</span><br></td>
       <td class = "post-comment">45</td>
   </tr>
   <tr class="table-success">
       <th scope="row" class = "post-sort">BEST</th>
-      <td class = "post-title"><a href = "#" class = "post-Atag">여기에 정치글 좀 올리지 마라</a><br><br>허경영<br>좋아요29</td>
+      <td class = "post-title"><a href = "#" class = "post-Atag">여기에 정치글 좀 올리지 마라</a><br><br>허경영<br><span class = "likeLike">좋아요29</span></td>
       <td class = "post-comment">105</td>
   </tr>
   </tbody>
@@ -280,9 +352,9 @@ https://templatemo.com/tm-559-zay-shop
 </table>
 
 <!-- 홈, 글쓰기 -->
-<a href = "index.jsp"><button type="button" class="btn btn-outline-dark">Home</button></a>
+<a href = "index.jsp"><button type="button" class="btn btn-outline-dark">홈</button></a>
 <%if (info != null){ %>
-	<a href = "boardWrite.jsp"><button type="button" class="btn btn-dark">Write</button></a>
+	<a href = "boardWrite.jsp"><button type="button" class="btn btn-dark">글쓰기</button></a>
 <%} %>
 
 <!-- 페이징 -->
@@ -342,38 +414,21 @@ https://templatemo.com/tm-559-zay-shop
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
-
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Zay Shop</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">VIP</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
-                            <i class="fas fa-map-marker-alt fa-fw"></i>
-                            123 Consectetur at ligula 10660
-                        </li>
-                        <li>
-                            <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                            <span class="address">동구 예술길 31-15 스마트인재개발원</span><br>
+                            <span class="address">대표자 : VIP</span><br>
+                            <span class="address">사업자등록번호 : 000-00-00000</span><br>
+                            <span class="address">개인정보관리책임자 : 정세연</span><br>
+                            <span class="address">고객센터 : 062-655-3509</span><br>
+                            <span class="address">이메일 : vip_korea@vip.com</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">About Us</a></li>
-                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
-                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                        <li><a class="text-decoration-none" href="#">Contact</a></li>
-                    </ul>
-                </div>
-
             </div>
-
             <div class="row text-light mb-4">
                 <div class="col-12 mb-3">
                     <div class="w-100 my-3 border-top border-light"></div>
@@ -381,42 +436,27 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-auto me-auto">
                     <ul class="list-inline text-left footer-icons">
                         <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a rel="nofollow" class="text-light text-decoration-none" target="_blank" href="http://fb.com/templatemo"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                            <a rel="nofollow" class="text-light text-decoration-none" target="_blank"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
                         </li>
                         <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item border border-light rounded-circle text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                            <a class="text-light text-decoration-none" target="_blank"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-auto">
-                    <label class="sr-only" for="subscribeEmail">Email address</label>
-                    <div class="input-group mb-2">
-                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
-                        <div class="input-group-text btn-success text-light">Subscribe</div>
-                    </div>
-                </div>
             </div>
         </div>
-
         <div class="w-100 bg-black py-3">
             <div class="container">
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
-                            Copyright &copy; 2021 Company Name 
-                            | Designed by <a rel="sponsored" href="https://templatemo.com/page/1" target="_blank">TemplateMo</a>
+                            <span class="copy">Copyright &copy; 2021 V.I.P.
+                            | Designed by VIP</span>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
     </footer>
     <!-- End Footer -->
 
