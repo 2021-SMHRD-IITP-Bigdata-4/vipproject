@@ -481,14 +481,13 @@ https://templatemo.com/tm-559-zay-shop
 				if(result.length > 0){
 					for (let i = 0; i < result.length;i++){
 						html += "<tr>";
-						html += "<th scope='row' id = 'post_sort'>"+result[i].post_sort+"</th>";
-						html += "<td><a href = 'boardView.jsp?post_num="+ result[i].post_num +"'>"+result[i].post_title+"</a></td>";
-						html += "<td>"+result[i].display_name+"</td>";
-						html += "<td>"+result[i].post_date+"</td>";
-						html += "<td>댓글</td>"
-						html += "<td>좋아요</td>"
+						html += "<th scope='row' id = 'post_sort' class = 'post-sort' style ='width:20%;'>"+result[i].post_sort+"</th>";
+						html += "<td class = 'post-title'><a href = 'boardView.jsp?post_num="+ result[i].post_num +"' class = 'post-Atag'>"+result[i].post_title+"</a><br><br>";
+						html += result[i].display_name+"<br>좋아요 <span></span><br>"+result[i].post_date+"</td>";
+						html += "<td class = 'post-comment'>댓글</td>";
 						html += "</tr>";
 					
+						
 					}
 		    
 					/* alert("전송 성공"); */					
