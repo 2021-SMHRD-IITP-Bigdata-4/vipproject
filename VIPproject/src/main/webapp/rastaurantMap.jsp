@@ -62,6 +62,12 @@
 	.intro{
 		font-size: 10px;
 	}
+	.address{
+	font-size: 12px;
+}
+.copy{
+	font-size: 12px;
+}
     </style>
 </head>
 <body>
@@ -73,52 +79,48 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">vip</a>
-
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">
+                VIP
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+			
+			
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.jsp">Home</a>
+                            <a class="nav-link" href="about_dogInfo.jsp"><span>반려견 정보</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.jsp">About</a>
+                            <a class="nav-link" href="about_law.jsp">법과 정책</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.jsp">Shop</a>
+                            <a class="nav-link" href="about_rankOfProductByShop.jsp">애견용품순위</a>
                         </li>
                         <li class="nav-item">
-                            <a id="allMap"class="nav-link" href="allMap.jsp">애견동반시설</a>
+                        <%if (info != null){  %>
+                            <a class="nav-link" href="allMap.jsp">애견동반시설</a>
+                            <%}else{ %>
+                            <a class="nav-link" id="egun"href="login.jsp">애견동반시설</a>
+                            <%} %>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="boardMain.jsp">커뮤니티</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.jsp">반려견 캘린더</a>
                         </li>
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
-                    </a>
                     <%if (info != null){ %>                   
                     	<a href = "userUpdate.jsp">개인정보수정</a> <br>                  	
                     	<a href = "Logout">로그아웃</a>
                     <%} else {%>
                     <a class="nav-icon position-relative text-decoration-none" href="login.jsp">
-                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                        <span>로그인</span><!--숫자표현  전체수정-->
                     </a>
                     <%}%>
                 </div>
@@ -177,7 +179,56 @@
 	</form>
 	  </div>
      </div>
-
+	
+	 <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">VIP</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <span class="address">동구 예술길 31-15 스마트인재개발원</span><br>
+                            <span class="address">대표자 : VIP</span><br>
+                            <span class="address">사업자등록번호 : 000-00-00000</span><br>
+                            <span class="address">개인정보관리책임자 : 정세연</span><br>
+                            <span class="address">고객센터 : 062-655-3509</span><br>
+                            <span class="address">이메일 : vip_korea@vip.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a rel="nofollow" class="text-light text-decoration-none" target="_blank"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            <span class="copy">Copyright &copy; 2021 V.I.P.
+                            | Designed by VIP</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
 	
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="assets/js/jquery-1.11.0.min.js"></script>
