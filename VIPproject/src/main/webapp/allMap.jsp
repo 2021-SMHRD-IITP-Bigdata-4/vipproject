@@ -44,6 +44,9 @@
 .copy{
 	font-size: 12px;
 }
+.load{
+	font-size: 15px;
+}
     
     </style>
 </head>
@@ -235,8 +238,8 @@
 			            });
 			            	//console.log(maks.position);
 					
- 			            var content ='<div style="width:150px;text-align:bottom;padding:4px 0;font-size:11px;">'
- 			            +"도로명 주소"+'<br>'+i.fac_address+'<br><a href ='+i.fac_intro+'>상세정보</div>'; 
+ 			            var content ='<div style="width:150px;text-align:bottom;padding:4px 0;font-size:11px;"><span class="load">'
+ 			            +"도로명 주소"+'</span><br><span class="load">'+i.fac_address+'</span><br><a href ='+i.fac_intro+'><span class="load">상세정보</span></div>'; 
 					 	
 						var infowindow = new daum.maps.InfoWindow({
 							content: content,
