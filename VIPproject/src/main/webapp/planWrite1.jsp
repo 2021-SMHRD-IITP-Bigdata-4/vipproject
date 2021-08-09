@@ -1,47 +1,11 @@
 <%@page import="Model.VipMemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-<%@page import="java.util.Calendar"%>
-
-
-<%
-String yy = request.getParameter("year");    
-String mm = request.getParameter("month");    
-
-Calendar cal = Calendar.getInstance();    
-
-int y = cal.get(Calendar.YEAR);
-int m = cal.get(Calendar.MONTH);
-
-if( yy != null && mm != null && !yy.equals("") && !yy.equals("")){
-	y = Integer.parseInt(yy);
-	m = Integer.parseInt(mm)-1;
-}
-
-cal.set(y,m,1);
-int dayOfweek = cal.get(Calendar.DAY_OF_WEEK); // 2
-int lastday = cal.getActualMaximum(Calendar.DATE);
-
-int b_y = y;
-int b_m = m;
-if(m == 0) {
-	b_y= b_y -1;
-	b_m = 12;
-}
-
-int n_y = y;
-int n_m = m+2;
-if(n_m == 13) {
-	n_y= n_y +1;
-	n_m = 1;
-}
-%>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>VIP - product Ranking Page</title>
+    <title>about dog basic info</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -55,47 +19,14 @@ if(n_m == 13) {
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+   
+<!--
+    
+TemplateMo 559 Zay Shop
 
-<style>
-body{
-	font-size:9pt;
-	color: #555555;
-}
-table{
-	border-collapse: collapse;
-}
-th, td {
-	border:1px solid #cccccc;
-	width: 50px;
-	height: 25px;
-	text-align:center;
-}
-caption {
-	margin-bottom:10px;
-	font-size: 15px;
-	
-}
-.t_div1 {
-	float:left;
-	width:31%;
-}
-.t_div2 {
-	margin-top: 8px;
-    float: left;
-    margin-left: 12px;
-    background-color: White;
-}
-.t_div3 {
-float:right;
-width:40%;
-text-align:right;
-}
-.tables{
-	width:100%;
-	
-}
+https://templatemo.com/tm-559-zay-shop
 
-</style>
+-->
 <style type="text/css">
 .p-text{
 	margin-top: 25px;
@@ -157,16 +88,70 @@ text-align:right;
 }
 </style>
 </head>
+ <script>
+  $( function() {
+    $( "#pdate" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  } );
+  </script>
 
-
-
-
-
-
-<body>
+<style>
+body {
+	font-size:9pt;
+	font-family:맑은 고딕;
+	color: #333333;
+}
+table{
+	width:380px;
+	border-collapse:collapse;
+}
+th,td {
+	border:1px solid #cccccc;
+	padding: 5px;
+}
+caption {
+	font-size:14pt;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.div1 {
+	width: 380px;
+	text-align: center;
+	margin-top: 10px;
+	}
+.t{
+width: 100%;
+	}
+</style>
 <% 
 		VipMemberDTO info = (VipMemberDTO)session.getAttribute("info"); 
 	%>
+	
+<body>
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
@@ -221,104 +206,58 @@ text-align:right;
         </div>
     </nav>
     <!-- Close Header -->
-    <br></br>
-    <a><span style="font-size: 1.5em">내 반려견 캘린더</span></a>	
-    <br></br>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
 
     <!-- Start Content -->
     
-    <form name="frm" method="post" action="planList1.jsp">
-
-	<select name = "year">
-		<%
-		for(int y1=2021; y1<=2041; y1++ ) {
-			
-			String chk1 = "";
-			//if( y1 == Integer.parseInt(yy)) { chk1 = " selected"; } 이거때문에 오류떠서 주석처리함.
-			
-		%>
-		<option value = "<%=y1 %>" <%=chk1 %> ><%=y1%>년</option>
-		<%
-		}
-		%>
-	</select>
-	<select name= "month">
-		<%
-		for( int m1=1; m1<=12; m1++){
-				String chk2 = "";
-				//if( m1 == Integer.parseInt(mm)) { chk2 = "selected";} 이거때문에 오류떠서 주석처리함. 
-			%>
-				<option value="<%=m1 %>" <%=chk2 %>><%=m1 %>월</option>
-			<%
-		    }
-			%>
-		
-	</select>
-
-<input type="submit" class="btn btn-outline-success" value="달력보기">
-<br></br>
+    <form name="frm" method="post" action="planWritesave.jsp">
+	<table class="t">
+		<tr>
+		<th width="20%">날짜</th>
+		<td width="80%"><input type="text" name= "pdate" id= "pdate" style="width:98%"></td>
+		</tr>
+		<tr>
+		<th>제목</th>
+		<td><input type="text" name= "title" style="width:98%"></td>
+		</tr>
+		<tr>
+		<th>내용</th>
+		<td><textarea name= "content" style="width:98%; height: 150px;"></textarea></td>
+		</tr>
+	</table>
 	
-</form>
-
-	<div style="width:350px;">
-	    <div class="t_div1">&nbsp;</div>
-		<div class="t_div2">
-			<%=y %>년<%=m+1 %>월
-		</div>
-		<div class="t_div3">
-			<button type="button" class="btn btn-outline-success" onClick="location.href='planWrite1.jsp'">일정등록</button>
-		</div>
+<div class = "div1">
+	<button type="submit">저장</button>
+	<button type="button" onclick="self.close();">닫기</button>
 </div>
-	
-<table class="tables">
-<br></br>
-	<tr>	
-		<th>일</th>
-		<th>월</th>
-		<th>화</th>
-		<th>수</th>
-		<th>목</th>
-		<th>금</th>
-		<th>토</th>
-	</tr>
-	<tr>
-	<%
-	int count = 0;
-	for(int s= 1; s<dayOfweek; s++)	{
-		out.print("<td></td>");
-		count++;
-	}
-	for(int d=1; d<=lastday; d++) {
-		count++;
-		String color ="#555555";
-		if(count == 7) {
-			color = "blue";
-		}else if(count == 1){
-			color = "red";
-		}
-	%>
-		<td style="color:<%= color%>"><%=d %></td>
-	<%
-		if( count == 7 ){
-			out.print("</tr><tr>");
-			count = 0;
-		}
-	}
-	while( count < 7) {
-		out.print("<td></td>");
-		count++;
-	}
-	
-	%>
-	</tr>
-</table>
+
+</form>
+    
+    
     <!-- End Content -->
 
     <!-- Start Footer -->
-    <br></br>
-    <br></br>
-    <br></br>
-     <footer class="bg-dark" id="tempaltemo_footer">
+   <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 pt-5">
@@ -365,8 +304,9 @@ text-align:right;
             </div>
         </div>
     </footer>
-    
     <!-- End Footer -->
+
+
 
     <!-- Start Script -->
     <script src="assets/js/jquery-1.11.0.min.js"></script>
@@ -375,20 +315,6 @@ text-align:right;
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
     <!-- End Script -->
-    <script>
-function fn_planWrite(){
-	
-}
-
-function fn_defail(v){
-	var w = (window.screen.width/2) - 200;
-	var h = (window.screen.height/2) - 200;
-	var url = "planView.jsp?pdate="+v;
-	window.open(url,"planview", "width = 400, height = 400, left="+w+",top="+h);
-}
-
-
-</script>
 </body>
 
 </html>

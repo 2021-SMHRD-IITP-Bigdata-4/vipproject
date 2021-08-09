@@ -189,24 +189,137 @@ public class CalendarDAO {
 			return totalCount;
 		}
 }
+
+//planDelete
+String sql = "DELETE FROM plan WHERE userid= '"+USERID+"' AND pdate='"+pdate+"' ";
+int result = stmt.executeUpdate(sql); //삭제완료 : result =1; 
+if( result == 1){
+%>
+    <script>
+	alert("삭제완료");
+	self.close();
+	opener.document.location="planList.jsp";
+	</script>
+<% 
+}else{
+%>
+	<script>
+	alert("삭제실패");
+	self.close();
+	</script>
+<%
+}
+%>
+
+//planWrite
+<%
+String sql = "INSERT INTO plan(userid, pdate, title, content)";
+	   sql+= "VALUES('"+USERID+"','"+pdate+"','"+title+"','"+content+"')";
+int result = stmt.executeUpdate(sql); //왜 오류뜨지ㅠ
+%>   
 		
+		
+		
+//planList
+
+<tr>
+<%
+int count = 0;
+for(int s= 1; s<dayOfweek; s++)	{
+	out.print("<td></td>");
+	count++;
+}
+for(int d=1; d<=lastday; d++) {
+	count++;
+	String color ="#555555";
+	if(count == 7) {
+		color = "blue";
+	}else if(count == 1){
+		color = "red";
+	}
+    String f_date = y+"-"+(m+1)+"-"+d;
 	
+	String f_sql = "select count(*) cnt from plan";
+		   f_sql+= "where userid = '"+USERID+"'";
+		   f_sql+= "and pdate = '"+f_date+"'";
+	
+    ResultSet f_rs = stmt.executeQuery(f_sql);
+	f_rs.next();
+    
+    int f_cnt = f_rs.getInt("cnt");
+	if(f_cnt == 1){
+		color = "pink";
+	%>
+	<td style="color:<%= color%>"><a href="javascript:fn_defail('<%=f_date %>')"><%=d %></a></td>
+	<%
+	}else{
+%>
+	<td style="color:<%= color%>"><%=d %></td>
+<%
+	}
+    //개행을 위한 설정
+	if( count == 7 ){
+		out.print("</tr><tr>");
+		count = 0; //변수초기화
+	}
+}
+while( count < 7) {
+	out.print("<td></td>");
+	count++;
+}
+
+%>
+</tr>		
+
+
+
+//planModify
+String sql = " select title,content, from plan ";
+sql += "where userid = '"+USERID+"' and pdate='"+pdate+"' ";   	
+ResultSet rs = stmt.executeQuery(sql);
+
+String title = "";
+String content = "";
+
+if( rs.next() ) {
+title = rs.getString("title");
+content = rs.getString("content");
+}else {		
+	
+	<%
+	return;
+}
+
+%>			
+	
+
+//planModifySave
+<%
+String sql = "update plan set title = '"+title+"', content='"+content+"'";
+       sql += "where userid='"+USERID+"' and pdate=''";
+
+int result = stmt.executeUpdate(sql); //왜 오류뜨지ㅠ
+
+%>   		
 		
+//planview	
+String sql = " select title,content, from plan ";
+sql += "where userid = '"+USERID+"' and pdate='"+pdate+"' ";   	
+ResultSet rs = stmt.executeQuery(sql);
+
+String title = "";
+String content = "";
+
+if( rs.next() ) {
+title = rs.getString("title");
+content = rs.getString("content");
+}else {
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	<%
+	return;
+}
+
+%>			
 		
 		
 		
