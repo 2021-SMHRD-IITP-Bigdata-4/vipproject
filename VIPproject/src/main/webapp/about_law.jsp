@@ -1,10 +1,11 @@
+<%@page import="Model.VipMemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>about law</title>
+    <title>법과 정책</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,50 +20,121 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
+
+	<style type="text/css">
+	.p-text{
+		margin-top: 25px;
+		text-aline:center;
+		padding-bottom: 1rem;
+	}
+	.ptag1{
+		padding-bottom: 1rem;
+		text-aline:center;
+	}
+	.ptag2{
+		margin-top: 25px;
+		padding-bottom: 1rem;
+		text-aline:center;
+	}
+	.con{
+		padding-bottom: 3rem!important; 
+		width: 100%;
+	    padding-right: var(--bs-gutter-x,.75rem);
+	    padding-left: var(--bs-gutter-x,.75rem);
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+	.in{
+		font-size: 19px;
+		font-weight: bold;
+	}
+	.cate{
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.img{
+		width: 100%;
+		height: 100%;
+	}
+	.categori{
+		height: 260px;
+	}
+	.img-fluids{
+		max-width: 100%;
+	    height: 200px;
+	}
+	.img-fluid1{
+		max-width: 100%;
+	    height: 205px;
+	}
+	.text{
+		font-size: 15px;
+	}
+	.btn.btn-dark{
+		font-size: 12px!important;
+		float: right;
+	}
+	.address{
+		font-size: 12px;
+	}
+	.copy{
+		font-size: 12px;
+	}
+	</style>
 </head>
 
 <body>
+<% 
+      VipMemberDTO info = (VipMemberDTO)session.getAttribute("info"); 
+   %>
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand text-success logo h1 align-self-center" href="about_dogInfo.jsp">
-                V.I.P.
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">
+                VIP
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+			
+			
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="about_dogInfo.jsp">애완견 정보</a>
+                            <a class="nav-link" href="about_dogInfo.jsp"><span>반려견 정보</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about_law.jsp">동물법과 정책</a>
+                            <a class="nav-link" href="about_law.jsp">법과 정책</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about_rankOfProductByShop.jsp">잘 팔리는 용품</a>
+                            <a class="nav-link" href="about_rankOfProductByShop.jsp">애견용품순위</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="allMap.jsp">애완견 동반 서비스</a>
+                        <%if (info != null){  %>
+                            <a class="nav-link" href="allMap.jsp">애견동반시설</a>
+                            <%}else{ %>
+                            <a class="nav-link" id="egun"href="login.jsp">애견동반시설</a>
+                            <%} %>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="boardMain.jsp">커뮤니티 게시판</a>
+                            <a class="nav-link" href="boardMain.jsp">커뮤니티</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about_dogInfo.jsp">내 반려견 캘린더</a>
+                            <a class="nav-link" href="shop.jsp">반려견 캘린더</a>
                         </li>
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
+                    <%if (info != null){ %>                   
+                    	<a href = "userUpdate.jsp">개인정보수정</a> <br>                  	
+                    	<a href = "Logout">로그아웃</a>
+                    <%} else {%>
+                    <a class="nav-icon position-relative text-decoration-none" href="login.jsp">
+                        <span>로그인</span><!--숫자표현  전체수정-->
+                    </a>
+                    <%}%>
                 </div>
             </div>
         </div>
@@ -106,7 +178,7 @@
                             </div>
                             <div class="card-body">
                             제3조(동물보호의 기본원칙) 누구든지 동물을 사육ㆍ관리 또는 보호할 때에는 다음 각 호의 원칙을 준수하여야 한다.<br>  
-                                <p class="text-center mb-0">
+                                <p class="doginfo_left">
                                 <개정 2017. 3. 21.><br>
                                 1. 동물이 본래의 습성과 신체의 원형을 유지하면서 정상적으로 살 수 있도록 할 것<br>
                                 2. 동물이 갈증 및 굶주림을 겪거나 영양이 결핍되지 아니하도록 할 것<br>
@@ -116,7 +188,7 @@
                                 </p>
                              </div>
                              <div class="card-body">제13조(등록대상동물의 관리 등)
-                             	<p class="text-center mb-0">① 소유자등은 등록대상동물을 기르는 곳에서 벗어나게 하는 경우에는 소유자등의 연락처 등 농림축산식품부령으로 정하는 사항을 표시한 인식표를 등록대상동물에게 부착하여야 한다.<br>  
+                             	<p class="doginfo_left">① 소유자등은 등록대상동물을 기르는 곳에서 벗어나게 하는 경우에는 소유자등의 연락처 등 농림축산식품부령으로 정하는 사항을 표시한 인식표를 등록대상동물에게 부착하여야 한다.<br>  
                                 <개정 2013. 3. 23.><br>
                                 ② 소유자등은 등록대상동물을 동반하고 외출할 때에는 농림축산식품부령으로 정하는 바에 따라 목줄 등 안전조치를 하여야 하며, 배설물(소변의 경우에는 공동주택의 엘리베이터ㆍ계단 등 건물 내부의 공용공간 및 평상ㆍ의자 등 사람이 눕거나 앉을 수 있는 기구 위의 것으로 한정한다)이 생겼을 때에는 즉시 수거하여야 한다.<br>  
                                 <개정 2013. 3. 23., 2015. 1. 20.><br>
@@ -131,7 +203,7 @@
                             </div>
                             <div class="card-body">
                             제6조의2(보험의 가입) 법 제13조의2제4항에 따라 맹견의 소유자는 다음 각 호의 요건을 모두 충족하는 보험에 가입해야 한다.
-                                <p class="text-center mb-0">1. 다음 각 목에 해당하는 금액 이상을 보상할 수 있는 보험일 것<br>
+                                <p class="doginfo_left">1. 다음 각 목에 해당하는 금액 이상을 보상할 수 있는 보험일 것<br>
                                 가. 사망의 경우에는 피해자 1명당 8천만원<br>
                                 나. 부상의 경우에는 피해자 1명당 농림축산식품부령으로 정하는 상해등급에 따른 금액<br>
                                 다. 부상에 대한 치료를 마친 후 더 이상의 치료효과를 기대할 수 없고 그 증상이 고정된 상태에서 그 부상이 원인이 되어 신체의 장애(이하 “후유장애”라 한다)가 생긴 경우에는 피해자 1명당 농림축산식품부령으로 정하는 후유장애등급에 따른 금액<br>
@@ -152,7 +224,7 @@
                             </div>
                             <div class="card-body">
                             제12조(안전조치)
-                                <p class="text-center mb-0">① 소유자등은 법 제13조제2항에 따라 등록대상동물을 동반하고 외출할 때에는 목줄 또는 가슴줄을 하거나 이동장치를 사용해야 한다. 다만, 소유자등이 월령 3개월 미만인 등록대상동물을 직접 안아서 외출하는 경우에는 해당 안전조치를 하지 않을 수 있다.  <개정 2021. 2. 10.><br>
+                                <p class="doginfo_left">① 소유자등은 법 제13조제2항에 따라 등록대상동물을 동반하고 외출할 때에는 목줄 또는 가슴줄을 하거나 이동장치를 사용해야 한다. 다만, 소유자등이 월령 3개월 미만인 등록대상동물을 직접 안아서 외출하는 경우에는 해당 안전조치를 하지 않을 수 있다.  <개정 2021. 2. 10.><br>
                                 ② 제1항 본문에 따른 목줄 또는 가슴줄은 2미터 이내의 길이여야 한다.  <개정 2021. 2. 10.><br>
                                 ③ 등록대상동물의 소유자등은 법 제13조제2항에 따라 「주택법 시행령」 제2조제2호 및 제3호에 따른 다중주택 및 다가구주택, 같은 영 제3조에 따른 공동주택의 건물 내부의 공용공간에서는 등록대상동물을 직접 안거나 목줄의 목덜미 부분 또는 가슴줄의 손잡이 부분을 잡는 등 등록대상동물이 이동할 수 없도록 안전조치를 해야 한다.  <신설 2021. 2. 10.><br>
                                 [전문개정 2019. 3. 21.]<br>
@@ -162,6 +234,8 @@
                             	<br><br><br>
                             	</p>
                             </div>
+                            			                    <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">맨 위로 </a>
+                            	
                         </div>
                     </div>
 
@@ -174,11 +248,11 @@
                             </div>
                             <div class="card-body">
                             > 주요정책 대상
-                                <p class="text-center mb-0">국민, 동물소유자, 동물실험관계자, 동물생산·판매 등 영업자 등</p>
+                                <p class="doginfo_left">국민, 동물소유자, 동물실험관계자, 동물생산·판매 등 영업자 등</p>
                             </div>
                             <div class="card-body">
                             > 정책추진 배경
-                                <p class="text-center mb-0">1. 1인 가구의 증가, 저출산과 고령화 등으로 인한 반려동물 가구 수가 증가하고 있는 반면에 올바른 반려문화에 대한 인식 부족<br>
+                                <p class="doginfo_left">1. 1인 가구의 증가, 저출산과 고령화 등으로 인한 반려동물 가구 수가 증가하고 있는 반면에 올바른 반려문화에 대한 인식 부족<br>
                                 2. 반려동물 및 보유가구의 급격한 증가에 따른 관련 산업 육성 요구 증가<br>
                                 3. 살충제 계란 파동 등으로 인해 밀식사육 등 축산 사육환경 개선 필요성 제기
                                 <br><br>
@@ -186,7 +260,7 @@
                             </div>
                             <div class="card-body">
                             > 주요 추진 내용
-	                            <p class="text-center mb-0">1. 제도 개선<br>
+	                            <p class="doginfo_left">1. 제도 개선<br>
 	                            -반려견 목줄길이를 2m 이내로 제한하는 동물보호법 시행규칙 개정 시행(21.2.12.)<br>
 	                            -맹견 소유자의 관리의무 신설 등 동물보호법 하위법령 개정 마련 시행(19.3.21.)<br>
 	                            -맹견 소유자 책임보험 의무가입 관련 동물보호」 하위법령 개정 시행(21.2.12.)<br>
@@ -206,8 +280,10 @@
                            		<a name="tag2_2">기타 정책</a>
                             </div>
                             <div class="card-body">
-                                <p class="text-center mb-0">-<br><br></p>
+                                <p class="doginfo_left">-<br><br></p>
                             </div>
+                            <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">맨 위로 </a>
+                            	
                         </div>
                     </div>
                  	<!----------법과 정책 > 지역별 정책 ------------->
@@ -219,13 +295,13 @@
                             </div>
                             <div class="card-body">
                             제1장 총칙
-                                <p class="text-center mb-0">제1조(목적) 이 조례는 「동물보호법」에서 위임된 사항과 
+                                <p class="doginfo_left">제1조(목적) 이 조례는 「동물보호법」에서 위임된 사항과 
                                 동물보호 및 복지에 관한 사항을 규정함으로써 동물의 생명보호, 안전보장 및 복지증진을 도모하고, 
                                 시민과 동물의 조화로운 공존에 기여함을 목적으로 한다.</p>
                           	</div>
                           	<div class="card-body">
                             제2조(정의) 이 조례에서 사용하는 용어의 뜻은 다음과 같다.
-                                <p class="text-center mb-0">1. "소유자등"이란 동물의 소유자와 일시적 또는 영구적으로 동물을 사육·관리 
+                                <p class="doginfo_left">1. "소유자등"이란 동물의 소유자와 일시적 또는 영구적으로 동물을 사육·관리 
                                 또는 보호하는 사람을 말한다.<br>
                                 2. "유실·유기동물"이란 도로·공원 등의 공공장소에서 소유자나 일시적 또는 영구적으로 동물을 사육·관리 또는 
                                 보호하는 사람 없이 배회하거나 내버려진 동물을 말한다.<br>
@@ -253,53 +329,33 @@
                             	<a name="tag3_2">기타 지역</a>
                             </div>
                             <div class="card-body">
-                                <p class="text-center mb-0">-<br><br></p>
+                                <p class="doginfo_left">-<br><br></p>
                           	</div>
+		                    <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">맨 위로 </a>
                          </div>
                     </div>
         		</div>
     		</div>
     <!-- End Content -->
 
-    <!-- Start Footer -->
+     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
-
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">V.I.P</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">VIP</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
-                            <i class="fas fa-map-marker-alt fa-fw"></i>
-                            우리팀은 광주에서 활동해요
+                            <span class="address">동구 예술길 31-15 스마트인재개발원</span><br>
+                            <span class="address">대표자 : VIP</span><br>
+                            <span class="address">사업자등록번호 : 000-00-00000</span><br>
+                            <span class="address">개인정보관리책임자 : 정세연</span><br>
+                            <span class="address">고객센터 : 062-655-3509</span><br>
+                            <span class="address">이메일 : vip_korea@vip.com</span>
                         </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="vip@info.com">vip@info.com</a>
-                        </li>
                     </ul>
                 </div>
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">동물법과 정책</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#tag1">법</a></li>
-                        <li><a class="text-decoration-none" href="#tag2">정책</a></li>
-                        <li><a class="text-decoration-none" href="#tag3">지역별정책</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">애완견 종합정보</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="about_dogInfo.jsp">애완견 정보</a></li>
-                        <li><a class="text-decoration-none" href="about_law.jsp">동물법과 정책</a></li>
-                        <li><a class="text-decoration-none" href="about_rankOfProductByShop.jsp">잘 팔리는 용품</a></li>
-                        <li><a class="text-decoration-none" href="allMap.jsp">애완견 동반 서비스</a></li>
-                        <li><a class="text-decoration-none" href="boardMain.jsp">커뮤니티 게시판</a></li>
-                        <li><a class="text-decoration-none" href="about_dogInfo.jsp">반려견 캘린더</a></li>
-                    </ul>
-                </div>
+                
             </div>
             <div class="row text-light mb-4">
                 <div class="col-12 mb-3">
@@ -322,8 +378,8 @@
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
-                            Copyright &copy; 2021 V.I.P.
-                            | Designed by <a rel="sponsored" target="_blank">V.I.P.</a>
+                            <span class="copy">Copyright &copy; 2021 V.I.P.
+                            | Designed by VIP</span>
                         </p>
                     </div>
                 </div>
@@ -338,6 +394,11 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+     $("#egun").on("click",function(){
+    	 alert("로그인을 하신 후 이용해 주시기 바랍니다")
+     });
+    </script>
     <!-- End Script -->
 </body>
 

@@ -1,5 +1,6 @@
-<%@page import="Model.DogInfoDTO"%>
+<%@page import="Model.VipMemberDTO"%>
 <%@page import="java.util.ArrayList"%>
+<%@page import="Model.DogInfoDTO"%>
 <%@page import="Model.DogInfoDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
@@ -7,7 +8,7 @@
 <html lang="en">
 
 <head>
-    <title>about dog basic info</title>
+    <title>반려견 정보 > 견종별 특성</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,14 +23,68 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
-		<style type="text/css">
-	.doginfo_left{
-		text-align: left!important;
-		margin-bottom: 0!important;
+	<style type="text/css">
+	.p-text{
+		margin-top: 25px;
+		text-aline:center;
+		padding-bottom: 1rem;
+	}
+	.ptag1{
+		padding-bottom: 1rem;
+		text-aline:center;
+	}
+	.ptag2{
+		margin-top: 25px;
+		padding-bottom: 1rem;
+		text-aline:center;
+	}
+	.con{
+		padding-bottom: 3rem!important; 
+		width: 100%;
+	    padding-right: var(--bs-gutter-x,.75rem);
+	    padding-left: var(--bs-gutter-x,.75rem);
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+	.in{
+		font-size: 19px;
+		font-weight: bold;
+	}
+	.cate{
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.img{
+		width: 100%;
+		height: 100%;
+	}
+	.categori{
+		height: 260px;
+	}
+	.img-fluids{
+		max-width: 100%;
+	    height: 200px;
+	}
+	.img-fluid1{
+		max-width: 100%;
+	    height: 205px;
+	}
+	.text{
+		font-size: 15px;
+	}
+	.btn.btn-dark{
+		font-size: 12px!important;
+		float: right;
+	}
+	.address{
+		font-size: 12px;
+	}
+	.copy{
+		font-size: 12px;
 	}
 	</style>
 </head>
-
+	
 <body>
 
 <!-- 개 목록 이 페이지에서 보여주기 위해 생성 -->
@@ -37,49 +92,58 @@
 <%
 	DogInfoDAO dao = new DogInfoDAO();
 	ArrayList<DogInfoDTO> list = dao.selectAll();
-
 %>
-	<!-- Header -->
+<% 
+      VipMemberDTO info = (VipMemberDTO)session.getAttribute("info"); 
+   %>
+    <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand text-success logo h1 align-self-center" href="about_dogInfo.jsp">
-                V.I.P.
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">
+                VIP
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+			
+			
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="about_dogInfo.jsp">애완견 정보</a>
+                            <a class="nav-link" href="about_dogInfo.jsp"><span>반려견 정보</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about_law.jsp">동물법과 정책</a>
+                            <a class="nav-link" href="about_law.jsp">법과 정책</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about_rankOfProductByShop.jsp">잘 팔리는 용품</a>
+                            <a class="nav-link" href="about_rankOfProductByShop.jsp">애견용품순위</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="allMap.jsp">애완견 동반 서비스</a>
+                        <%if (info != null){  %>
+                            <a class="nav-link" href="allMap.jsp">애견동반시설</a>
+                            <%}else{ %>
+                            <a class="nav-link" id="egun"href="login.jsp">애견동반시설</a>
+                            <%} %>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="boardMain.jsp">커뮤니티 게시판</a>
+                            <a class="nav-link" href="boardMain.jsp">커뮤니티</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about_dogInfo.jsp">내 반려견 캘린더</a>
+                            <a class="nav-link" href="shop.jsp">반려견 캘린더</a>
                         </li>
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
+                    <%if (info != null){ %>                   
+                    	<a href = "userUpdate.jsp">개인정보수정</a> <br>                  	
+                    	<a href = "Logout">로그아웃</a>
+                    <%} else {%>
+                    <a class="nav-icon position-relative text-decoration-none" href="login.jsp">
+                        <span>로그인</span><!--숫자표현  전체수정-->
+                    </a>
+                    <%}%>
                 </div>
             </div>
         </div>
@@ -182,42 +246,24 @@
     </div>
     <!-- End Content -->
 
-    <!-- Start Footer -->
+     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">V.I.P</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">VIP</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
-                            <i class="fas fa-map-marker-alt fa-fw"></i>
-                            우리팀은 광주에서 활동해요
+                            <span class="address">동구 예술길 31-15 스마트인재개발원</span><br>
+                            <span class="address">대표자 : VIP</span><br>
+                            <span class="address">사업자등록번호 : 000-00-00000</span><br>
+                            <span class="address">개인정보관리책임자 : 정세연</span><br>
+                            <span class="address">고객센터 : 062-655-3509</span><br>
+                            <span class="address">이메일 : vip_korea@vip.com</span>
                         </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="vip@info.com">vip@info.com</a>
-                        </li>
                     </ul>
                 </div>
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">다른 애완견 정보 보기</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="doginfo_basic1.jsp">기초 상식</a></li>
-                        <li><a class="text-decoration-none" href="doginfo_basic2.jsp">건강 정보</a></li>
-                        <li><a class="text-decoration-none" href="doginfo_basic3.jsp">견종별 특성</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">애완견 종합정보</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="about_dogInfo.jsp">애완견 정보</a></li>
-                        <li><a class="text-decoration-none" href="about_law.jsp">동물법과 정책</a></li>
-                        <li><a class="text-decoration-none" href="about_rankOfProductByShop.jsp">잘 팔리는 용품</a></li>
-                        <li><a class="text-decoration-none" href="allMap.jsp">애완견 동반 서비스</a></li>
-                        <li><a class="text-decoration-none" href="boardMain.jsp">커뮤니티 게시판</a></li>
-                        <li><a class="text-decoration-none" href="about_dogInfo.jsp">반려견 캘린더</a></li>
-                    </ul>
-                </div>
+                
             </div>
             <div class="row text-light mb-4">
                 <div class="col-12 mb-3">
@@ -240,8 +286,8 @@
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
-                            Copyright &copy; 2021 V.I.P.
-                            | Designed by <a rel="sponsored" target="_blank">V.I.P.</a>
+                            <span class="copy">Copyright &copy; 2021 V.I.P.
+                            | Designed by VIP</span>
                         </p>
                     </div>
                 </div>
@@ -250,16 +296,18 @@
     </footer>
     <!-- End Footer -->
 
-
     <!-- Start Script -->
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+     $("#egun").on("click",function(){
+    	 alert("로그인을 하신 후 이용해 주시기 바랍니다")
+     });
+    </script>
     <!-- End Script -->
-    
-    
 </body>
 
 </html>
