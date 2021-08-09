@@ -355,7 +355,9 @@ https://templatemo.com/tm-559-zay-shop
 <a href = "index.jsp"><button type="button" class="btn btn-outline-dark">홈</button></a>
 <%if (info != null){ %>
 	<a href = "boardWrite.jsp"><button type="button" class="btn btn-dark">글쓰기</button></a>
-<%} %>
+<%} else { %>
+	<a href = "login.jsp"><button type="button" class="btn btn-dark" id = "login-write">글쓰기</button></a>
+<% }%>
 
 <!-- 페이징 -->
 <div>
@@ -501,6 +503,10 @@ https://templatemo.com/tm-559-zay-shop
 		})			
 		
 	})
+	
+	 $("#login-write").on("click",function(){
+    	 alert("로그인을 하신 후 이용해 주시기 바랍니다")
+     });
 	</script>
     <!-- End Script -->
 </body>
