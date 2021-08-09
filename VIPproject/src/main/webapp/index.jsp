@@ -29,7 +29,18 @@ https://templatemo.com/tm-559-zay-shop
 
 <style type="text/css">
 .p-text{
-	text-aline:center
+	margin-top: 25px;
+	text-aline:center;
+	padding-bottom: 1rem;
+}
+.ptag1{
+	padding-bottom: 1rem;
+	text-aline:center;
+}
+.ptag2{
+	margin-top: 25px;
+	padding-bottom: 1rem;
+	text-aline:center;
 }
 .con{
 	padding-bottom: 3rem!important; 
@@ -56,8 +67,24 @@ https://templatemo.com/tm-559-zay-shop
 }
 .img-fluids{
 	max-width: 100%;
-    height: 300px;
-    
+    height: 200px;
+}
+.img-fluid1{
+	max-width: 100%;
+    height: 205px;
+}
+.text{
+	font-size: 15px;
+}
+.btn.btn-dark{
+	font-size: 12px!important;
+	float: right;
+}
+.address{
+	font-size: 12px;
+}
+.copy{
+	font-size: 12px;
 }
 </style>
 </head>
@@ -176,14 +203,14 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_03.jpg" alt="">
+                            <img class="img-fluid1" src="./img/dog3.png" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
                                 <h1 class="h1"></h1>
                                 <h3 class="h2"></h3>
-                                <p>
-                                    너를 더 알고싶어 내 애완견이 행복할 수 있게, 너는 누구니?
+                                <p class="ptag1">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정보를 통한 올바른 사회성
                                 </p>
                             </div>
                         </div>
@@ -194,14 +221,14 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluids" src="./img/dogimg.png" alt="">
+                            <img class="img-fluids" src="./img/dog1.png" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
                                 <h1 class="h1"></h1>
-                                
-                                <p>
-                                <h3 class="h2">금주의 인기 반려견</h3>
+                                <h3 class="h2"></h3>
+                                <p class="ptag2">
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;함께 성장하는 나의 가족
                                 </p>
                             </div>
                         </div>
@@ -212,14 +239,12 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="container">
                     <div class="row p-5">
                          <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluids" src="./img/hugeso.png" alt="">
+                            <img class="img-fluids" src="./img/dog2.png" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
-                                <h1 class="h1 text-success"></h1>
-                                <h3 class="h2"></h3>
                                 <p class="p-text">
-                                    우리집 댕댕이들도 함께쉬는 휴게소!
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정보를 통한 올바른 교감
                                 </p>
                             </div>
                         </div>
@@ -241,11 +266,6 @@ https://templatemo.com/tm-559-zay-shop
         <div class="con">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1"><span class="in">1000만 반려인들의 필수 정보</span></h1>
-                    <p>
-                        Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident.
-                    </p>
                 </div>
             </div>
             <div class="row">
@@ -257,6 +277,8 @@ https://templatemo.com/tm-559-zay-shop
                         <div class="card-body">
                             <a href="about_dogInfo.jsp" class="h2 text-decoration-none text-dark"><span class="cate">반려견 정보</span></a>
                             <p class="card-text">
+                            	<span class="text">기초상식, 건강상식, 견종별 특성</span>
+                            	<a href="about_dogInfo.jsp"><input class="btn btn-dark" type="button" value="바로가기"></a>
                             </p>
                         </div>
                     </div>
@@ -269,6 +291,8 @@ https://templatemo.com/tm-559-zay-shop
                         <div class="card-body">
                             <a href="about_law.jsp" class="h2 text-decoration-none text-dark"><span class="cate">법과 정책</span></a>
                             <p class="card-text">
+                            <span class="text">동물보호법, 복지정책, 지역별 정책</span>
+                            <a href="about_law.jsp"><input class="btn btn-dark" type="button" value="바로가기"></a>
                             </p>
                         </div>
                     </div>
@@ -281,6 +305,8 @@ https://templatemo.com/tm-559-zay-shop
                         <div class="card-body">
                             <a href="boardMain.jsp" class="h2 text-decoration-none text-dark"><span class="cate">커뮤니티</span></a>
                             <p class="card-text">
+                            <span class="text">강아지 관련 정보공유</span>
+                             <a href="boardMain.jsp"><input class="btn btn-dark" type="button" value="바로가기"></a>
                             </p>
                         </div>
                     </div>
@@ -296,15 +322,15 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container">
             <div class="row">
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">V.I.P.</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">VIP</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
-                            <i class="fas fa-map-marker-alt fa-fw"></i>
-                            우리팀은 광주에서 활동해요
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="vip@info.com">vip@info.com</a>
+                            <span class="address">동구 예술길 31-15 스마트인재개발원</span><br>
+                            <span class="address">대표자 : VIP</span><br>
+                            <span class="address">사업자등록번호 : 000-00-00000</span><br>
+                            <span class="address">개인정보관리책임자 : 정세연</span><br>
+                            <span class="address">고객센터 : 062-655-3509</span><br>
+                            <span class="address">이메일 : vip_korea@vip.com</span>
                         </li>
                     </ul>
                 </div>
@@ -331,8 +357,8 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
-                            Copyright &copy; 2021 V.I.P.
-                            | Designed by <a rel="sponsored" target="_blank">V.I.P.</a>
+                            <span class="copy">Copyright &copy; 2021 V.I.P.
+                            | Designed by VIP</span>
                         </p>
                     </div>
                 </div>
