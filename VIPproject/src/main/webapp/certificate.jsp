@@ -1,7 +1,8 @@
+<%@page import="Model.VipMemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%
-String USERID = (String) session.getAttribute("SessionUserId");	 //id값 맞춰서 넣기
+VipMemberDTO USERID = (VipMemberDTO) session.getAttribute("info");	 //id값 맞춰서 넣기
 if(USERID ==null){
 %>
 	<script>

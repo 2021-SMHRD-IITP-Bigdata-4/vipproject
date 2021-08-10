@@ -323,9 +323,7 @@ function fn_defail(v){
 		}
 		 String f_date = y+"-"+(m+1)+"-"+d;
 			
-			String f_sql = "select count(*) cnt from plan";
-				   f_sql+= "where userid = '"+USERID+"'";
-				   f_sql+= "and pdate = '"+f_date+"'";
+			String f_sql = "select count(*) cnt from schedule where user_id = '"+USERID+"' and sca_pdate = '"+f_date+"'";
 			
 		    ResultSet f_rs = stmt.executeQuery(f_sql);
 			f_rs.next();
