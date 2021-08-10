@@ -187,7 +187,7 @@ width: 100%;
                             <a class="nav-link" href="boardMain.jsp">Ä¿¹Â´ÏÆ¼</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.jsp">¹Ý·Á°ß Ä¶¸°´õ</a>
+                            <a class="nav-link" href="planList1.jsp">¹Ý·Á°ß Ä¶¸°´õ</a>
                         </li>
                     </ul>
                 </div>

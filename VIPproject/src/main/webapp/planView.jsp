@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 
+<%@ include file="certificate.jsp" %>
+<%@ include file="DbCon.jsp" %>
 
 <%
 String pdate = request.getParameter("pdate");
@@ -14,13 +16,28 @@ if( pdate == null ){
 	return;
 }
 
+String sql = " select title,content, from plan ";
+sql += "where userid = '"+USERID+"' and pdate='"+pdate+"' ";   	
+rs = stmt.executeQuery(sql);
+
+String title = "";
+String content = "";
+
+if( rs.next() ) {
+title = rs.getString("title");
+content = rs.getString("content");
+}else {
 %>
 	<script>
 	alert("잘못된 경로로의 접근");
 	self.close();
 	</script>	
 	
+<%
+	return;
+}
 
+%>	
 
 <!DOCTYPE html>
 <html>
@@ -87,9 +104,11 @@ caption {
 		</tr>
 		<tr>
 		<th>제목</th>
+		<td><%=title %></td>
 		</tr>
 		<tr>
 		<th>내용</th>
+		<td height="120" valign="top"><%=content %></td>
 		</tr>
 
 	</table>

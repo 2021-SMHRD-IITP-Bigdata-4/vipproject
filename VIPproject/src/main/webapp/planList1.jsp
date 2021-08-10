@@ -3,6 +3,8 @@
     pageEncoding="EUC-KR"%>
 <%@page import="java.util.Calendar"%>
 
+<%@ include file="certificate.jsp" %>
+<%@ include file="DbCon.jsp" %>
 
 <%
 String yy = request.getParameter("year");    
@@ -160,7 +162,30 @@ text-align:right;
 
 
 
+<script>
+function fn_planWrite(){
+	
+	
+	}else {
+	
+		var w = (window.screen.width/2) - 200;
+		var h = (window.screen.height/2) - 200;
+		var url = "planWrite.jsp";
+		window.open(url,"planWrite","width = 400, height = 400, left="+w+",top="+h);
+	<%
+	
+	%>
+}
 
+function fn_defail(v){
+	var w = (window.screen.width/2) - 200;
+	var h = (window.screen.height/2) - 200;
+	var url = "planView.jsp?pdate="+v;
+	window.open(url,"planview", "width = 400, height = 400, left="+w+",top="+h);
+}
+
+
+</script>
 
 
 <body>
@@ -202,7 +227,7 @@ text-align:right;
                             <a class="nav-link" href="boardMain.jsp">Ä¿¹Â´ÏÆ¼</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.jsp">¹Ý·Á°ß Ä¶¸°´õ</a>
+                            <a class="nav-link" href="planList1.jsp">¹Ý·Á°ß Ä¶¸°´õ</a>
                         </li>
                     </ul>
                 </div>
@@ -296,9 +321,26 @@ text-align:right;
 		}else if(count == 1){
 			color = "red";
 		}
-	%>
+		 String f_date = y+"-"+(m+1)+"-"+d;
+			
+			String f_sql = "select count(*) cnt from plan";
+				   f_sql+= "where userid = '"+USERID+"'";
+				   f_sql+= "and pdate = '"+f_date+"'";
+			
+		    ResultSet f_rs = stmt.executeQuery(f_sql);
+			f_rs.next();
+		    
+		    int f_cnt = f_rs.getInt("cnt");
+			if(f_cnt == 1){
+				color = "pink";
+			%>
+			<td style="color:<%= color%>"><a href="javascript:fn_defail('<%=f_date %>')"><%=d %></a></td>
+			<%
+			}else{
+		%>
 		<td style="color:<%= color%>"><%=d %></td>
 	<%
+			}
 		if( count == 7 ){
 			out.print("</tr><tr>");
 			count = 0;
