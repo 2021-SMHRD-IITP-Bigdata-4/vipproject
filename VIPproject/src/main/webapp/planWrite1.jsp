@@ -19,7 +19,21 @@
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-   
+    <!-- Calendar -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+  
+  <script>
+  $( function() {
+    $( "#sca_pdate" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  } );
+  </script>
 <!--
     
 TemplateMo 559 Zay Shop
@@ -87,15 +101,6 @@ https://templatemo.com/tm-559-zay-shop
 	font-size: 12px;
 }
 </style>
-</head>
- <script>
-  $( function() {
-    $( "#pdate" ).datepicker({
-      changeMonth: true,
-      changeYear: true
-    });
-  } );
-  </script>
 
 <style>
 body {
@@ -230,25 +235,25 @@ width: 100%;
 
     <!-- Start Content -->
     
-    <form name="frm" method="post" action="planWritesave.jsp">
-	<table class="t">
+    <form name="frm" method="post" action="planWriteSave.jsp">
+	<table>
 		<tr>
 		<th width="20%">날짜</th>
-		<td width="80%"><input type="text" name= "pdate" id= "pdate" style="width:98%"></td>
+		<td width="80%"><input type="text" name= "sca_pdate" id= "sca_pdate" style="width:98%"></td>
 		</tr>
 		<tr>
 		<th>제목</th>
-		<td><input type="text" name= "title" style="width:98%"></td>
+		<td><input type="text" name= "sca_title" style="width:98%"></td>
 		</tr>
 		<tr>
 		<th>내용</th>
-		<td><textarea name= "content" style="width:98%; height: 150px;"></textarea></td>
+		<td><textarea name= "sca_content" style="width:98%; height: 150px;"></textarea></td>
 		</tr>
 	</table>
 	
 <div class = "div1">
-	<button type="submit">저장</button>
-	<button type="button" onclick="self.close();">닫기</button>
+	<button type="submit" onclick="location.href='planList1.jsp'">저장</button>
+	<button type="button" onclick="location.href='planList1.jsp'">닫기</button>
 </div>
 
 </form>
